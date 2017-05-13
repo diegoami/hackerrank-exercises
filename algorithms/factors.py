@@ -42,43 +42,11 @@ aN, bN = [int(arr_temp) for arr_temp in input().strip().split(' ')]
 a = sorted([int(arr_temp) for arr_temp in input().strip().split(' ')])
 b = sorted([int(arr_temp) for arr_temp in input().strip().split(' ')])
 
-def gcd(a,b):
-    while True:
-        if (a == b):
-            return a
-        if (b > a):
-            b -= a
-        else:
-            a -= b
+#!/bin/python3
 
-def gcdl(l):
-    sl = list(l)
-    while True:
-        if 0 in sl:
-            sl.remove(0)
-        if (len(sl) == 1):
-            return sl[0]
-        if (len(sl) == 2):
-            return gcd(sl[0],sl[1])
-        sl = sorted(sl)
-        sl[-1] -= sl[-2]
+import sys
 
-def lcm(x,y):
-    tmp=x
-    while (tmp%y)!=0:
-        tmp+=x
-    return tmp
-
-def lcml(*args):
-    return functools.reduce(lcm,args)
-
-al = lcml(*(a))
-bg = gcdl(b)
-al_o = al
-count = 0
-while al <= bg:
-    if(bg % al) == 0:
-        count += 1
-    al = al + al_o
-
-print(count)
+n,k = input().strip().split(' ')
+n,k = [int(n),int(k)]
+a = list(map(int, input().strip().split(' ')))
+# write your code here
