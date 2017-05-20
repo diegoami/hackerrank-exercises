@@ -10,7 +10,7 @@ inputarray = [
 "2",
 ]
 
-inputarray = [ \
+inputarray2 = [ \
 
 "1",
 "70 1988",
@@ -2007,7 +2007,7 @@ inputarray = [ \
 
 def input():
     global state
-    result = inputarray[state]
+    result = inputarray2[state]
     state += 1
     return result
 
@@ -2016,7 +2016,7 @@ class Node:
     def __init__(self, ID):
         self.ID = ID
         self.children = []
-        self.parent = None
+
         self.distance = 0
 
     def __hash__(self):
@@ -2029,9 +2029,9 @@ class Node:
         return str("{}".format(self.ID))
 
     def add_child(self,child):
-        child.parent = self
-        self.children.append(child)
 
+        self.children.append(child)
+        child.children.append(self)
 
 
 class Tree:
@@ -2063,7 +2063,7 @@ class Tree:
             current = Q.pop()
             for p in current.children:
                 if p not in S:
-                    p.distance = p.parent.distance + 6
+                    p.distance = current.distance + 6
                     S.add(p)
                     Q.appendleft(p)
 
