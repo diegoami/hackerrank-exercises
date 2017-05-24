@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28059e24-6916-4e45-a251-8bd7c042f12b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/30days/exceptionraised.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/algorithms/lisa_workbook.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/probability/prob10" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/30days/queues_and_stacks.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/search/connected_cells.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/search/missing_numbers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tree/roads_and_libraries.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tree/testcase_1.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,9 +64,11 @@
     <SUITE FILE_PATH="coverage/hackerrank$hurdle_race.coverage" NAME="hurdle_race Coverage Results" MODIFIED="1494686083300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithms" />
     <SUITE FILE_PATH="coverage/hackerrank$mini_dinstances.coverage" NAME="mini_dinstances Coverage Results" MODIFIED="1494879348343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithms" />
     <SUITE FILE_PATH="coverage/hackerrank$mult_linear.coverage" NAME="mult_linear Coverage Results" MODIFIED="1494674736158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stats" />
+    <SUITE FILE_PATH="coverage/hackerrank$connected_cells.coverage" NAME="connected_cells Coverage Results" MODIFIED="1495652834078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/search" />
     <SUITE FILE_PATH="coverage/hackerrank$binary_cont.coverage" NAME="binary_cont Coverage Results" MODIFIED="1494957706582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/30days" />
     <SUITE FILE_PATH="coverage/hackerrank$nim.coverage" NAME="nim Coverage Results" MODIFIED="1494282419943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stats" />
     <SUITE FILE_PATH="coverage/hackerrank$s_input_2.coverage" NAME="s_input_2 Coverage Results" MODIFIED="1495230474730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bit_manipulation" />
+    <SUITE FILE_PATH="coverage/hackerrank$roads_and_libraries.coverage" NAME="roads_and_libraries Coverage Results" MODIFIED="1495658576187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tree" />
     <SUITE FILE_PATH="coverage/hackerrank$geom2.coverage" NAME="geom2 Coverage Results" MODIFIED="1494284964755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stats" />
     <SUITE FILE_PATH="coverage/hackerrank$intro.coverage" NAME="intro Coverage Results" MODIFIED="1494768237761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sort" />
     <SUITE FILE_PATH="coverage/hackerrank$mark_and_toys.coverage" NAME="mark_and_toys Coverage Results" MODIFIED="1495353383509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/greedy" />
@@ -72,6 +76,7 @@
     <SUITE FILE_PATH="coverage/hackerrank$time_in_words.coverage" NAME="time_in_words Coverage Results" MODIFIED="1495267450289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithms" />
     <SUITE FILE_PATH="coverage/hackerrank$pangrams.coverage" NAME="pangrams Coverage Results" MODIFIED="1495220705358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/strings" />
     <SUITE FILE_PATH="coverage/hackerrank$clessidre.coverage" NAME="clessidre Coverage Results" MODIFIED="1494035743763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/hackerrank$queues_and_stacks.coverage" NAME="queues_and_stacks Coverage Results" MODIFIED="1495647941416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/30days" />
     <SUITE FILE_PATH="coverage/hackerrank$utopian_tree.coverage" NAME="utopian_tree Coverage Results" MODIFIED="1494690484918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithms" />
     <SUITE FILE_PATH="coverage/hackerrank$kangaroos.coverage" NAME="kangaroos Coverage Results" MODIFIED="1494118771085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hackerrank$centrallimit3.coverage" NAME="centrallimit3 Coverage Results" MODIFIED="1494445734613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stats" />
@@ -90,6 +95,7 @@
     <SUITE FILE_PATH="coverage/hackerrank$valley.coverage" NAME="valley Coverage Results" MODIFIED="1494676291982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hackerrank$gauss2.coverage" NAME="gauss2 Coverage Results" MODIFIED="1494358935233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stats" />
     <SUITE FILE_PATH="coverage/hackerrank$rations.coverage" NAME="rations Coverage Results" MODIFIED="1495216712727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithms" />
+    <SUITE FILE_PATH="coverage/hackerrank$missing_numbers.coverage" NAME="missing_numbers Coverage Results" MODIFIED="1495650422794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/search" />
     <SUITE FILE_PATH="coverage/hackerrank$picking_numbers.coverage" NAME="picking_numbers Coverage Results" MODIFIED="1494958839629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithms" />
     <SUITE FILE_PATH="coverage/hackerrank$poisson1.coverage" NAME="poisson1 Coverage Results" MODIFIED="1494349273082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stats" />
     <SUITE FILE_PATH="coverage/hackerrank$dictionaries_and_maps.coverage" NAME="dictionaries_and_maps Coverage Results" MODIFIED="1494756881786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/30days" />
@@ -97,91 +103,101 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="cakewalk.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/greedy/cakewalk.py">
+      <file leaf-file-name="queues_and_stacks.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/30days/queues_and_stacks.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="25" selection-end-column="10" />
+            <state relative-caret-position="221">
+              <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mark_and_toys.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/greedy/mark_and_toys.py">
+      <file leaf-file-name="knight_walk.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/search/knight_walk.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="29" selection-end-column="10" />
+            <state relative-caret-position="1207">
+              <caret line="71" column="17" lean-forward="false" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="prob6" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/probability/prob6">
+      <file leaf-file-name="missing_numbers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/search/missing_numbers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="40" />
+            <state relative-caret-position="629">
+              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="prob7" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/probability/prob7">
+      <file leaf-file-name="connected_cells.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/search/connected_cells.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+            <state relative-caret-position="799">
+              <caret line="47" column="13" lean-forward="false" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="prob8" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/probability/prob8">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="52" lean-forward="false" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="prob9" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/probability/prob9">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="prob10" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/probability/prob10">
+      <file leaf-file-name="even_tree.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tree/even_tree.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="27" lean-forward="true" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="30" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lisa_workbook.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/algorithms/lisa_workbook.py">
+      <file leaf-file-name="roads_and_libraries.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tree/roads_and_libraries.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="33" selection-end-column="9" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="exceptionraised.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="testcase_1.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tree/testcase_1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testcase_2.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tree/testcase_2.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3305310">
+              <caret line="194430" column="0" lean-forward="false" selection-start-line="194430" selection-start-column="0" selection-end-line="194430" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shortest_reach2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tree/shortest_reach2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="7" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exceptionraised.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/30days/exceptionraised.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="28" selection-end-column="62" />
+            <state relative-caret-position="646">
+              <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -204,11 +220,12 @@
       <find>filter</find>
       <find>^([a-z]*)</find>
       <find>Searching</find>
-      <find>print</find>
       <find>&quot;16</find>
       <find>inputarray3</find>
       <find>xrange</find>
       <find>^([\-0-9\ ]+)$</find>
+      <find>print</find>
+      <find>,</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -221,11 +238,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/algorithms/pdf_viewer.py" />
-        <option value="$PROJECT_DIR$/algorithms/clouds_2.py" />
-        <option value="$PROJECT_DIR$/algorithms/finddigits.py" />
-        <option value="$PROJECT_DIR$/sort/intro.py" />
-        <option value="$PROJECT_DIR$/algorithms/movies.py" />
         <option value="$PROJECT_DIR$/algorithms/movie_beautiful.py" />
         <option value="$PROJECT_DIR$/algorithms/angry_professor.py" />
         <option value="$PROJECT_DIR$/algorithms/sequence_equation.py" />
@@ -272,6 +284,11 @@
         <option value="$PROJECT_DIR$/probability/prob10" />
         <option value="$PROJECT_DIR$/algorithms/lane.py" />
         <option value="$PROJECT_DIR$/algorithms/lisa_workbook.py" />
+        <option value="$PROJECT_DIR$/30days/queues_and_stacks.py" />
+        <option value="$PROJECT_DIR$/search/missing_numbers.py" />
+        <option value="$PROJECT_DIR$/search/connected_cells.py" />
+        <option value="$PROJECT_DIR$/tree/testcase_1.txt" />
+        <option value="$PROJECT_DIR$/tree/roads_and_libraries.py" />
       </list>
     </option>
   </component>
@@ -303,6 +320,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -325,7 +343,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
+              <option name="myItemId" value="tree" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -346,7 +364,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -359,18 +376,18 @@
     <option name="mySupportQtDebugging" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\python\hackerrank\tree" />
+      <recent name="D:\python\hackerrank\search" />
+      <recent name="D:\python\hackerrank\30days" />
+      <recent name="D:\python\hackerrank\probability" />
+      <recent name="D:\python\hackerrank\greedy" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\python\hackerrank\strings" />
       <recent name="D:\python\hackerrank\algorithms" />
       <recent name="D:\python\hackerrank\warmup" />
       <recent name="D:\python\hackerrank" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\python\hackerrank\probability" />
-      <recent name="D:\python\hackerrank\30days" />
-      <recent name="D:\python\hackerrank\greedy" />
-      <recent name="D:\python\hackerrank\tree" />
-      <recent name="D:\python\hackerrank\strings" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -385,83 +402,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.lisa_workbook">
-    <configuration default="false" name="shortest_reach" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tree" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="hackerrank" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tree/shortest_reach.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="cakewalk" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/greedy" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="hackerrank" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/greedy/cakewalk.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="mark_and_toys" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/greedy" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="hackerrank" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/greedy/mark_and_toys.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="exceptionraised" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/30days" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="hackerrank" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/30days/exceptionraised.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.roads_and_libraries">
     <configuration default="false" name="lisa_workbook" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -476,6 +417,82 @@
       <module name="hackerrank" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithms/lisa_workbook.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="queues_and_stacks" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/30days" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="hackerrank" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/30days/queues_and_stacks.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="missing_numbers" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/search" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="hackerrank" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/search/missing_numbers.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="connected_cells" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/search" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="hackerrank" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/search/connected_cells.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="roads_and_libraries" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tree" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="hackerrank" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tree/roads_and_libraries.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -630,19 +647,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.shortest_reach" />
-      <item index="1" class="java.lang.String" itemvalue="Python.cakewalk" />
-      <item index="2" class="java.lang.String" itemvalue="Python.mark_and_toys" />
-      <item index="3" class="java.lang.String" itemvalue="Python.exceptionraised" />
-      <item index="4" class="java.lang.String" itemvalue="Python.lisa_workbook" />
+      <item index="0" class="java.lang.String" itemvalue="Python.lisa_workbook" />
+      <item index="1" class="java.lang.String" itemvalue="Python.queues_and_stacks" />
+      <item index="2" class="java.lang.String" itemvalue="Python.missing_numbers" />
+      <item index="3" class="java.lang.String" itemvalue="Python.connected_cells" />
+      <item index="4" class="java.lang.String" itemvalue="Python.roads_and_libraries" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.lisa_workbook" />
-        <item index="1" class="java.lang.String" itemvalue="Python.exceptionraised" />
-        <item index="2" class="java.lang.String" itemvalue="Python.mark_and_toys" />
-        <item index="3" class="java.lang.String" itemvalue="Python.cakewalk" />
-        <item index="4" class="java.lang.String" itemvalue="Python.shortest_reach" />
+        <item index="0" class="java.lang.String" itemvalue="Python.roads_and_libraries" />
+        <item index="1" class="java.lang.String" itemvalue="Python.connected_cells" />
+        <item index="2" class="java.lang.String" itemvalue="Python.missing_numbers" />
+        <item index="3" class="java.lang.String" itemvalue="Python.queues_and_stacks" />
+        <item index="4" class="java.lang.String" itemvalue="Python.lisa_workbook" />
       </list>
     </recent_temporary>
   </component>
@@ -758,23 +775,30 @@
       <option name="project" value="LOCAL" />
       <updated>1495402111806</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Other problems">
+      <created>1495580293403</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1495580293403</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.159375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.247557" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30076003" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3984799" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -792,7 +816,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Other problems" />
     <MESSAGE value="Additional problems" />
     <MESSAGE value="Probability and stuff" />
     <MESSAGE value="Bread firsth" />
@@ -800,7 +823,8 @@
     <MESSAGE value="Children all the way" />
     <MESSAGE value="Found problems" />
     <MESSAGE value="Probability problems and others" />
-    <option name="LAST_COMMIT_MESSAGE" value="Probability problems and others" />
+    <MESSAGE value="Other problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="Other problems" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -821,48 +845,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/algorithms/day_of_programmer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="31" column="25" lean-forward="false" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/angry_professor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/clouds_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/clouds_3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="41" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/cut_sticks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="42" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/mini_dinstances.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="42" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/algorithms/sequence_equation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -888,13 +870,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/30days/binary_cont.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1041,28 +1016,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search/knight_walk.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="80" column="0" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="80" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tree/tcases/sr1.txt" />
-    <entry file="file://$PROJECT_DIR$/tree/shortest_reach2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-744">
-          <caret line="24" column="7" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tree/tcases/sr2.txt" />
     <entry file="file://$PROJECT_DIR$/search/icecream-parlor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3434">
           <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1085,6 +1044,117 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/greedy/cakewalk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="25" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/greedy/mark_and_toys.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="29" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/probability/prob6">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/probability/prob7">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/probability/prob8">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="52" lean-forward="false" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/probability/prob9">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/lane.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="9" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithms/lisa_workbook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="33" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/probability/prob10">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/30days/binary_cont.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search/knight_walk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="71" column="17" lean-forward="false" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/30days/queues_and_stacks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/30days/exceptionraised.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search/missing_numbers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search/connected_cells.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="13" lean-forward="false" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1097,84 +1167,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/greedy/cakewalk.py">
+    <entry file="file://$PROJECT_DIR$/tree/shortest_reach2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="25" selection-end-column="10" />
+        <state relative-caret-position="408">
+          <caret line="24" column="7" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/greedy/mark_and_toys.py">
+    <entry file="file://$PROJECT_DIR$/tree/testcase_2.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="29" selection-end-column="10" />
+        <state relative-caret-position="3305310">
+          <caret line="194430" column="0" lean-forward="false" selection-start-line="194430" selection-start-column="0" selection-end-line="194430" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/probability/prob6">
+    <entry file="file://$PROJECT_DIR$/tree/testcase_1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="40" />
+        <state relative-caret-position="187">
+          <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/probability/prob7">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/probability/prob8">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="52" lean-forward="false" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/probability/prob9">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/probability/prob10">
+    <entry file="file://$PROJECT_DIR$/tree/roads_and_libraries.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="27" lean-forward="true" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/lane.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="9" selection-end-column="3" />
-          <folding>
-            <element signature="e#186#196#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/lisa_workbook.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="33" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/30days/exceptionraised.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="28" selection-end-column="62" />
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
