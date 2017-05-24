@@ -18,7 +18,7 @@ class AdjMatrix:
             self.A.append(Ai)
             for j in range(n):
                 self.A[i].append(0)
-            self.C[i] = set([i])
+
         self.cr = cr
         self.cl = cl
 
@@ -38,15 +38,19 @@ class AdjMatrix:
         if self.cr >= self.cl:
             return len(self.A)*self.cl
         else:
-            self.walk_graph()
-            cn = self.conn()
-            return len(cn)*self.cl + sum([len(x)-1 for x in cn])*self.cr
+            tl, tr =self.walk_graph()
+            print (tl,tr)
+
+            return tl*self.cl + tr*self.cr
 
 
     def walk_graph(self):
         GVU = set()
+        tl, tr = 0, 0
         for i in range(len(self.A)):
-
+            if i in GVU:
+                continue
+            tl += 1
             VU = set()
             S = deque()
             S.append(i)
@@ -57,9 +61,10 @@ class AdjMatrix:
                     GVU.add(v)
                     for j,Aj in enumerate(self.A[v]):
                         if Aj > 0 and v != j:
-
-                            self.C[i] = self.C[i].union([j])
-                            S.append(j)
+                            if j not in GVU:
+                                S.append(j)
+                                tr += 1
+        return (tl,tr)
 
 q = int(input().strip())
 for a0 in range(q):
