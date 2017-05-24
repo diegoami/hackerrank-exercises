@@ -8,8 +8,6 @@ def input():
 
 from collections import deque
 class AdjMatrix:
-
-
     def __init__(self,n,m,cl,cr):
         self.A = []
         self.C = {}
@@ -24,6 +22,7 @@ class AdjMatrix:
 
     def add_city(self,city_1,city_2):
         self.A[city_1][city_2] = 1
+        self.A[city_2][city_1] = 1
 
     def get_adjacent(self,n):
         return self.a[n]
@@ -39,8 +38,6 @@ class AdjMatrix:
             return len(self.A)*self.cl
         else:
             tl, tr =self.walk_graph()
-            print (tl,tr)
-
             return tl*self.cl + tr*self.cr
 
 
@@ -61,14 +58,13 @@ class AdjMatrix:
                     GVU.add(v)
                     for j,Aj in enumerate(self.A[v]):
                         if Aj > 0 and v != j:
-                            if j not in GVU:
-                                S.append(j)
-                                tr += 1
+                            S.append(j)
+
+            tr += len(VU)-1
         return (tl,tr)
 
 q = int(input().strip())
 for a0 in range(q):
-
     n,m,x,y = input().strip().split(' ')
     n,m,x,y = [int(n),int(m),int(x),int(y)]
     Aj = AdjMatrix(n,m,x,y)
@@ -78,3 +74,6 @@ for a0 in range(q):
         Aj.add_city(city_1-1,city_2-1)
 
     print(Aj.cost())
+
+
+
