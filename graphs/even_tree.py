@@ -21,8 +21,8 @@ def input():
     state += 1
     return result
 
-import tree
-T = tree.Tree()
+import graphs
+T = graphs.Tree()
 N,M = map(int, input().split())
 for i in range(M):
     v1,v2 = input().split()
