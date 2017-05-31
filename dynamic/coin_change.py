@@ -5,11 +5,15 @@ inputarray =[
 "1 2 3"
 ]
 
+inputarray2 =[
+"10 4",
+"2 5 3 6"
+]
 
 
 def input():
     global state
-    result = inputarray[state]
+    result = inputarray2[state]
     state += 1
     return result
 
@@ -18,7 +22,7 @@ sols = {0:[]}
 
 
 def getWays(n, c):
-    print("calling getWays({}) : {}".format(n, c))
+    #print("calling getWays({}) : {}".format(n, c))
     if (n < 0):
         return [[]]
     elif (n in sols):
@@ -36,15 +40,17 @@ def getWays(n, c):
             elif (ce < n):
                 nr = n - ce
                 ws = getWays(nr,cc)
-                print("{} : retrieving getWays({}) : {}".format(n, nr, ws))
+                #print("{} : retrieving getWays({}) : {}".format(n, nr, ws))
 
                 for w in ws:
-                    print("{} : sum({})+{} == {}".format(n, w,ce, n))
+                    #print("{} : sum({})+{} == {}".format(n, w,ce, n))
 
                     if sum(w)+ce == n:
-                        soll.append(w+[ce])
+                        nls = sorted(w + [ce])
+                        if not nls in soll:
+                            soll.append(nls)
         sols[n] = soll
-        print("returning getWays({}) : {}".format(n,soll))
+        #print("returning getWays({}) : {}".format(n,soll))
         return soll
 
 
@@ -53,4 +59,4 @@ n, m = [int(n), int(m)]
 c = list(map(int, input().strip().split(' ')))
 # Print the number of ways of making change for 'n' units using coins having the values given by 'c'
 ways = getWays(n, c)
-print(set(ways))
+print(len(ways))
