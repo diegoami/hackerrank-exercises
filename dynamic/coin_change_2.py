@@ -20,44 +20,35 @@ inputarray3 =[
 
 def input():
     global state
-    result = inputarray2[state]
+    result = inputarray[state]
     state += 1
     return result
 
 
-sols = {0:[]}
+sols = {}
 
 
 
 
-def getWays(n, c):
+def getWays(n, c, index):
     #print("calling getWays({}) : {}".format(n, c))
     if (n < 0):
-        return [[]]
-    elif (n in sols):
-        return sols[n]
-    elif (n == 1):
-        soll = [[1]] if 1 in c else []
-        sols[n] = soll
-        return soll
+        return {}
+    elif ((n,index) in sols):
+        return sols[(n,index)]
     else:
-        soll = []
+        soll = 0
         cc = list(c)
-        for ci,ce in enumerate(c):
+        for ci,ce in enumerate(c,index):
             if (ce == n):
-                soll.append([ce])
+                soll += 1
+                break;
             elif (ce < n):
                 nr = n - ce
-                ws = getWays(nr,cc[ci:])
-                #print("{} : retrieving getWays({}) : {}".format(n, nr, ws))
+                ws = getWays(nr,cc,index+1)
+                soll += ws
 
-                for w in ws:
-                    #print("{} : sum({})+{} == {}".format(n, w,ce, n))
-
-                   nls = sorted(w + [ce])
-                   if not nls in soll:
-                        soll.append(nls)
-        sols[n] = soll
+        sols[(n,index)] = soll
         #print("returning getWays({}) : {}".format(n,soll))
         return soll
 
@@ -67,6 +58,6 @@ n, m = [int(n), int(m)]
 c = list(map(int, input().strip().split(' ')))
 # Print the number of ways of making change for 'n' units using coins having the values given by 'c'
 cf = sorted(c,reverse=True)
-print(cf)
-ways = getWays(n, cf)
-print(len(ways))
+#print(cf)
+ways = getWays(n, cf, 0)
+print(ways)
