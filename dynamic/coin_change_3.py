@@ -20,7 +20,7 @@ inputarray3 =[
 
 def input():
     global state
-    result = inputarray3[state]
+    result = inputarray[state]
     state += 1
     return result
 
