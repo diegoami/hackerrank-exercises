@@ -23,17 +23,7 @@ def input():
 
 
 n = int(input().strip())
-S = []
-for i in range(n):
-    S.append(input().strip())
-
-Q = []
+S = [input().strip() for i in range(n)]
 qn = int(input().strip())
-for i in range(qn):
-    qs = input().strip()
-    ff = 0
-    for s in S:
-        if s == qs:
-            ff += 1
-
-    print(ff)
+for _ in range(qn):
+    print(sum([S.count(input().strip())]))
