@@ -65,10 +65,12 @@ def scan(node):
 def levelOrder(root):
     print(" ".join(scan(root)))
 
-lm = list(map(int, input().strip().split(' ')))
-tree = BinarySearchTree()
+if __name__ == '__main__':
+
+    lm = list(map(int, input().strip().split(' ')))
+    tree = BinarySearchTree()
 
 
-for le in lm:
-    tree.create(le)
-levelOrder(tree.root)
+    for le in lm:
+        tree.create(le)
+    levelOrder(tree.root)
