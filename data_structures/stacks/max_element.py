@@ -17,7 +17,7 @@ inputarray1 = [
 "1 91",
 "3"
 ]
-def inputCmd():
+def input2():
     global state
     result = inputarray1[state]
     state += 1
@@ -28,7 +28,7 @@ state = 1
 import linecache
 def input():
     global state
-    result = linecache.getline('tc_19.txt', state)
+    result = linecache.getline('tc_8.txt', state)
     state += 1
     return result
 
@@ -37,22 +37,28 @@ from collections import deque
 #dq = deque()
 dq = []
 dqs = []
+
+removed = []
 n = int(input())
 crmx = None
 for i in range(n):
+
     cmd = list(map(int,input().split()))
+
     if cmd[0] == 1:
         dq.append(cmd[1])
-        if crmx == None or cmd[1] > crmx:
-
-            dqs = sorted(dq,reverse=True)
-            crmx = dqs[0] if len(dqs) > 0 else None
+        if (crmx == None or cmd[1] > crmx):
+            crmx = cmd[1]
     elif cmd[0] == 2:
         ppd = dq.pop()
-        if (crmx == None or ppd == crmx ):
-            dqs = sorted(dq,reverse = True)
-            crmx = dqs[0] if len(dqs) > 0 else None
+        removed.append(ppd)
     elif cmd[0] == 3:
+        if (crmx in removed):
+            dqs = sorted(dq,reverse=True)
+            crmx = dqs[0]
+            removed = []
         print(crmx)
+
+
 
 
