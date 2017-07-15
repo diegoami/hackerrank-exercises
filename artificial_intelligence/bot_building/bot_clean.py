@@ -36,6 +36,33 @@ def input():
     return result
 
 # Head ends here
+def next_move_sub(posr, posc, board):
+    csdy, csdx = None,None
+    for bi, by in enumerate(board):
+        for bj, bx in enumerate(by):
+            if bx == 'd':
+
+                if (csdy, csdx) == (None, None):
+                    csdy, csdx = bi, bj
+                else:
+                    if (abs(csdy-posr) +  abs(csdx-posc)) > (abs(bi-posr) +  abs(bj-posc)):
+                        csdy, csdx = bi, bj
+    if (csdy, csdx) == (posr, posc):
+        print('CLEAN')
+    elif (csdy, csdx) == (None, None):
+        print('FINISHED')
+    else:
+        if posc < csdx:
+            print('RIGHT')
+        elif posc > csdx:
+            print('LEFT')
+        elif posr < csdy:
+            print('DOWN')
+        elif posr > csdy:
+            print('UP')
+        print('FINISHED')
+
+
 def next_move(posr, posc, board):
     csdy, csdx = None,None
     for bi, by in enumerate(board):
