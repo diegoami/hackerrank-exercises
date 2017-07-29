@@ -2,7 +2,7 @@ state = 1
 import linecache
 def input():
     global state
-    result = linecache.getline('stockfile_2.txt', state)
+    result = linecache.getline('stockfile_1.txt', state)
     state += 1
     return result
 
@@ -14,17 +14,19 @@ for i in range(k):
     row = list(input().split())
     stockname, stocks, history = row[0], int(row[1]),list(map(float,row[2:]))
     #print(history)
-    x = np.arange(0,len(history))
-    y = np.array(history)
-   # import matplotlib.pyplot as plt
-   # plt.plot(x,y)
-    pf = np.polyfit(np.arange(0,len(history)),np.array(history),1)
-    ev1 = pf[0]*len(history)  + pf[1]
-    ev2 = pf[0]*(len(history)-1) + pf[1]
-    exv = ev1 - ev2 + history[-1]
- #   print(stockname, history[-1], exv)
-
-    stckop[stockname] = {"n" : stocks, "y" : history[-1], "t" : exv}
+    #x = np.arange(0,len(history)+1)
+    x = np.arange(0,4)
+    #x = np.logspace(2, 3, num=len(history)+1)
+    y = np.array(history[-3:])
+    #import matplotlib.pyplot as plt
+    #plt.plot(x[:-1],y)
+    pf = np.polyfit(x[:-1],y,1)
+    ev1 = pf[0]*x[-2]  + pf[1]
+    ev2 = pf[0]*x[-1] + pf[1]
+    exv = ev2 - ev1 + history[-1]
+    print(stockname, history[-1], exv)
+    print(x,y)
+    stckop[stockname] = {"n" : stocks, "y" : history[-1], "t" : ev2}
 #print(stckop)
 #plt.show()
 bestbuys = sorted([x for x in stckop.items() if x[1]["t"] > x[1]["y"]], key=lambda x: x[1]["t"] - x[1]["y"],reverse=True)
@@ -33,7 +35,8 @@ shouldsell = sorted([x for x in stckop.items() if x[1]["n"] > 0 and x[1]["t"] < 
 #print(shouldsell)
 trns = []
 for ss in shouldsell:
-    trns.append((ss[0],"SELL",int(ss[1]["n"])))
+    trns.append((ss[0],"SELL",max(int(ss[1]["n"]) // 2 ,1)))
+    #trns.append((ss[0],"SELL",int(ss[1]["n"])))
 #    print("{} SELL {}".format(ss[0],int(ss[1]["n"])))
 for bb in bestbuys:
     if (m > 0):
