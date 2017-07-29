@@ -24,8 +24,8 @@ for i in range(k):
     ev1 = pf[0]*x[-2]  + pf[1]
     ev2 = pf[0]*x[-1] + pf[1]
     exv = ev2 - ev1 + history[-1]
-    print(stockname, history[-1], exv)
-    print(x,y)
+    #print(stockname, history[-1], exv)
+    #print(x,y)
     stckop[stockname] = {"n" : stocks, "y" : history[-1], "t" : ev2}
 #print(stckop)
 #plt.show()
@@ -43,10 +43,12 @@ for bb in bestbuys:
         tb = m // bb[1]["y"]
 #        trns.append({"s": bb[0], "a": "BUY", "q": int(tb)})
         if (tb > 0):
-            trns.append((bb[0], "BUY", int(tb)))
+            #trns.append((ss[0], "SELL", max(int(ss[1]["n"]) // 2, 1)))
+            amt =     max(int(tb) // 2, 1)
+            trns.append((bb[0], "BUY", amt))
         #
 #        print("{} BUY {}".format(bb[0],int(tb)))
-        m = m - tb*bb[1]["y"]
+            m = m - amt*bb[1]["y"]
 
 print(len(trns))
 for trn in trns:
