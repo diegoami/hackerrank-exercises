@@ -37,13 +37,13 @@ for ss in shouldsell:
 #    print("{} SELL {}".format(ss[0],int(ss[1]["n"])))
 for bb in bestbuys:
     if (m > 0):
-        tb = m // bb[1]["t"]
+        tb = m // bb[1]["y"]
 #        trns.append({"s": bb[0], "a": "BUY", "q": int(tb)})
         if (tb > 0):
             trns.append((bb[0], "BUY", int(tb)))
         #
 #        print("{} BUY {}".format(bb[0],int(tb)))
-        m = m - tb*bb[1]["t"]
+        m = m - tb*bb[1]["y"]
 
 print(len(trns))
 for trn in trns:
