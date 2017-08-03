@@ -14,10 +14,74 @@ inputarray = [
 "%%%%%%%%%%%%%%%%%%%%"
 ]
 
+inputarray2 = [
+"25 13",
+"3 1",
+"27 28",
+"%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
+"%------------%%------------%",
+"%-%%%%-%%%%%-%%-%%%%%-%%%%-%",
+"%.%%%%-%%%%%-%%-%%%%%-%%%%-%",
+"%-%%%%-%%%%%-%%-%%%%%-%%%%-%",
+"%--------------------------%",
+"%-%%%%-%%-%%%%%%%%-%%-%%%%-%",
+"%-%%%%-%%-%%%%%%%%-%%-%%%%-%",
+"%------%%----%%----%%------%",
+"%%%%%%-%%%%%-%%-%%%%%-%%%%%%",
+"%%%%%%-%%%%%-%%-%%%%%-%%%%%%",
+"%%%%%%-%------------%-%%%%%%",
+"%%%%%%-%-%%%%--%%%%-%-%%%%%%",
+"%--------%--------%--------%",
+"%%%%%%-%-%%%%%%%%%%-%-%%%%%%",
+"%%%%%%-%------------%-%%%%%%",
+"%%%%%%-%-%%%%%%%%%%-%-%%%%%%",
+"%------------%%------------%",
+"%-%%%%-%%%%%-%%-%%%%%-%%%%-%",
+"%-%%%%-%%%%%-%%-%%%%%-%%%%-%",
+"%---%%----------------%%---%",
+"%%%-%%-%%-%%%%%%%%-%%-%%-%%%",
+"%%%-%%-%%-%%%%%%%%-%%-%%-%%%",
+"%------%%----%%----%%------%",
+"%-%%%%%%%%%%-%%-%%%%%%%%%%-%",
+"%------------P-------------%",
+"%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+]
+
+"""
+"%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
+"%------------%%------------%",
+"%-%%%%-%%%%%-%%-%%%%%-%%%%-%",
+"%.%%%%-%%%%%-%%-%%%%%-%%%%-%",
+"%-%%%%-%%%%%-%%-%%%%%-%%%%-%",
+"%--------------------------%",
+"%-%%%%-%%-%%%%%%%%-%%-%%%%-%",
+"%-%%%%-%%-%%%%%%%%-%%-%%%%-%",
+"%------%%----%%----%%------%",
+"%%%%%%-%%%%%-%%-%%%%%-%%%%%%",
+"%%%%%%-%%%%%-%%-%%%%%-%%%%%%",
+"%%%%%%-%------------%-%%%%%%",
+"%%%%%%-%-%%%%--%%%%-%-%%%%%%",
+"%--------%--------%--------%",
+"%%%%%%-%-%%%%%%%%%%-%-%%%%%%",
+"%%%%%%-%------------%-%%%%%%",
+"%%%%%%-%-%%%%%%%%%%-%-%%%%%%",
+"%------------%%------------%",
+"%-%%%%-%%%%%-%%-%%%%%-%%%%-%",
+"%-%%%%-%%%%%-%%-%%%%%-%%%%-%",
+"%---%%------------XXXX%%---%",
+"%%%-%%-%%-%%%%%%%%X%%X%%-%%%",
+"%%%-%%-%%-%%%%%%%%X%%X%%-%%%",
+"%------%%----%%XXXX%%XXXXXX%",
+"%-%%%%%%%%%%-%%-%%%%%%%%%%X%",
+"%------------PXXXXXXXXXXXXX%",
+"%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+]
+
+"""
 def input():
     global state
-    if state < len(inputarray):
-        result = inputarray[state]
+    if state < len(inputarray2):
+        result = inputarray2[state]
         state += 1
         return result
     else:
@@ -25,19 +89,22 @@ def input():
 
 from collections import deque
 def walk(maze, sy,sx, y,x):
-    print("Now walking from {},{} to {}, {} ".format(sy,sx,y,x))
     S = set()
     Q = deque()
 
     S.add((sy,sx))
     Q.append((sy,sx))
-    max_loops = 200
+    max_loops = 500
+
+
+    addedPath, exploredPath = [], []
     while len(Q) > 0 and max_loops > 0:
         max_loops -= 1
         (cy,cx) = Q.pop()
-        print((cy,cx))
+        exploredPath.append((cy,cx))
+
         if ((cy,cx) == (y,x)):
-            return (cy,cx)
+            return (exploredPath, addedPath)
         else:
             cand_dirs = [(cy-1,cx),(cy,cx-1),(cy,cx+1),(cy+1,cx)]
             poss_dir = [(j,i) for (j,i) in cand_dirs if 0 < j < len(maze) and  0 < i < len(maze[0]) ]
@@ -46,35 +113,31 @@ def walk(maze, sy,sx, y,x):
                 if (mzchr != '%' ):
                     if (j,i) not in S:
                         S.add((j,i))
+                        #s_dirs = [(j+1,x),(j,x+1),(j,x-1),(j-1,x)]
+                        #for s_dir in s_dirs:
+                        #    if addedPath.index(s_dir) > 0:
+
+                        addedPath.append((j, i))
+
                         Q.append((j,i))
-    print("Failed")
+
 
 if __name__ == "__main__":
 
-    pathArray = []
-    mazeArray = []
+    maze = []
 
 
-    while True:
-        inputString = input()
-        if inputString == None:
-            break
-        if inputString.startswith('%'):
-            mazeArray.append(inputString)
-        else:
-            pathArray.append(tuple(map(int,inputString.split())))
+    sy,sx = map(int,input().split())
+    y, x = map(int, input().split())
+    ly, lx = map(int, input().split())
+    for _ in range(ly):
+        maze.append(input())
 
+    exploredPath, addedPath = walk(maze,sy,sx,y,x)
+    print(len(exploredPath))
+    for p in exploredPath:
+        print(*p, sep=" ")
 
-    print(mazeArray)
-    print(pathArray)
-    sy,sx = 0,0
-    for i,path in enumerate(pathArray):
-
-        if i == 0:
-            sy,sx = path
-        else:
-            y,x = path
-            walk(mazeArray,sy,sx,y,x)
-            sy,sx = y,x
-
-
+    print(len(addedPath)-1)
+    for p in addedPath:
+        print(*p, sep=" ")
