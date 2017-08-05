@@ -68,6 +68,7 @@ inputarray3 = [
 
 ]
 
+
 inputarray4 = [
 "35 35",
 "35 1",
@@ -112,7 +113,6 @@ inputarray4 = [
 ]
 
 
-
 def input():
     global state
     if state < len(inputarray4):
@@ -126,44 +126,13 @@ def input():
 
 from collections import deque
 
-
-def walk_idf(maze, sy,sx, y,x):
-    S = set()
-    Q = deque()
-
-    S.add((sy,sx))
-    Q.append((sy,sx))
-    max_loops = 500
-
-
-    exploredPath =  []
-    while len(Q) > 0 and max_loops > 0:
-        max_loops -= 1
-        (cy,cx) = Q.pop()
-        exploredPath.append((cy,cx))
-
-        if ((cy,cx) == (y,x)):
-            return exploredPath
-        else:
-            cand_dirs = [(cy-1,cx),(cy,cx-1),(cy,cx+1),(cy+1,cx)]
-            poss_dir = [(j,i) for (j,i) in cand_dirs if 0 < j < len(maze) and  0 < i < len(maze[0]) ]
-            for j,i in poss_dir:
-                mzchr = maze[j][i]
-                if (mzchr != '%' ):
-                    if (j,i) not in S:
-                        S.add((j,i))
-                        Q.append((j,i))
-
-
-from collections import deque
-
 def walk_bf(maze, sy,sx, y,x):
     S = set()
     Q = deque()
 
     S.add((sy,sx))
     Q.appendleft((sy,sx))
-    max_loops = 500
+    max_loops = 1000
 
     exploredPath =  []
     while len(Q) > 0 and max_loops > 0:
@@ -217,9 +186,9 @@ if __name__ == "__main__":
         maze.append(input())
 
     exploredPath = walk_bf(maze,sy,sx,y,x)
-    print(len(exploredPath))
-    for p in exploredPath:
-        print(*p, sep=" ")
+  #  print(len(exploredPath))
+   # for p in exploredPath:
+  #      print(*p, sep=" ")
     addedPath = clean_path(exploredPath)
     print(len(addedPath)-1)
     for p in addedPath:
