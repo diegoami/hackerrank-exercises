@@ -128,16 +128,17 @@ from collections import deque
 
 def walk_bf(maze, sy,sx, y,x):
     S = set()
-    Q = deque()
+    Q = []
 
     S.add((sy,sx))
-    Q.appendleft((sy,sx))
+    Q.append((sy,sx))
     max_loops = 1000
 
     exploredPath =  []
     while len(Q) > 0 and max_loops > 0:
         max_loops -= 1
-        (cy,cx) = Q.pop()
+
+        (cy,cx) = Q.pop(0)
         exploredPath.append((cy,cx))
 
         if ((cy,cx) == (y,x)):
@@ -153,7 +154,9 @@ def walk_bf(maze, sy,sx, y,x):
                 if (mzchr != '%' ):
                     if (j,i) not in S:
                         S.add((j,i))
-                        Q.appendleft((j,i))
+                        Q.append((j,i))
+            Q = sorted(Q,key = lambda r: abs(r[0]-y)+abs(r[1]-x))
+
 
 
 def clean_path(explored_path):
@@ -186,10 +189,10 @@ if __name__ == "__main__":
         maze.append(input())
 
     exploredPath = walk_bf(maze,sy,sx,y,x)
-  #  print(len(exploredPath))
-   # for p in exploredPath:
-  #      print(*p, sep=" ")
+#    print(len(exploredPath))
+#    for p in exploredPath:
+#        print(*p, sep=" ")
     addedPath = clean_path(exploredPath)
     print(len(addedPath)-1)
     for p in addedPath:
-        print(*p, sep=" ")
+       print(*p, sep=" ")
