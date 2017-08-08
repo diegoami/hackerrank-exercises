@@ -30,6 +30,7 @@ def input():
 
 
 import math
+import sys
 
 def heuristic_cost_estimate(sy,sx,y,x,ty,tx):
     cost = distance_between(sy, sx, y, x)
@@ -63,6 +64,7 @@ def neighbors(maze,cy,cx):
     return poss_dir
 
 def walk_astar(maze, ly, lx, sy, sx, y, x):
+    print("Finding path from {}, {} to {}, {}".format(sy,sx,y,x),file=sys.stderr)
     closedSet, openSet = set(), set([(sy,sx)])
     cameFrom = {}
     gScore, fScore = dict_infinity(ly,lx), dict_infinity(ly,lx)
@@ -93,7 +95,7 @@ def walk_astar(maze, ly, lx, sy, sx, y, x):
             gScore  [(ny,nx)] = tentative_gscore
             fScore  [(ny,nx)] = gScore[(ny,nx)] + heuristic_cost_estimate(ny,nx,y,x,y,x)
 
-    return None
+    return None, math.inf
 
 
 def is_red(maze,j,i):
@@ -150,8 +152,16 @@ if __name__ == "__main__":
     red_dist_dict = dict_calc(maze, all_cells, dist_to_cells, cells_to_avoid=rcs)
     green_dist_dict = dict_calc(maze, all_cells, dist_to_cells, cells_to_avoid=gcs)
     all_dist_dict =     dict_calc(maze, all_cells, dist_to_cells, cells_to_avoid=gcs+rcs)
-    y,x = max(all_dist_dict.items(), key = lambda x : x[1])[0]
-    path, steps = walk_astar(maze,ly,lx,ry,rx,y,x)
-    ny, nx = path[1]
-    direction = get_direction(ry, rx, ny, nx)
-    print(direction)
+    possible_targets = sorted(all_dist_dict.items(), key = lambda x : x[1], reverse=True)
+    #print(possible_targets)
+    for k,v in possible_targets:
+        y,x = k
+        print("Tring target {}, {}".format(y,x), file=sys.stderr)
+        path, steps = walk_astar(maze,ly,lx,ry,rx,y,x)
+        if path != None and len(path) > 0:
+            ny, nx = path[1]
+            print("Going to {}, {}".format(ny, nx), file=sys.stderr)
+            direction = get_direction(ry, rx, ny, nx)
+            print("Direction : {}".format(direction), file=sys.stderr)
+            print(direction)
+            break

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="28059e24-6916-4e45-a251-8bd7c042f12b" name="Default" comment="Solved astar using algorithm">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artificial_intelligence/a_search/pacman_astar.py" afterPath="$PROJECT_DIR$/artificial_intelligence/a_search/pacman_astar.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artificial_intelligence/combinatorial_search/tron.py" afterPath="$PROJECT_DIR$/artificial_intelligence/combinatorial_search/tron.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,7 +16,7 @@
     <SUITE FILE_PATH="coverage/hackerrank_exercises$pacman_dfs.coverage" NAME="pacman_dfs Coverage Results" MODIFIED="1501923486351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_intelligence/a_search" />
     <SUITE FILE_PATH="coverage/hackerrank_exercises$regress_1.coverage" NAME="regress_1 Coverage Results" MODIFIED="1500152347154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_intelligence/statistics" />
     <SUITE FILE_PATH="coverage/hackerrank$inssort_2.coverage" NAME="inssort_2 Coverage Results" MODIFIED="1496105057046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sort" />
-    <SUITE FILE_PATH="coverage/hackerrank_exercises$pacman_astar.coverage" NAME="pacman_astar Coverage Results" MODIFIED="1502199536094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_intelligence/a_search" />
+    <SUITE FILE_PATH="coverage/hackerrank_exercises$pacman_astar.coverage" NAME="pacman_astar Coverage Results" MODIFIED="1502199998999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_intelligence/a_search" />
     <SUITE FILE_PATH="coverage/hackerrank$taum_bday.coverage" NAME="taum_bday Coverage Results" MODIFIED="1495045306819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithms" />
     <SUITE FILE_PATH="coverage/hackerrank$pdf_viewer.coverage" NAME="pdf_viewer Coverage Results" MODIFIED="1494760982748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithms" />
     <SUITE FILE_PATH="coverage/hackerrank$electronic_shop_2.coverage" NAME="electronic_shop_2 Coverage Results" MODIFIED="1494679688216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithms" />
@@ -120,6 +120,7 @@
     <SUITE FILE_PATH="coverage/hackerrank$reverse.coverage" NAME="reverse Coverage Results" MODIFIED="1494033755725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hackerrank$nested_logic.coverage" NAME="nested_logic Coverage Results" MODIFIED="1496346935350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/30days" />
     <SUITE FILE_PATH="coverage/hackerrank$journey_moon.coverage" NAME="journey_moon Coverage Results" MODIFIED="1496179460668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graphs" />
+    <SUITE FILE_PATH="coverage/hackerrank_exercises$tron.coverage" NAME="tron Coverage Results" MODIFIED="1502204941454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_intelligence/combinatorial_search" />
     <SUITE FILE_PATH="coverage/hackerrank$count_luck.coverage" NAME="count_luck Coverage Results" MODIFIED="1496011379960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/search" />
     <SUITE FILE_PATH="coverage/hackerrank$pearson1.coverage" NAME="pearson1 Coverage Results" MODIFIED="1494533290118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stats" />
     <SUITE FILE_PATH="coverage/hackerrank$prob5_2.coverage" NAME="prob5_2 Coverage Results" MODIFIED="1495270827708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/probability" />
@@ -154,21 +155,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pacman_astar.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pacman_astar.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/artificial_intelligence/a_search/pacman_astar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="149" column="0" lean-forward="false" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+            <state relative-caret-position="280">
+              <caret line="200" column="0" lean-forward="false" selection-start-line="200" selection-start-column="0" selection-end-line="205" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pacman_bfs.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/artificial_intelligence/a_search/pacman_bfs.py">
+      <file leaf-file-name="tron.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/artificial_intelligence/combinatorial_search/tron.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3276">
-              <caret line="182" column="34" lean-forward="false" selection-start-line="182" selection-start-column="24" selection-end-line="182" selection-end-column="34" />
+            <state relative-caret-position="280">
+              <caret line="161" column="28" lean-forward="true" selection-start-line="161" selection-start-column="28" selection-end-line="161" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sam_substrings_1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dynamic/sam_substrings/sam_substrings_1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="27" column="95" lean-forward="false" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="95" />
               <folding />
             </state>
           </provider>
@@ -195,7 +206,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>range(n)</find>
       <find>,</find>
       <find>print</find>
       <find>2 427</find>
@@ -225,6 +235,7 @@
       <find>{}</find>
       <find>Now</find>
       <find>^(.*)$</find>
+      <find>sys</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -244,7 +255,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/30days/primes.py" />
         <option value="$PROJECT_DIR$/greedy/min_diff.py" />
         <option value="$PROJECT_DIR$/dynamic/coin_change.py" />
         <option value="$PROJECT_DIR$/dynamic/coin_change_2.py" />
@@ -295,6 +305,7 @@
         <option value="$PROJECT_DIR$/artificial_intelligence/a_search/pacman_dfs.py" />
         <option value="$PROJECT_DIR$/artificial_intelligence/a_search/pacman_bfs.py" />
         <option value="$PROJECT_DIR$/artificial_intelligence/a_search/pacman_astar.py" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/combinatorial_search/tron.py" />
       </list>
     </option>
   </component>
@@ -354,6 +365,12 @@
               <item name="hackerrank-exercises" type="b2602c69:ProjectViewProjectNode" />
               <item name="hackerrank-exercises" type="462c0819:PsiDirectoryNode" />
               <item name="artificial_intelligence" type="462c0819:PsiDirectoryNode" />
+              <item name="combinatorial_search" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hackerrank-exercises" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hackerrank-exercises" type="462c0819:PsiDirectoryNode" />
+              <item name="artificial_intelligence" type="462c0819:PsiDirectoryNode" />
               <item name="statistics" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -402,7 +419,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.pacman_astar">
+  <component name="RunManager" selected="Python.tron">
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -622,38 +639,38 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="stat_warmup" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="tron" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/artificial_intelligence/statistics" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/artificial_intelligence/combinatorial_search" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="hackerrank" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/artificial_intelligence/statistics/stat_warmup.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/artificial_intelligence/combinatorial_search/tron.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.stat_warmup" />
-      <item index="1" class="java.lang.String" itemvalue="Python.predict_stock" />
-      <item index="2" class="java.lang.String" itemvalue="Python.pacman_dfs" />
-      <item index="3" class="java.lang.String" itemvalue="Python.pacman_bfs" />
-      <item index="4" class="java.lang.String" itemvalue="Python.pacman_astar" />
+      <item index="0" class="java.lang.String" itemvalue="Python.predict_stock" />
+      <item index="1" class="java.lang.String" itemvalue="Python.pacman_dfs" />
+      <item index="2" class="java.lang.String" itemvalue="Python.pacman_bfs" />
+      <item index="3" class="java.lang.String" itemvalue="Python.pacman_astar" />
+      <item index="4" class="java.lang.String" itemvalue="Python.tron" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.pacman_astar" />
-        <item index="1" class="java.lang.String" itemvalue="Python.pacman_bfs" />
-        <item index="2" class="java.lang.String" itemvalue="Python.pacman_dfs" />
-        <item index="3" class="java.lang.String" itemvalue="Python.predict_stock" />
-        <item index="4" class="java.lang.String" itemvalue="Python.stat_warmup" />
+        <item index="0" class="java.lang.String" itemvalue="Python.tron" />
+        <item index="1" class="java.lang.String" itemvalue="Python.pacman_astar" />
+        <item index="2" class="java.lang.String" itemvalue="Python.pacman_bfs" />
+        <item index="3" class="java.lang.String" itemvalue="Python.pacman_dfs" />
+        <item index="4" class="java.lang.String" itemvalue="Python.predict_stock" />
       </list>
     </recent_temporary>
   </component>
@@ -670,20 +687,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1494032842976</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Other problems">
-      <created>1494689444744</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1494689444744</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Additional problems">
-      <created>1494766803175</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1494766803175</updated>
     </task>
     <task id="LOCAL-00005" summary="Additional problems">
       <created>1494887856755</created>
@@ -1014,7 +1017,21 @@
       <option name="project" value="LOCAL" />
       <updated>1502199640044</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="First utility function tron">
+      <created>1502202056866</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1502202056867</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Tron first version">
+      <created>1502204164602</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1502204164602</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1027,29 +1044,28 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="75" y="24" width="1853" height="1056" extended-state="4" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20399353" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843652" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.021621622" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40432432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20399353" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843652" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3976915" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40432432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843652" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3976915" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1069,8 +1085,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Silly insertion algorithm" />
-    <MESSAGE value="Insertion sort, bread first tree" />
     <MESSAGE value="Couple of problems more" />
     <MESSAGE value="Problems bobob" />
     <MESSAGE value="Solved simple stuff" />
@@ -1094,7 +1108,9 @@
     <MESSAGE value="First version pacman breadth first search" />
     <MESSAGE value="Sorted astar with bread first search" />
     <MESSAGE value="Solved astar using algorithm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solved astar using algorithm" />
+    <MESSAGE value="First utility function tron" />
+    <MESSAGE value="Tron first version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tron first version" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1150,20 +1166,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/graphs/roads_and_libraries.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="49" column="27" lean-forward="true" selection-start-line="42" selection-start-column="11" selection-end-line="49" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graphs/shortest_reach2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-918">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/graphs/even_tree.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1448,6 +1450,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1496,7 +1499,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/artificial_intelligence/a_search/pacman_bfs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3276">
+        <state relative-caret-position="814">
           <caret line="182" column="34" lean-forward="false" selection-start-line="182" selection-start-column="24" selection-end-line="182" selection-end-column="34" />
           <folding />
         </state>
@@ -1504,8 +1507,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/artificial_intelligence/a_search/pacman_astar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="149" column="0" lean-forward="false" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
+        <state relative-caret-position="280">
+          <caret line="200" column="0" lean-forward="false" selection-start-line="200" selection-start-column="0" selection-end-line="205" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dynamic/sam_substrings/sam_substrings_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="27" column="95" lean-forward="false" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/combinatorial_search/tron.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="161" column="28" lean-forward="true" selection-start-line="161" selection-start-column="28" selection-end-line="161" selection-end-column="28" />
           <folding />
         </state>
       </provider>
