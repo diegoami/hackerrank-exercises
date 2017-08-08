@@ -122,74 +122,85 @@ def input():
     else:
         return None
 
+import math
+
+def heuristic_cost_estimate(sy,sx,y,x,ty,tx):
+    cost = distance_between(sy, sx, y, x)
+    if (ty,tx) == (y,x):
+        cost -= 1
+    return cost
 
 
-from collections import deque
-
-def walk_bf(maze, sy,sx, y,x):
-    S = set()
-    Q = deque()
-
-    S.add((sy,sx))
-    Q.appendleft((sy,sx))
-    max_loops = 1000
-
-    exploredPath =  []
-    while len(Q) > 0 and max_loops > 0:
-        max_loops -= 1
-        (cy,cx) = Q.pop()
-        exploredPath.append((cy,cx))
-
-        if ((cy,cx) == (y,x)):
-            return exploredPath
-
-        else:
-            #cand_dirs = [(cy-1,cx),(cy,cx-1),(cy,cx+1),(cy+1,cx)]
-            cand_dirs = [(cy - 1, cx), (cy, cx - 1), (cy, cx + 1), (cy + 1, cx)]
-
-            poss_dir = [(j,i) for (j,i) in cand_dirs if 0 < j < len(maze) and  0 < i < len(maze[0]) ]
-            for j,i in poss_dir:
-                mzchr = maze[j][i]
-                if (mzchr != '%' ):
-                    if (j,i) not in S:
-                        S.add((j,i))
-                        Q.appendleft((j,i))
+def distance_between(sy, sx, y, x):
+    return abs(sy - y) + abs(sx - x)
 
 
-def clean_path(explored_path):
-    shortest_path_r = []
-    explored_path_r = explored_path[::-1]
-    ly, lx = None, None
-    for index,(cy,cx) in enumerate(explored_path_r):
-        if index == 0:
-            shortest_path_r.append((cy,cx))
-            ly,lx= cy,cx
-        else:
-            poss_steps = [(ly + 1, lx), (ly, lx + 1), (ly, lx - 1), (ly - 1, lx)]
-            if ((cy,cx) in poss_steps):
-                shortest_path_r.append((cy,cx))
-                ly,lx =cy,cx
+def dict_infinity(mj,mi):
+    return {(j,i) : math.inf for j in range(mj) for i in range(mi)}
 
-    shortest_path = shortest_path_r[::-1]
-    return shortest_path
 
+
+def reconstruct_path(cameFrom, cy,cx):
+    total_path = [(cy,cx)]
+    total_steps = 0
+    while (cy,cx) in cameFrom:
+        (cy, cx) = cameFrom[(cy, cx)]
+        total_path.append((cy, cx))
+        total_steps += 1
+    return total_path, total_steps
+
+
+def neighbors(maze,cy,cx):
+    cand_dirs = [(cy - 1, cx), (cy, cx - 1), (cy, cx + 1), (cy + 1, cx)]
+    poss_dir = [(j, i) for (j, i) in cand_dirs if 0 < j < len(maze) and 0 < i < len(maze[0]) and maze[j][i] != '%']
+    return poss_dir
+
+def walk_astar(maze, ly, lx, sy, sx, y, x):
+    closedSet, openSet = set(), set([(sy,sx)])
+    cameFrom = {}
+    gScore, fScore = dict_infinity(ly,lx), dict_infinity(ly,lx)
+    gScore[(sy,sx)] = 0
+    fScore[(sy,sx)] = heuristic_cost_estimate(sy,sx,y,x,y,x)
+    MAX_LOOPS = 1000
+    n_loops = 0
+    while len(openSet) > 0 and n_loops < MAX_LOOPS :
+        n_loops += 1
+        cy, cx = min(openSet, key=lambda x: fScore[x])
+        if (cy,cx) == (y,x):
+            path, steps = reconstruct_path(cameFrom, cy, cx)
+
+            return path[::-1],steps
+
+        openSet.remove((cy,cx))
+        closedSet.add((cy,cx))
+        for (ny,nx) in neighbors(maze,cy,cx):
+            if (ny,nx) in closedSet:
+                continue
+            if (ny,nx) not in openSet:
+                openSet.add((ny,nx))
+
+            tentative_gscore = gScore[(cy,cx)] + (0 if (cy,cx) == (y,x) else 1)
+            if tentative_gscore > gScore[(ny,nx)]:
+                continue
+            cameFrom[(ny,nx)] = (cy,cx)
+            gScore  [(ny,nx)] = tentative_gscore
+            fScore  [(ny,nx)] = gScore[(ny,nx)] + heuristic_cost_estimate(ny,nx,y,x,y,x)
+
+    return None
 
 if __name__ == "__main__":
 
     maze = []
-
-
     sy,sx = map(int,input().split())
     y, x = map(int, input().split())
     ly, lx = map(int, input().split())
     for _ in range(ly):
         maze.append(input())
 
-    exploredPath = walk_bf(maze,sy,sx,y,x)
-  #  print(len(exploredPath))
-   # for p in exploredPath:
-  #      print(*p, sep=" ")
-    addedPath = clean_path(exploredPath)
-    print(len(addedPath)-1)
-    for p in addedPath:
-        print(*p, sep=" ")
+    exploredPath, steps = walk_astar(maze,ly,lx,sy,sx,y,x)
+    if exploredPath != None:
+        print(steps)
+        for p in exploredPath:
+            print(*p, sep=" ")
+    else:
+        print("FAILURE")
