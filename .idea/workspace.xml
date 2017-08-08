@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="28059e24-6916-4e45-a251-8bd7c042f12b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artificial_intelligence/a_search/pacman_astar.py" afterPath="$PROJECT_DIR$/artificial_intelligence/a_search/pacman_astar.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -671,13 +670,6 @@
       <option name="presentableId" value="Default" />
       <updated>1494032842976</updated>
     </task>
-    <task id="LOCAL-00001" summary="Other problems">
-      <created>1494359186611</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1494359186611</updated>
-    </task>
     <task id="LOCAL-00002" summary="Other problems">
       <created>1494447298971</created>
       <option name="number" value="00002" />
@@ -1014,7 +1006,14 @@
       <option name="project" value="LOCAL" />
       <updated>1501927173455</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Solved astar using algorithm">
+      <created>1502199594113</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1502199594114</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1068,7 +1067,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="A couple of problems more" />
     <MESSAGE value="Silly insertion algorithm" />
     <MESSAGE value="Insertion sort, bread first tree" />
     <MESSAGE value="Couple of problems more" />
@@ -1093,7 +1091,8 @@
     <MESSAGE value="Exercise completed" />
     <MESSAGE value="First version pacman breadth first search" />
     <MESSAGE value="Sorted astar with bread first search" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sorted astar with bread first search" />
+    <MESSAGE value="Solved astar using algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solved astar using algorithm" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
