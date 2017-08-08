@@ -19,10 +19,31 @@ inputArray = [
 "###############",
 ]
 
+inputArray2 = [
+"g",
+"4 3 5 13",
+"###############",
+"#-rr--------gg#",
+"#-rr--------gg#",
+"#-rr--------gg#",
+"#-rr--------gg#",
+"#-r---------g-#",
+"#-r---------gg#",
+"#rr----------g#",
+"#-------------#",
+"#-------------#",
+"#-------------#",
+"#-------------#",
+"#-------------#",
+"#-------------#",
+"###############",
+]
+
+
 def input():
     global state
-    if state < len(inputArray):
-        result = inputArray[state]
+    if state < len(inputArray2):
+        result = inputArray2[state]
         state += 1
         return result
     else:
@@ -125,14 +146,14 @@ def green_cells(maze,ly,lx):
     return matching_cells(maze,ly,lx, is_green)
 
 
-def get_direction(ry, rx, ny, nx):
-    if ny == ry - 1:
+def get_direction(sy, sx, ny, nx):
+    if ny == sy - 1:
         return "UP"
-    elif ny == ry + 1:
+    elif ny == sy + 1:
         return "DOWN"
-    elif nx == rx - 1:
+    elif nx == sx - 1:
         return "LEFT"
-    elif nx == rx + 1:
+    elif nx == sx + 1:
         return "RIGHT"
     return None
 
@@ -143,6 +164,7 @@ if __name__ == "__main__":
     pch = input()
     ry,rx,gy,gx = map(int,input().split())
 
+    sy,sx = (ry,rx) if pch == 'r' else (gy,gx)
     ly, lx = 15,15
     for _ in range(ly):
         maze.append(input())
@@ -153,15 +175,16 @@ if __name__ == "__main__":
     green_dist_dict = dict_calc(maze, all_cells, dist_to_cells, cells_to_avoid=gcs)
     all_dist_dict =     dict_calc(maze, all_cells, dist_to_cells, cells_to_avoid=gcs+rcs)
     possible_targets = sorted(all_dist_dict.items(), key = lambda x : x[1], reverse=True)
-    #print(possible_targets)
+
     for k,v in possible_targets:
         y,x = k
         print("Tring target {}, {}".format(y,x), file=sys.stderr)
-        path, steps = walk_astar(maze,ly,lx,ry,rx,y,x)
-        if path != None and len(path) > 0:
+        path, steps = walk_astar(maze,ly,lx,sy,sx,y,x)
+        if path != None and len(path) > 1:
             ny, nx = path[1]
             print("Going to {}, {}".format(ny, nx), file=sys.stderr)
-            direction = get_direction(ry, rx, ny, nx)
+            direction = get_direction(sy, sx, ny, nx)
             print("Direction : {}".format(direction), file=sys.stderr)
             print(direction)
             break
+    print("WE LOSE",file=sys.stderr)
