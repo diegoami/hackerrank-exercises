@@ -1,7 +1,7 @@
 #!/bin/python3
 import sys
 
-state = 0
+
 
 #inputarray = ["1 1 1 0 0 0","0 1 0 0 0 0","1 1 1 0 0 0","0 0 2 4 4 0","0 0 0 2 0 0","0 0 1 2 4 0" ]
 inputarray1 = [
@@ -24,20 +24,8 @@ def input2():
     return result
 
 
-state = 1
-import linecache
-from itertools import cycle
-
-c = cycle(linecache.getlines('tc_8.txt'))
-def input():
-    return next(c)
-
-def input_old():
-    global state
-    result = linecache.getline('tc_8.txt', state)
-    state += 1
-    return result
-
+from tools import input, initFileInputter
+initFileInputter('tc_8.txt')
 
 from collections import deque
 #dq = deque()

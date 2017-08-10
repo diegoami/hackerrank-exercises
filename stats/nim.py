@@ -1,5 +1,5 @@
 import sys
-state = 0
+
 inputarray = [
 "2",
 "2",

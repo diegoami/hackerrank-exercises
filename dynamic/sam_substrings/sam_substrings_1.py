@@ -1,4 +1,4 @@
-state = 0
+
 inputarray =[
 "123"
 ]
@@ -9,11 +9,8 @@ inputarray2 =[
 #sol 445677619#
 
 
-def input():
-    global state
-    result = inputarray2[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray2)
 
 
 

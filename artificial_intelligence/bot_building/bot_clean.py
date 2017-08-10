@@ -1,5 +1,5 @@
 #!/usr/bin/python
-state = 0
+
 
 inputarray = [
 "0 0",
@@ -29,11 +29,8 @@ inputarray3 = [
 ]
 
 
-def input():
-    global state
-    result = inputarray[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray)
 
 # Head ends here
 def next_move_sub(posr, posc, board):

@@ -1,14 +1,11 @@
-state = 0
+
 inputarray = [
     "1 3",
     "5"
 ]
 
-def input():
-    global state
-    result = inputarray[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray)
 
 import sys
 N, D = map(int,input().split())

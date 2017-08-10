@@ -4,7 +4,7 @@ import sys
 #!/bin/python3
 
 import sys
-state = 0
+
 
 inputarray = [
 "2 2"
@@ -13,11 +13,8 @@ inputarray = [
 
 
 
-def input():
-    global state
-    result = inputarray[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray)
 
 n,m = input().strip().split(' ')
 n,m = [int(n),int(m)]

@@ -1,4 +1,4 @@
-state = 0
+
 inputarray = [
 "3",
 "2 3",
@@ -18,11 +18,8 @@ inputarray = [
 "......XXXX.",
 "4"
 ]
-def input():
-    global state
-    result = inputarray[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray)
 from collections import deque
 
 def find_exit(A,RH,PK,n,m):

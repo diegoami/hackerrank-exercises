@@ -1,15 +1,12 @@
 #!/bin/python
 
-state = 0
+
 inputarray = [
 "13"
 ]
 
-def input():
-    global state
-    result = inputarray[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray)
 
 n = int(input().strip())
 c1 = ""

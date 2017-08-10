@@ -1,5 +1,5 @@
 import sys
-state = 0
+
 
 #inputarray = ["1 1 1 0 0 0","0 1 0 0 0 0","1 1 1 0 0 0","0 0 2 4 4 0","0 0 0 2 0 0","0 0 1 2 4 0" ]
 inputarray = [
@@ -8,11 +8,8 @@ inputarray = [
 
 
 
-def input():
-    global state
-    result = inputarray[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray)
 
 f,l,d = map(int, input().split())
 

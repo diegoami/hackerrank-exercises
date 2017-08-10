@@ -1,4 +1,4 @@
-state = 0
+
 
 inputarray = \
 [
@@ -212,11 +212,8 @@ res = [
 "55 74",
 "7 9",
 ]
-def input():
-    global state
-    result = inputarray3[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray3)
 
 """
 def fgpl(ls, m, li):

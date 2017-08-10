@@ -1,9 +1,6 @@
-state = 0
-def input():
-    global state
-    result = inputarray4[state]
-    state += 1
-    return result
+
+from tools import input, initArrayInputter
+initArrayInputter(inputarray4)
 
 inputarray4 = [
 "1",

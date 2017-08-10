@@ -1,4 +1,4 @@
-state = 0
+
 inputarray = [
 "7",
 "3",
@@ -10,11 +10,8 @@ inputarray = [
 "7"
 ]
 
-def input():
-    global state
-    result = inputarray[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray)
 
 class Node:
     def __init__(self,data):

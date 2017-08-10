@@ -1,17 +1,14 @@
 #!/usr/bin/py
 # Head ends here
-state = 0
+
 
 
 inputarray = [
 "5",
 "0 0 1 2 1"
 ]
-def input():
-    global state
-    result = inputarray[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray)
 
 def lonelyinteger(b):
     import functools as ft

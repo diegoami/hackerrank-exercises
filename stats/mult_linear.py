@@ -1,4 +1,4 @@
-state = 0
+
 inputarray = [
 "2 7",
 "0.18 0.89 109.85",
@@ -15,11 +15,8 @@ inputarray = [
 "0.76 0.18"
 ]
 
-def input():
-    global state
-    result = inputarray[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray)
 import numpy as np
 X,Y,XV = None, None, None
 

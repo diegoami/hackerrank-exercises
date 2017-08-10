@@ -1,9 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28059e24-6916-4e45-a251-8bd7c042f12b" name="Default" comment="Solved astar using algorithm">
+    <list default="true" id="28059e24-6916-4e45-a251-8bd7c042f12b" name="Default" comment="Adapted for second player">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/30days/and_max.py" afterPath="$PROJECT_DIR$/30days/and_max.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/30days/and_max_2.py" afterPath="$PROJECT_DIR$/30days/and_max_2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/30days/angry_professor_ua.py" afterPath="$PROJECT_DIR$/30days/angry_professor_ua.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/30days/binary_cont.py" afterPath="$PROJECT_DIR$/30days/binary_cont.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/30days/binary_cont_2.py" afterPath="$PROJECT_DIR$/30days/binary_cont_2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/30days/bst.py" afterPath="$PROJECT_DIR$/30days/bst.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/30days/bst_2.py" afterPath="$PROJECT_DIR$/30days/bst_2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/30days/dictionaries_and_maps.py" afterPath="$PROJECT_DIR$/30days/dictionaries_and_maps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/30days/exceptionraised.py" afterPath="$PROJECT_DIR$/30days/exceptionraised.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/30days/l_list.py" afterPath="$PROJECT_DIR$/30days/l_list.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/30days/nested_logic.py" afterPath="$PROJECT_DIR$/30days/nested_logic.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/30days/primes.py" afterPath="$PROJECT_DIR$/30days/primes.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/30days/queues_and_stacks.py" afterPath="$PROJECT_DIR$/30days/queues_and_stacks.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/30days/regexes.py" afterPath="$PROJECT_DIR$/30days/regexes.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/angry_professor.py" afterPath="$PROJECT_DIR$/algorithms/angry_professor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/apples_orange.py" afterPath="$PROJECT_DIR$/algorithms/apples_orange.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/bird1.py" afterPath="$PROJECT_DIR$/algorithms/bird1.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/bonappetit.py" afterPath="$PROJECT_DIR$/algorithms/bonappetit.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/cat_mouse.py" afterPath="$PROJECT_DIR$/algorithms/cat_mouse.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/chocolate.py" afterPath="$PROJECT_DIR$/algorithms/chocolate.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/clessidre.py" afterPath="$PROJECT_DIR$/algorithms/clessidre.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/clouds_2.py" afterPath="$PROJECT_DIR$/algorithms/clouds_2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/clouds_3.py" afterPath="$PROJECT_DIR$/algorithms/clouds_3.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/cut_sticks.py" afterPath="$PROJECT_DIR$/algorithms/cut_sticks.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/day_of_programmer.py" afterPath="$PROJECT_DIR$/algorithms/day_of_programmer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/divis1.py" afterPath="$PROJECT_DIR$/algorithms/divis1.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/drawing_book.py" afterPath="$PROJECT_DIR$/algorithms/drawing_book.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/electronic_shop.py" afterPath="$PROJECT_DIR$/algorithms/electronic_shop.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/electronic_shop_2.py" afterPath="$PROJECT_DIR$/algorithms/electronic_shop_2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/encryption.py" afterPath="$PROJECT_DIR$/algorithms/encryption.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/equalize_array.py" afterPath="$PROJECT_DIR$/algorithms/equalize_array.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/factors.py" afterPath="$PROJECT_DIR$/algorithms/factors.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/finddigits.py" afterPath="$PROJECT_DIR$/algorithms/finddigits.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/hurdle_race.py" afterPath="$PROJECT_DIR$/algorithms/hurdle_race.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/kangaroos.py" afterPath="$PROJECT_DIR$/algorithms/kangaroos.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/lane.py" afterPath="$PROJECT_DIR$/algorithms/lane.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/lisa_workbook.py" afterPath="$PROJECT_DIR$/algorithms/lisa_workbook.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/mini_dinstances.py" afterPath="$PROJECT_DIR$/algorithms/mini_dinstances.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/movie_beautiful.py" afterPath="$PROJECT_DIR$/algorithms/movie_beautiful.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/pdf_viewer.py" afterPath="$PROJECT_DIR$/algorithms/pdf_viewer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/picking_numbers.py" afterPath="$PROJECT_DIR$/algorithms/picking_numbers.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/rations.py" afterPath="$PROJECT_DIR$/algorithms/rations.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/record.py" afterPath="$PROJECT_DIR$/algorithms/record.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/repeated_string.py" afterPath="$PROJECT_DIR$/algorithms/repeated_string.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/reverse.py" afterPath="$PROJECT_DIR$/algorithms/reverse.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/sequence_equation.py" afterPath="$PROJECT_DIR$/algorithms/sequence_equation.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/sock_merchant.py" afterPath="$PROJECT_DIR$/algorithms/sock_merchant.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/sparse.py" afterPath="$PROJECT_DIR$/algorithms/sparse.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/summary_s.py" afterPath="$PROJECT_DIR$/algorithms/summary_s.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/taum_bday.py" afterPath="$PROJECT_DIR$/algorithms/taum_bday.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/time_in_words.py" afterPath="$PROJECT_DIR$/algorithms/time_in_words.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/utopian_tree.py" afterPath="$PROJECT_DIR$/algorithms/utopian_tree.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/valley.py" afterPath="$PROJECT_DIR$/algorithms/valley.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms/viral.py" afterPath="$PROJECT_DIR$/algorithms/viral.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artificial_intelligence/a_search/pacman_astar.py" afterPath="$PROJECT_DIR$/artificial_intelligence/a_search/pacman_astar.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artificial_intelligence/a_search/pacman_bfs.py" afterPath="$PROJECT_DIR$/artificial_intelligence/a_search/pacman_bfs.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artificial_intelligence/a_search/pacman_dfs.py" afterPath="$PROJECT_DIR$/artificial_intelligence/a_search/pacman_dfs.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artificial_intelligence/bot_building/bot_clean.py" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/bot_clean.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artificial_intelligence/bot_building/bot_clean_2.py" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/bot_clean_2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artificial_intelligence/bot_building/save_princess_1.py" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/save_princess_1.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artificial_intelligence/bot_building/save_princess_2.py" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/save_princess_2.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artificial_intelligence/combinatorial_search/tron.py" afterPath="$PROJECT_DIR$/artificial_intelligence/combinatorial_search/tron.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artificial_intelligence/statistics/battery_life.py" afterPath="$PROJECT_DIR$/artificial_intelligence/statistics/battery_life.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artificial_intelligence/statistics/predict_stock.py" afterPath="$PROJECT_DIR$/artificial_intelligence/statistics/predict_stock.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artificial_intelligence/statistics/stat_warmup.py" afterPath="$PROJECT_DIR$/artificial_intelligence/statistics/stat_warmup.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bit_manipulation/flip_bits.py" afterPath="$PROJECT_DIR$/bit_manipulation/flip_bits.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bit_manipulation/s_input_2.py" afterPath="$PROJECT_DIR$/bit_manipulation/s_input_2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/constructive/flipping_matrix.py" afterPath="$PROJECT_DIR$/constructive/flipping_matrix.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_structures/arrays/sparse_arrays/sarray_1.py" afterPath="$PROJECT_DIR$/data_structures/arrays/sparse_arrays/sarray_1.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_structures/stacks/max_element.py" afterPath="$PROJECT_DIR$/data_structures/stacks/max_element.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_structures/tree/btree.py" afterPath="$PROJECT_DIR$/data_structures/tree/btree.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_structures/tree/height.py" afterPath="$PROJECT_DIR$/data_structures/tree/height.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_structures/tree/insert.py" afterPath="$PROJECT_DIR$/data_structures/tree/insert.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_structures/tree/levelOrder.py" afterPath="$PROJECT_DIR$/data_structures/tree/levelOrder.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dynamic/coin_change/change_coins_5.py" afterPath="$PROJECT_DIR$/dynamic/coin_change/change_coins_5.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dynamic/coin_change/coin_change.py" afterPath="$PROJECT_DIR$/dynamic/coin_change/coin_change.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dynamic/coin_change/coin_change_2.py" afterPath="$PROJECT_DIR$/dynamic/coin_change/coin_change_2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dynamic/coin_change/coin_change_3.py" afterPath="$PROJECT_DIR$/dynamic/coin_change/coin_change_3.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dynamic/coin_change/coin_change_6.py" afterPath="$PROJECT_DIR$/dynamic/coin_change/coin_change_6.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dynamic/mod_fibonacci.py" afterPath="$PROJECT_DIR$/dynamic/mod_fibonacci.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dynamic/sam_substrings/sam_substrings_1.py" afterPath="$PROJECT_DIR$/dynamic/sam_substrings/sam_substrings_1.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dynamic/sam_substrings/sam_substrings_2.py" afterPath="$PROJECT_DIR$/dynamic/sam_substrings/sam_substrings_2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dynamic/sam_substrings/sam_substrings_3.py" afterPath="$PROJECT_DIR$/dynamic/sam_substrings/sam_substrings_3.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dynamic/sam_substrings/sam_substrings_4.py" afterPath="$PROJECT_DIR$/dynamic/sam_substrings/sam_substrings_4.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graphs/even_tree.py" afterPath="$PROJECT_DIR$/graphs/even_tree.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graphs/journey_moon.py" afterPath="$PROJECT_DIR$/graphs/journey_moon.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graphs/roads_and_libraries.py" afterPath="$PROJECT_DIR$/graphs/roads_and_libraries.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graphs/shortest_reach2.py" afterPath="$PROJECT_DIR$/graphs/shortest_reach2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/greedy/cakewalk.py" afterPath="$PROJECT_DIR$/greedy/cakewalk.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/greedy/mark_and_toys.py" afterPath="$PROJECT_DIR$/greedy/mark_and_toys.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/greedy/min_diff.py" afterPath="$PROJECT_DIR$/greedy/min_diff.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/math/fundamentals/bases.py" afterPath="$PROJECT_DIR$/math/fundamentals/bases.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/math/fundamentals/find_the_point.py" afterPath="$PROJECT_DIR$/math/fundamentals/find_the_point.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/math/fundamentals/handshakes.py" afterPath="$PROJECT_DIR$/math/fundamentals/handshakes.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/math/fundamentals/lowesttriangle.py" afterPath="$PROJECT_DIR$/math/fundamentals/lowesttriangle.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/math/fundamentals/socks.py" afterPath="$PROJECT_DIR$/math/fundamentals/socks.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/replace_ml.py" afterPath="$PROJECT_DIR$/replace_ml.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/connected_cells.py" afterPath="$PROJECT_DIR$/search/connected_cells.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/count_luck.py" afterPath="$PROJECT_DIR$/search/count_luck.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/icecream-parlor.py" afterPath="$PROJECT_DIR$/search/icecream-parlor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/knight_walk.py" afterPath="$PROJECT_DIR$/search/knight_walk.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search/missing_numbers.py" afterPath="$PROJECT_DIR$/search/missing_numbers.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sort/insertion.py" afterPath="$PROJECT_DIR$/sort/insertion.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sort/inssort_1.py" afterPath="$PROJECT_DIR$/sort/inssort_1.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sort/inssort_2.py" afterPath="$PROJECT_DIR$/sort/inssort_2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sort/intro.py" afterPath="$PROJECT_DIR$/sort/intro.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sparse_arrays/sarray_1.py" afterPath="$PROJECT_DIR$/sparse_arrays/sarray_1.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stats/binom1.py" afterPath="$PROJECT_DIR$/stats/binom1.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stats/binom2.py" afterPath="$PROJECT_DIR$/stats/binom2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stats/centrallimit1.py" afterPath="$PROJECT_DIR$/stats/centrallimit1.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stats/centrallimit2.py" afterPath="$PROJECT_DIR$/stats/centrallimit2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stats/centrallimit3.py" afterPath="$PROJECT_DIR$/stats/centrallimit3.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stats/defect.py" afterPath="$PROJECT_DIR$/stats/defect.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stats/gauss1.py" afterPath="$PROJECT_DIR$/stats/gauss1.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stats/gauss2.py" afterPath="$PROJECT_DIR$/stats/gauss2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stats/geom.py" afterPath="$PROJECT_DIR$/stats/geom.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stats/geom2.py" afterPath="$PROJECT_DIR$/stats/geom2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stats/ls_regr.py" afterPath="$PROJECT_DIR$/stats/ls_regr.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stats/mult_linear.py" afterPath="$PROJECT_DIR$/stats/mult_linear.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stats/nim.py" afterPath="$PROJECT_DIR$/stats/nim.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stats/pearson1.py" afterPath="$PROJECT_DIR$/stats/pearson1.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stats/pearson2.py" afterPath="$PROJECT_DIR$/stats/pearson2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stats/poisson1.py" afterPath="$PROJECT_DIR$/stats/poisson1.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stats/poisson2.py" afterPath="$PROJECT_DIR$/stats/poisson2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strings/altchar.py" afterPath="$PROJECT_DIR$/strings/altchar.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strings/camelcase.py" afterPath="$PROJECT_DIR$/strings/camelcase.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strings/funny.py" afterPath="$PROJECT_DIR$/strings/funny.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strings/gemstones.py" afterPath="$PROJECT_DIR$/strings/gemstones.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strings/love_letter.py" afterPath="$PROJECT_DIR$/strings/love_letter.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strings/mars.py" afterPath="$PROJECT_DIR$/strings/mars.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/strings/pangrams.py" afterPath="$PROJECT_DIR$/strings/pangrams.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools.py" afterPath="$PROJECT_DIR$/tools.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/warmup/maxmin.py" afterPath="$PROJECT_DIR$/warmup/maxmin.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,14 +150,17 @@
     <SUITE FILE_PATH="coverage/hackerrank$inssort_2.coverage" NAME="inssort_2 Coverage Results" MODIFIED="1496105057046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sort" />
     <SUITE FILE_PATH="coverage/hackerrank_exercises$pacman_astar.coverage" NAME="pacman_astar Coverage Results" MODIFIED="1502199998999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_intelligence/a_search" />
     <SUITE FILE_PATH="coverage/hackerrank$taum_bday.coverage" NAME="taum_bday Coverage Results" MODIFIED="1495045306819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithms" />
+    <SUITE FILE_PATH="coverage/hackerrank_exercises$bst_2.coverage" NAME="bst_2 Coverage Results" MODIFIED="1502376378551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/30days" />
     <SUITE FILE_PATH="coverage/hackerrank$pdf_viewer.coverage" NAME="pdf_viewer Coverage Results" MODIFIED="1494760982748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithms" />
     <SUITE FILE_PATH="coverage/hackerrank$electronic_shop_2.coverage" NAME="electronic_shop_2 Coverage Results" MODIFIED="1494679688216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithms" />
     <SUITE FILE_PATH="coverage/hackerrank$sequence_equation.coverage" NAME="sequence_equation Coverage Results" MODIFIED="1494872055500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithms" />
     <SUITE FILE_PATH="coverage/hackerrank$boys.coverage" NAME="boys Coverage Results" MODIFIED="1494163357560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stats" />
     <SUITE FILE_PATH="coverage/hackerrank$gauss2.coverage" NAME="gauss2 Coverage Results" MODIFIED="1494358935233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stats" />
     <SUITE FILE_PATH="coverage/hackerrank$centrallimit3.coverage" NAME="centrallimit3 Coverage Results" MODIFIED="1494445734613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stats" />
+    <SUITE FILE_PATH="coverage/hackerrank_exercises$replace_ml.coverage" NAME="replace_ml Coverage Results" MODIFIED="1502376362683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hackerrank$clessidre.coverage" NAME="clessidre Coverage Results" MODIFIED="1494035743763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hackerrank$insertion.coverage" NAME="insertion Coverage Results" MODIFIED="1495229370969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sort" />
+    <SUITE FILE_PATH="coverage/hackerrank_exercises$lies_unknown.coverage" NAME="lies_unknown Coverage Results" MODIFIED="1502358101616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_intelligence/combinatorial_search" />
     <SUITE FILE_PATH="coverage/hackerrank$coin_change_6.coverage" NAME="coin_change_6 Coverage Results" MODIFIED="1496578312172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dynamic" />
     <SUITE FILE_PATH="coverage/hackerrank$clouds_2.coverage" NAME="clouds_2 Coverage Results" MODIFIED="1494761695420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithms" />
     <SUITE FILE_PATH="coverage/hackerrank$flipping_matrix.coverage" NAME="flipping_matrix Coverage Results" MODIFIED="1496571184091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/constructive" />
@@ -56,7 +191,7 @@
     <SUITE FILE_PATH="coverage/hackerrank$lisa_workbook.coverage" NAME="lisa_workbook Coverage Results" MODIFIED="1495579637073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithms" />
     <SUITE FILE_PATH="coverage/hackerrank$centrallimit2.coverage" NAME="centrallimit2 Coverage Results" MODIFIED="1494442095029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stats" />
     <SUITE FILE_PATH="coverage/hackerrank_exercises$battery_life.coverage" NAME="battery_life Coverage Results" MODIFIED="1501310327068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_intelligence/statistics" />
-    <SUITE FILE_PATH="coverage/hackerrank_exercises$predict_stock.coverage" NAME="predict_stock Coverage Results" MODIFIED="1501320875066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_intelligence/statistics" />
+    <SUITE FILE_PATH="coverage/hackerrank_exercises$predict_stock.coverage" NAME="predict_stock Coverage Results" MODIFIED="1502380517064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_intelligence/statistics" />
     <SUITE FILE_PATH="coverage/hackerrank$summary_s.coverage" NAME="summary_s Coverage Results" MODIFIED="1494610753837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hackerrank_exercises$find_the_point.coverage" NAME="find_the_point Coverage Results" MODIFIED="1500135537479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/math/fundamentals" />
     <SUITE FILE_PATH="coverage/hackerrank$time_in_words.coverage" NAME="time_in_words Coverage Results" MODIFIED="1495267450289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithms" />
@@ -80,11 +215,13 @@
     <SUITE FILE_PATH="coverage/hackerrank$centrallimit1.coverage" NAME="centrallimit1 Coverage Results" MODIFIED="1494440561616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stats" />
     <SUITE FILE_PATH="coverage/hackerrank$clouds_3.coverage" NAME="clouds_3 Coverage Results" MODIFIED="1494876013679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithms" />
     <SUITE FILE_PATH="coverage/hackerrank$geom2.coverage" NAME="geom2 Coverage Results" MODIFIED="1494284964755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stats" />
+    <SUITE FILE_PATH="coverage/hackerrank_exercises$re.coverage" NAME="re Coverage Results" MODIFIED="1502371327936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/anaconda3/envs/datacamp/lib/python3.6" />
     <SUITE FILE_PATH="coverage/hackerrank$bst_2.coverage" NAME="bst_2 Coverage Results" MODIFIED="1496103256970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/30days" />
     <SUITE FILE_PATH="coverage/hackerrank$flip_bits.coverage" NAME="flip_bits Coverage Results" MODIFIED="1496573655821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bit_manipulation" />
     <SUITE FILE_PATH="coverage/hackerrank$picking_numbers.coverage" NAME="picking_numbers Coverage Results" MODIFIED="1494958839629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithms" />
     <SUITE FILE_PATH="coverage/hackerrank$binary_cont_2.coverage" NAME="binary_cont_2 Coverage Results" MODIFIED="1494957698454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/30days" />
     <SUITE FILE_PATH="coverage/hackerrank$cat_mouse.coverage" NAME="cat_mouse Coverage Results" MODIFIED="1494684940962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithms" />
+    <SUITE FILE_PATH="coverage/hackerrank_exercises$roads_and_libraries.coverage" NAME="roads_and_libraries Coverage Results" MODIFIED="1502380560690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graphs" />
     <SUITE FILE_PATH="coverage/hackerrank$shortest_reach.coverage" NAME="shortest_reach Coverage Results" MODIFIED="1495323144034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tree" />
     <SUITE FILE_PATH="coverage/hackerrank$regexes.coverage" NAME="regexes Coverage Results" MODIFIED="1496569251968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/30days" />
     <SUITE FILE_PATH="coverage/hackerrank$queues_and_stacks.coverage" NAME="queues_and_stacks Coverage Results" MODIFIED="1495647941416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/30days" />
@@ -95,6 +232,7 @@
     <SUITE FILE_PATH="coverage/hackerrank$valley.coverage" NAME="valley Coverage Results" MODIFIED="1494676291982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hackerrank_exercises$regress_4.coverage" NAME="regress_4 Coverage Results" MODIFIED="1500153661678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_intelligence/statistics" />
     <SUITE FILE_PATH="coverage/hackerrank$cakewalk.coverage" NAME="cakewalk Coverage Results" MODIFIED="1495351041573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/greedy" />
+    <SUITE FILE_PATH="coverage/hackerrank_exercises$max_element.coverage" NAME="max_element Coverage Results" MODIFIED="1502357526497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_structures/stacks" />
     <SUITE FILE_PATH="coverage/hackerrank$poisson2.coverage" NAME="poisson2 Coverage Results" MODIFIED="1494355540264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stats" />
     <SUITE FILE_PATH="coverage/hackerrank$coin_change_3.coverage" NAME="coin_change_3 Coverage Results" MODIFIED="1496575670946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dynamic" />
     <SUITE FILE_PATH="coverage/hackerrank$change_coins_5.coverage" NAME="change_coins_5 Coverage Results" MODIFIED="1496344449183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dynamic" />
@@ -113,6 +251,7 @@
     <SUITE FILE_PATH="coverage/hackerrank$lane.coverage" NAME="lane Coverage Results" MODIFIED="1494876429349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithms" />
     <SUITE FILE_PATH="coverage/hackerrank$apples_orange.coverage" NAME="apples_orange Coverage Results" MODIFIED="1494118311370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hackerrank$angry_professor_ua2.coverage" NAME="angry_professor_ua2 Coverage Results" MODIFIED="1496568523724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/30days" />
+    <SUITE FILE_PATH="coverage/hackerrank_exercises$binary_cont.coverage" NAME="binary_cont Coverage Results" MODIFIED="1502376372324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/30days" />
     <SUITE FILE_PATH="coverage/hackerrank$binom1.coverage" NAME="binom1 Coverage Results" MODIFIED="1494280604152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stats" />
     <SUITE FILE_PATH="coverage/hackerrank$mark_and_toys.coverage" NAME="mark_and_toys Coverage Results" MODIFIED="1495353383509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/greedy" />
     <SUITE FILE_PATH="coverage/hackerrank_exercises$regress_3.coverage" NAME="regress_3 Coverage Results" MODIFIED="1500152730433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_intelligence/statistics" />
@@ -120,7 +259,7 @@
     <SUITE FILE_PATH="coverage/hackerrank$reverse.coverage" NAME="reverse Coverage Results" MODIFIED="1494033755725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hackerrank$nested_logic.coverage" NAME="nested_logic Coverage Results" MODIFIED="1496346935350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/30days" />
     <SUITE FILE_PATH="coverage/hackerrank$journey_moon.coverage" NAME="journey_moon Coverage Results" MODIFIED="1496179460668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graphs" />
-    <SUITE FILE_PATH="coverage/hackerrank_exercises$tron.coverage" NAME="tron Coverage Results" MODIFIED="1502204941454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_intelligence/combinatorial_search" />
+    <SUITE FILE_PATH="coverage/hackerrank_exercises$tron.coverage" NAME="tron Coverage Results" MODIFIED="1502206006914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_intelligence/combinatorial_search" />
     <SUITE FILE_PATH="coverage/hackerrank$count_luck.coverage" NAME="count_luck Coverage Results" MODIFIED="1496011379960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/search" />
     <SUITE FILE_PATH="coverage/hackerrank$pearson1.coverage" NAME="pearson1 Coverage Results" MODIFIED="1494533290118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stats" />
     <SUITE FILE_PATH="coverage/hackerrank$prob5_2.coverage" NAME="prob5_2 Coverage Results" MODIFIED="1495270827708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/probability" />
@@ -141,7 +280,7 @@
     <SUITE FILE_PATH="coverage/hackerrank$missing_numbers.coverage" NAME="missing_numbers Coverage Results" MODIFIED="1495650422794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/search" />
     <SUITE FILE_PATH="coverage/hackerrank$dictionaries_and_maps.coverage" NAME="dictionaries_and_maps Coverage Results" MODIFIED="1494756881786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/30days" />
     <SUITE FILE_PATH="coverage/hackerrank$Unittests_in_test_angry_professor_py.coverage" NAME="Unittests in test_angry_professor.py Coverage Results" MODIFIED="1496568061575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/30days" />
-    <SUITE FILE_PATH="coverage/hackerrank_exercises$btree.coverage" NAME="btree Coverage Results" MODIFIED="1498382337872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_structures/tree" />
+    <SUITE FILE_PATH="coverage/hackerrank_exercises$btree.coverage" NAME="btree Coverage Results" MODIFIED="1502376446024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_structures/tree" />
     <SUITE FILE_PATH="coverage/hackerrank$altchar.coverage" NAME="altchar Coverage Results" MODIFIED="1495227472704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/strings" />
     <SUITE FILE_PATH="coverage/hackerrank$and_max_2.coverage" NAME="and_max_2 Coverage Results" MODIFIED="1497101350659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/30days" />
     <SUITE FILE_PATH="coverage/hackerrank$coin_change_2.coverage" NAME="coin_change_2 Coverage Results" MODIFIED="1496272557716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dynamic" />
@@ -155,41 +294,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pacman_astar.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/artificial_intelligence/a_search/pacman_astar.py">
+      <file leaf-file-name="tools.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="200" column="0" lean-forward="false" selection-start-line="200" selection-start-column="0" selection-end-line="205" selection-end-column="24" />
+            <state relative-caret-position="416">
+              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tron.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/artificial_intelligence/combinatorial_search/tron.py">
+      <file leaf-file-name="journey_moon.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/graphs/journey_moon.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="161" column="28" lean-forward="true" selection-start-line="161" selection-start-column="28" selection-end-line="161" selection-end-column="28" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sam_substrings_1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dynamic/sam_substrings/sam_substrings_1.py">
+      <file leaf-file-name="roads_and_libraries.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/graphs/roads_and_libraries.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="27" column="95" lean-forward="false" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="95" />
+            <state relative-caret-position="108">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="builtins.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-286841697/builtins.py">
+      <file leaf-file-name="and_max.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/30days/and_max.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5562">
-              <caret line="309" column="4" lean-forward="false" selection-start-line="309" selection-start-column="4" selection-end-line="309" selection-end-column="4" />
+            <state relative-caret-position="36">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="max_element.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_structures/stacks/max_element.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="and_max_2.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/30days/and_max_2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="2014" column="0" lean-forward="true" selection-start-line="2014" selection-start-column="0" selection-end-line="2014" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="replace_ml.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/replace_ml.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="re.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda3/envs/datacamp/lib/python3.6/re.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="319" column="48" lean-forward="false" selection-start-line="319" selection-start-column="44" selection-end-line="319" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="predict_stock.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/artificial_intelligence/statistics/predict_stock.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flipping_matrix.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/constructive/flipping_matrix.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -206,44 +405,49 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>,</find>
-      <find>print</find>
-      <find>2 427</find>
-      <find>union</find>
-      <find>^([\-0-9[a-zA-Z]\.\*\ ]+)$</find>
-      <find>^([\-0-9[a-z]\ ]+)$</find>
-      <find>l</find>
-      <find>le</find>
-      <find>lea</find>
-      <find>leap</find>
-      <find>;</find>
-      <find>^([\-0-9\ \.]+)$</find>
-      <find>^([\-0-9\ \.@a-z]+)$</find>
       <find>findall</find>
       <find>info</find>
       <find>m</find>
       <find>main</find>
       <find>return</find>
-      <find>linec</find>
       <find>input</find>
       <find>u</find>
       <find>format</find>
-      <find>line</find>
       <find>sorted</find>
       <find>^([\-0-9\ ]+)$</find>
       <find>deq</find>
       <find>{}</find>
       <find>Now</find>
-      <find>^(.*)$</find>
       <find>sys</find>
+      <find>ry</find>
+      <find>class</find>
+      <find>def input\(\)\:\n    global state\n    if state \&lt; len\(inputArray2\)\:\n        result \= inputArray2\[state\]\n        state \+\= 1\n        return result\n    else\:\n        return None\n</find>
+      <find>def input():    global state    if state &lt; len(inputArray2):        result = inputArray2[state]        state += 1        return result    else:        return None</find>
+      <find>^(.*)$</find>
+      <find>def input()</find>
+      <find>\ndef input\(\)\:\n    global state\n    if \(state \&lt; len\(inputarray\) \)\:\n        result \= inputarray\[state\]\n        state \+\= 1\n        return result\n    else\:\n        return None</find>
+      <find>def input():    global state    if (state &lt; len(inputarray) ):        result = inputarray[state]        state += 1        return result</find>
+      <find>def input():\n</find>
+      <find>def input\(\):\n\s+global state\n\s+result = ([a-zA-z0-9]+)\[state\]\n\s+state \+\= 1\n\s+return result</find>
+      <find>line</find>
+      <find>linec</find>
+      <find>match</find>
+      <find>linecache</find>
+      <find>state =</find>
+      <find>state = 0</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
       <replace>print</replace>
       <replace>&quot;$1&quot;,</replace>
+      <replace>from tools import input, initArrayInputterinitArrayInputter(inputarray3)</replace>
+      <replace>from tools import input\, initArrayInputter\ninitArray\.Inputter($2)</replace>
+      <replace>from tools import input, initArrayInputte\ninitArray\.Inputter($2)</replace>
+      <replace />
     </replaceStrings>
     <dirStrings>
       <dir>D:\python\hackerrank</dir>
+      <dir>$PROJECT_DIR$</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -255,18 +459,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/greedy/min_diff.py" />
-        <option value="$PROJECT_DIR$/dynamic/coin_change.py" />
-        <option value="$PROJECT_DIR$/dynamic/coin_change_2.py" />
-        <option value="$PROJECT_DIR$/dynamic/change_coins_4.py" />
-        <option value="$PROJECT_DIR$/dynamic/change_coins_5.py" />
-        <option value="$PROJECT_DIR$/30days/nested_logic.py" />
-        <option value="$PROJECT_DIR$/30days/test_angry_professor.py" />
-        <option value="$PROJECT_DIR$/30days/angry_professor_ua.py" />
-        <option value="$PROJECT_DIR$/30days/angry_professor_ua2.py" />
-        <option value="$PROJECT_DIR$/30days/regexes.py" />
-        <option value="$PROJECT_DIR$/constructive/fp_tc_2.txt" />
-        <option value="$PROJECT_DIR$/constructive/flipping_matrix.py" />
         <option value="$PROJECT_DIR$/bit_manipulation/flip_bits.py" />
         <option value="$PROJECT_DIR$/dynamic/coin_change_3.py" />
         <option value="$PROJECT_DIR$/dynamic/coin_change_6.py" />
@@ -274,13 +466,10 @@
         <option value="$PROJECT_DIR$/dynamic/sam_substrings/sam_substrings_2.py" />
         <option value="$PROJECT_DIR$/dynamic/sam_substrings/sam_substrings_3.py" />
         <option value="$PROJECT_DIR$/dynamic/sam_substrings/sam_substrings_4.py" />
-        <option value="$PROJECT_DIR$/30days/and_max.py" />
-        <option value="$PROJECT_DIR$/30days/and_max_2.py" />
         <option value="$PROJECT_DIR$/sparse_arrays/sarray_1.py" />
         <option value="$PROJECT_DIR$/data_structures/tree/topview.py" />
         <option value="$PROJECT_DIR$/data_structures/tree/tree.py" />
         <option value="$PROJECT_DIR$/data_structures/tree/levelOrder.py" />
-        <option value="$PROJECT_DIR$/data_structures/tree/btree.py" />
         <option value="$PROJECT_DIR$/data_structures/tree/insert.py" />
         <option value="$PROJECT_DIR$/data_structures/tree/preorder.py" />
         <option value="$PROJECT_DIR$/math/fundamentals/find_the_point.py" />
@@ -301,11 +490,26 @@
         <option value="$PROJECT_DIR$/artificial_intelligence/statistics/stat_warmup.py" />
         <option value="$PROJECT_DIR$/artificial_intelligence/statistics/stockfile_1.txt" />
         <option value="$PROJECT_DIR$/artificial_intelligence/statistics/stockfile_2.txt" />
-        <option value="$PROJECT_DIR$/artificial_intelligence/statistics/predict_stock.py" />
         <option value="$PROJECT_DIR$/artificial_intelligence/a_search/pacman_dfs.py" />
         <option value="$PROJECT_DIR$/artificial_intelligence/a_search/pacman_bfs.py" />
         <option value="$PROJECT_DIR$/artificial_intelligence/a_search/pacman_astar.py" />
         <option value="$PROJECT_DIR$/artificial_intelligence/combinatorial_search/tron.py" />
+        <option value="$PROJECT_DIR$/tools/inputter.py" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/combinatorial_search/lies_unknown.py" />
+        <option value="$PROJECT_DIR$/regexes.txt" />
+        <option value="$PROJECT_DIR$/scripts.txt" />
+        <option value="$PROJECT_DIR$/30days/binary_cont_2.py" />
+        <option value="$PROJECT_DIR$/30days/binary_cont_2.py.bak" />
+        <option value="$PROJECT_DIR$/replace_ml.py" />
+        <option value="$PROJECT_DIR$/data_structures/tree/btree.py" />
+        <option value="$PROJECT_DIR$/tools.py" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/statistics/predict_stock.py" />
+        <option value="$PROJECT_DIR$/constructive/flipping_matrix.py" />
+        <option value="$PROJECT_DIR$/data_structures/stacks/max_element.py" />
+        <option value="$PROJECT_DIR$/graphs/journey_moon.py" />
+        <option value="$PROJECT_DIR$/graphs/roads_and_libraries.py" />
+        <option value="$PROJECT_DIR$/30days/and_max.py" />
+        <option value="$PROJECT_DIR$/30days/and_max_2.py" />
       </list>
     </option>
   </component>
@@ -315,11 +519,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="75" />
-    <option name="y" value="24" />
-    <option name="width" value="1853" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="65" />
+    <option name="y" value="-4" />
+    <option name="width" value="1855" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -337,6 +541,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -344,41 +550,10 @@
               <item name="hackerrank-exercises" type="b2602c69:ProjectViewProjectNode" />
               <item name="hackerrank-exercises" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="hackerrank-exercises" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hackerrank-exercises" type="462c0819:PsiDirectoryNode" />
-              <item name="artificial_intelligence" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hackerrank-exercises" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hackerrank-exercises" type="462c0819:PsiDirectoryNode" />
-              <item name="artificial_intelligence" type="462c0819:PsiDirectoryNode" />
-              <item name="a_search" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hackerrank-exercises" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hackerrank-exercises" type="462c0819:PsiDirectoryNode" />
-              <item name="artificial_intelligence" type="462c0819:PsiDirectoryNode" />
-              <item name="bot_building" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hackerrank-exercises" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hackerrank-exercises" type="462c0819:PsiDirectoryNode" />
-              <item name="artificial_intelligence" type="462c0819:PsiDirectoryNode" />
-              <item name="combinatorial_search" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hackerrank-exercises" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hackerrank-exercises" type="462c0819:PsiDirectoryNode" />
-              <item name="artificial_intelligence" type="462c0819:PsiDirectoryNode" />
-              <item name="statistics" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -419,7 +594,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.tron">
+  <component name="RunManager" selected="Python.roads_and_libraries">
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -567,56 +742,56 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <configuration name="pacman_astar" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="binary_cont" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/artificial_intelligence/a_search" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/30days" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="hackerrank" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/artificial_intelligence/a_search/pacman_astar.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/30days/binary_cont.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="pacman_bfs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="bst_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/artificial_intelligence/a_search" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/30days" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="hackerrank" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/artificial_intelligence/a_search/pacman_bfs.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/30days/bst_2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="pacman_dfs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="btree" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/artificial_intelligence/a_search" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_structures/tree" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="hackerrank" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/artificial_intelligence/a_search/pacman_dfs.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_structures/tree/btree.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -639,38 +814,38 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="tron" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="roads_and_libraries" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/artificial_intelligence/combinatorial_search" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/graphs" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="hackerrank" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/artificial_intelligence/combinatorial_search/tron.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/graphs/roads_and_libraries.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.predict_stock" />
-      <item index="1" class="java.lang.String" itemvalue="Python.pacman_dfs" />
-      <item index="2" class="java.lang.String" itemvalue="Python.pacman_bfs" />
-      <item index="3" class="java.lang.String" itemvalue="Python.pacman_astar" />
-      <item index="4" class="java.lang.String" itemvalue="Python.tron" />
+      <item index="0" class="java.lang.String" itemvalue="Python.binary_cont" />
+      <item index="1" class="java.lang.String" itemvalue="Python.bst_2" />
+      <item index="2" class="java.lang.String" itemvalue="Python.btree" />
+      <item index="3" class="java.lang.String" itemvalue="Python.predict_stock" />
+      <item index="4" class="java.lang.String" itemvalue="Python.roads_and_libraries" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.tron" />
-        <item index="1" class="java.lang.String" itemvalue="Python.pacman_astar" />
-        <item index="2" class="java.lang.String" itemvalue="Python.pacman_bfs" />
-        <item index="3" class="java.lang.String" itemvalue="Python.pacman_dfs" />
-        <item index="4" class="java.lang.String" itemvalue="Python.predict_stock" />
+        <item index="0" class="java.lang.String" itemvalue="Python.roads_and_libraries" />
+        <item index="1" class="java.lang.String" itemvalue="Python.predict_stock" />
+        <item index="2" class="java.lang.String" itemvalue="Python.btree" />
+        <item index="3" class="java.lang.String" itemvalue="Python.bst_2" />
+        <item index="4" class="java.lang.String" itemvalue="Python.binary_cont" />
       </list>
     </recent_temporary>
   </component>
@@ -687,27 +862,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1494032842976</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Additional problems">
-      <created>1494887856755</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1494887856756</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Additional problems">
-      <created>1495057684529</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1495057684529</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Additional problems">
-      <created>1495233590424</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1495233590424</updated>
     </task>
     <task id="LOCAL-00008" summary="Probability and stuff">
       <created>1495271541899</created>
@@ -1031,7 +1185,28 @@
       <option name="project" value="LOCAL" />
       <updated>1502204164602</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Bad version of Tron">
+      <created>1502205179671</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1502205179672</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Adapted for second player">
+      <created>1502206125078</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1502206125078</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Script to replace to function call">
+      <created>1502375718795</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1502375718795</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1043,30 +1218,53 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="75" y="24" width="1853" height="1056" extended-state="4" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.021621622" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40432432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3924449" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20399353" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32668462" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843652" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843652" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46065056" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3976915" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.021621622" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40432432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32703725" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4616216" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3976915" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1085,9 +1283,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Couple of problems more" />
-    <MESSAGE value="Problems bobob" />
-    <MESSAGE value="Solved simple stuff" />
     <MESSAGE value="Explaining the coin count algorithm" />
     <MESSAGE value="Sam Strings" />
     <MESSAGE value="Unperformant crap" />
@@ -1110,7 +1305,10 @@
     <MESSAGE value="Solved astar using algorithm" />
     <MESSAGE value="First utility function tron" />
     <MESSAGE value="Tron first version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tron first version" />
+    <MESSAGE value="Bad version of Tron" />
+    <MESSAGE value="Adapted for second player" />
+    <MESSAGE value="Script to replace to function call" />
+    <option name="LAST_COMMIT_MESSAGE" value="Script to replace to function call" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1122,12 +1320,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/algorithms/encryption.py</url>
-          <line>39</line>
+          <line>36</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dynamic/coin_change/change_coins_5.py</url>
-          <line>43</line>
+          <line>40</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1157,167 +1355,20 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/artificial_intelligence/statistics/stat_warmup.py</url>
-          <line>42</line>
+          <line>39</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/artificial_intelligence/combinatorial_search/lies_unknown.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="30" />
+      <option name="time" value="33" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/graphs/even_tree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/30days/and_max_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36000">
-          <caret line="2000" column="6" lean-forward="false" selection-start-line="2000" selection-start-column="6" selection-end-line="2000" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_structures/linked_lists/insert_ll.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_structures/tree/postorder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="9" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_structures/tree/tree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_structures/tree/levelOrder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_structures/tree/inorder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="13" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_structures/tree/btree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_structures/tree/insert.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="40" lean-forward="false" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms/encryption.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="42" column="6" lean-forward="false" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/30days/angry_professor_ua.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/strings/altchar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_structures/tree/preorder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_structures/arrays/sparse_arrays/sarray_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/math/fundamentals/handshakes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="15" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/math/fundamentals/socks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="20" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/math/fundamentals/bases.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/math/fundamentals/lowesttriangle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="14" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/hackerrank/lib/python3.6/site-packages/numpy/lib/function_base.py" />
-    <entry file="file://$PROJECT_DIR$/artificial_intelligence/statistics/regress_3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artificial_intelligence/statistics/regress_4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artificial_intelligence/statistics/regress_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/artificial_intelligence/statistics/regress_2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1383,13 +1434,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/artificial_intelligence/statistics/predict_stock.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="42" column="28" lean-forward="false" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/datacamp/lib/python3.6/site-packages/scipy/stats/stats.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
@@ -1408,13 +1452,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
           <caret line="3026" column="34" lean-forward="false" selection-start-line="3026" selection-start-column="34" selection-end-line="3026" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graphs/journey_moon.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1450,7 +1487,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1489,42 +1525,226 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-286841697/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5562">
-          <caret line="309" column="4" lean-forward="false" selection-start-line="309" selection-start-column="4" selection-end-line="309" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/artificial_intelligence/a_search/pacman_bfs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="814">
           <caret line="182" column="34" lean-forward="false" selection-start-line="182" selection-start-column="24" selection-end-line="182" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dynamic/sam_substrings/sam_substrings_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="95" lean-forward="false" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-286841697/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="834">
+          <caret line="309" column="4" lean-forward="false" selection-start-line="309" selection-start-column="4" selection-end-line="309" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/artificial_intelligence/a_search/pacman_astar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
+        <state relative-caret-position="654">
           <caret line="200" column="0" lean-forward="false" selection-start-line="200" selection-start-column="0" selection-end-line="205" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic/sam_substrings/sam_substrings_1.py">
+    <entry file="file://$USER_HOME$/anaconda3/envs/datacamp/lib/python3.6/linecache.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="27" column="95" lean-forward="false" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="95" />
+        <state relative-caret-position="165">
+          <caret line="36" column="4" lean-forward="false" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data_structures/stacks/tc_8.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_structures/stacks/tc_3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/inputter.py" />
     <entry file="file://$PROJECT_DIR$/artificial_intelligence/combinatorial_search/tron.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="161" column="28" lean-forward="true" selection-start-line="161" selection-start-column="28" selection-end-line="161" selection-end-column="28" />
+        <state relative-caret-position="756">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/combinatorial_search/lies_unknown.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/30days/angry_professor_ua.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/30days/perl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons/io.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="588" column="8" lean-forward="false" selection-start-line="588" selection-start-column="8" selection-end-line="588" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/30days/binary_cont_2.py.bak">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/30days/bst_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_structures/tree/btree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/30days/binary_cont_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/replace_ml.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/30days/binary_cont.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/datacamp/lib/python3.6/re.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="319" column="48" lean-forward="false" selection-start-line="319" selection-start-column="44" selection-end-line="319" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/constructive/flipping_matrix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_structures/stacks/max_element.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/statistics/predict_stock.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphs/journey_moon.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphs/roads_and_libraries.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/30days/and_max.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/30days/and_max_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="2014" column="0" lean-forward="true" selection-start-line="2014" selection-start-column="0" selection-end-line="2014" selection-end-column="0" />
           <folding />
         </state>
       </provider>

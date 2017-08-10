@@ -1,6 +1,6 @@
 #!/bin/python
 
-state = 0
+
 inputarray = [
 "6",
 "1 2 2 3 1 2"
@@ -12,11 +12,8 @@ inputarray2 = [
 ]
 
 
-def input():
-    global state
-    result = inputarray[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray)
 
 
 

@@ -1,4 +1,4 @@
-state = 0
+
 
 inputarray = [
 "47 2 49 1 40 48 50 20 44 14 38 43 45 10 16 30 39 41 46 7 12 15 19 28 31 42 5 9 11 13 17 27 29 34 3 6 8 18 21 33 35 4 25 32 36 22 26 37 24 23"
@@ -9,11 +9,8 @@ sol = [
 ]
 
 from collections import deque
-def input():
-    global state
-    result = inputarray[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray)
 
 
 """

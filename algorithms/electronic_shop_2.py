@@ -1,5 +1,5 @@
 #!/bin/python3
-state = 0
+
 
 
 inputarray1 = [
@@ -14,11 +14,8 @@ inputarray2 = [
 ]
 
 
-def input():
-    global state
-    result = inputarray1[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray1)
 
 import sys
 import itertools as it

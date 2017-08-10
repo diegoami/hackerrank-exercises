@@ -1,6 +1,6 @@
 
 
-state = 0
+
 inputarray =[
 "4 3",
 "1 2 3"
@@ -23,11 +23,8 @@ inputarray3 =[
 #           get the number of combinations for the money value minus the coin value
 #           add this to the number of combinations of the current value, because you can construct it just adding the coin value to those combinations
 
-def input():
-    global state
-    result = inputarray2[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray2)
 
 # Initialize an array of combination numbers for all target_money amounts from 0 until the amount you want to reach
 # For each coin:

@@ -1,4 +1,4 @@
-state = 0
+
 inputarray = [
 "4",
 "4",
@@ -19,11 +19,8 @@ inputarray2 = [
 "0 1 0 0 0",
 "0 0 1 1 0",
 ]
-def input():
-    global state
-    result = inputarray[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray)
 from collections import deque
 A = []
 n = int(input())

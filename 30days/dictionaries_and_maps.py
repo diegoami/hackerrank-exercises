@@ -1,4 +1,4 @@
-state = 0
+
 inputarray = [
 "3",
 "sam 99912222",
@@ -9,11 +9,8 @@ inputarray = [
 "harry"
 ]
 
-def input():
-    global state
-    result = inputarray[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray)
 dic = {}
 import sys
 n = int(input())

@@ -1,4 +1,4 @@
-state = 0
+
 inputarray = [
    "9800",
     "49",
@@ -6,11 +6,8 @@ inputarray = [
     "15"
 ]
 
-def input():
-    global state
-    result = inputarray[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray)
 
 import math
 def phi(x):

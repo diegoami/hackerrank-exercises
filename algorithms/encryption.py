@@ -1,6 +1,6 @@
 #!/bin/python3
 
-state = 0
+
 
 inputarray = \
 [
@@ -15,11 +15,8 @@ inputarray3 = \
 [
 "chillout",
 ]
-def input():
-    global state
-    result = inputarray2[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray2)
 #!/bin/python3
 
 

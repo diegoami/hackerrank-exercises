@@ -1,6 +1,6 @@
 #!/usr/bin/py
 # Head ends here
-state = 0
+
 
 
 inputarray = [
@@ -9,11 +9,8 @@ inputarray = [
 "1 ",
 "0"
 ]
-def input():
-    global state
-    result = inputarray[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray)
 
 
 # Tail starts here

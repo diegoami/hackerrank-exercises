@@ -1,7 +1,7 @@
 #!/bin/python3
 
 import sys
-state = 0
+
 inputarray = ["1 1 1 0 0 0",""]
 def input():
     global state

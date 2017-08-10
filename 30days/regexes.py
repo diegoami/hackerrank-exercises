@@ -1,6 +1,6 @@
 #!/bin/python3
 
-state = 0
+
 inputarray = [
 "6",
 "riya riya@gmail.com",
@@ -11,11 +11,8 @@ inputarray = [
 "tanya tanya@gmail.com"
 ]
 
-def input():
-    global state
-    result = inputarray[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray)
 
 import re
 N = int(input().strip())

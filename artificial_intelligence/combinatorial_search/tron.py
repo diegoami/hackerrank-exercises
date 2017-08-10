@@ -1,4 +1,4 @@
-state = 0
+
 inputArray = [
 "r",
 "4 3 5 13",

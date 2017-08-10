@@ -2,7 +2,7 @@
 
 import sys
 
-state = 0
+
 
 inputarray = [
 "2",
@@ -16,11 +16,8 @@ inputarray = [
 # 5 --> 10
 
 
-def input():
-    global state
-    result = inputarray[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray)
 
 T = int(input().strip())
 for a0 in range(T):

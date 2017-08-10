@@ -1,4 +1,4 @@
-state = 0
+
 inputarray = [
 "9 6 2015",
 "6 6 2015"
@@ -16,11 +16,8 @@ inputarray4 = [
 "31 12 2009",
 "1 1 2010"
 ]
-def input():
-    global state
-    result = inputarray4[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray4)
 
 import sys
 

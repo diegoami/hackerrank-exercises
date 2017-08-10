@@ -1,4 +1,4 @@
-state = 0
+
 inputarray = [
 "10",
 "203 204 205 206 207 208 203 204 205 206",
@@ -13,11 +13,8 @@ inputarray2 = [
 ]
 
 import collections as col
-def input():
-    global state
-    result = inputarray2[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray2)
 
 
 An = int(input())

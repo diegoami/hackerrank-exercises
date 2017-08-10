@@ -1,6 +1,6 @@
 #!/bin/python3
 import sys
-state = 0
+
 
 #inputarray = ["1 1 1 0 0 0","0 1 0 0 0 0","1 1 1 0 0 0","0 0 2 4 4 0","0 0 0 2 0 0","0 0 1 2 4 0" ]
 inputarray1 = [
@@ -11,11 +11,8 @@ inputarray2 = [
 "5",
 "4"
 ]
-def input():
-    global state
-    result = inputarray1[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray1)
 
 def solve(n, p):
     n = n if n % 2 == 0 else n-1

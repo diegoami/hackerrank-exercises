@@ -1,10 +1,6 @@
 state = 1
-import linecache
-def input():
-    global state
-    result = linecache.getline('stockfile_1.txt', state)
-    state += 1
-    return result
+from tools import input, initFileInputter
+initFileInputter('stockfile_1.txt')
 
 import numpy as np
 m,kf,df = map(float,input().split())

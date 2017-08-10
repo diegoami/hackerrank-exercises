@@ -1,4 +1,4 @@
-state = 0
+
 inputarray = [
 "3",
 "12",
@@ -13,11 +13,8 @@ inputarray2 = [
 ]
 
 
-def input():
-    global state
-    result = inputarray2[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray2)
 
 import math
 def prime(v):

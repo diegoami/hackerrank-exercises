@@ -1,4 +1,4 @@
-state = 0
+
 inputarray = [
 "1",
 "2",
@@ -8,13 +8,8 @@ inputarray = [
 "62 98 114 108"
 ]
 
-state = 1
-import linecache
-def input():
-    global state
-    result = linecache.getline('fp_tc_2.txt', state)
-    state += 1
-    return result
+from tools import input, initFileInputter
+initFileInputter('fp_tc_2.txt')
 
 def input_term():
     global state

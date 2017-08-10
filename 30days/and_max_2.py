@@ -1,6 +1,6 @@
 #!/bin/python3
 
-state = 0
+
 inputarray = [
 "3",
 "5 2",
@@ -2013,11 +2013,8 @@ res = [
 "184"
 ]
 
-def input():
-    global state
-    result = inputarray3[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray3)
 
 import sys
 T = int(input().strip())

@@ -1,4 +1,4 @@
-state = 0
+
 inputarray = [
 "95 85",
 "85 95",
@@ -7,11 +7,8 @@ inputarray = [
 "60 70",
 ]
 
-def input():
-    global state
-    result = inputarray[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray)
 
 import math
 def mean(l):

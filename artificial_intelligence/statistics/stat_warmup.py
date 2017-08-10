@@ -1,14 +1,11 @@
 
-state = 0
+
 inputarray = [
     "10",
     "64630 11735 14216 99233 14470 4978 73429 38120 51135 67060"
 ]
-def input():
-    global state
-    result = inputarray[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray)
 
 
 def ecdf(data):

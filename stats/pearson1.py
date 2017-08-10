@@ -1,15 +1,12 @@
-state = 0
+
 inputarray = [
     "10",
     "10 9.8 8 7.8 7.7 7 6 5 4 2",
     "200 44 32 24 22 17 15 12 8 4"
 ]
 
-def input():
-    global state
-    result = inputarray[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray)
 
 import math
 

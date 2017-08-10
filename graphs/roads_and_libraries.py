@@ -1,10 +1,6 @@
-state = 1
-import linecache
-def input():
-    global state
-    result = linecache.getline('testcase_4.txt', state)
-    state += 1
-    return result
+from tools import input, initFileInputter
+initFileInputter('testcase_3.txt')
+
 
 from collections import deque
 class AdjMatrix:

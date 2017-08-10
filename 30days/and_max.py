@@ -1,6 +1,6 @@
 #!/bin/python3
 
-state = 0
+
 inputarray = [
 "3",
 "5 2",

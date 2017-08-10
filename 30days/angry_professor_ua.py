@@ -1,4 +1,4 @@
-state = 0
+
 
 inputarray = [
 "2",
@@ -22,7 +22,7 @@ import sys
 
 def print_array():
     global state
-    state = 0
+
     while True:
         x = input()
         if x:
@@ -33,7 +33,7 @@ def print_array():
 
 def expect_output():
     global state
-    state = 0
+
 
     eo = []
     t = int(input().strip())

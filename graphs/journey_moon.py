@@ -1,10 +1,5 @@
-state = 1
-import linecache
-def input():
-    global state
-    result = linecache.getline('jm_2.txt', state)
-    state += 1
-    return result
+from tools import input, initFileInputter
+initFileInputter('jm_2.txt')
 
 from collections import deque
 from itertools import combinations

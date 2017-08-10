@@ -1,7 +1,7 @@
 #!/bin/python3
 
 import sys
-state = 0
+
 
 
 inputarray = [
@@ -11,11 +11,8 @@ inputarray = [
 ]
 
 
-def input():
-    global state
-    result = inputarray[state]
-    state += 1
-    return result
+from tools import input, initArrayInputter
+initArrayInputter(inputarray)
 
 
 

@@ -1,7 +1,7 @@
 #!/bin/python3
 
 
-state = 0
+
 
 inputarray1 = [
 "9",

@@ -1,5 +1,5 @@
 #!/usr/bin/python
-state = 0
+
 
 inputarray = [
 "3 9",
