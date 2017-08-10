@@ -1,5 +1,5 @@
 
-inputArray = [
+inputArray1 = [
 "20 1 2 2 0",
 "2",
 "2 1 NO",
@@ -15,8 +15,83 @@ inputArray2 = [
 "0 9 NO",
 ]
 
+
+inputArray3 = [
+"10 1 1 2 0",
+"10",
+"8 0 YES",
+"7 6 YES",
+"4 5 NO",
+"7 6 YES",
+"6 8 NO",
+"1 5 YES",
+"1 7 NO",
+"2 4 YES",
+"5 2 YES",
+"7 8 NO"
+]
+
+inputArray0 = [
+"10 1 1 2 0",
+"0"
+]
+
+
+inputArray5 = [
+"10 1 1 2 0",
+"13",
+"0 9 YES",
+"3 0 NO",
+"2 8 YES",
+"6 9 NO",
+"6 5 NO",
+"5 0 YES",
+"4 8 NO",
+"4 8 NO",
+"5 8 NO",
+"8 1 NO",
+"2 9 YES",
+"1 8 NO",
+"7 2 YES"
+]
+
+
+inputArray6 = [
+"10 1 1 2 0",
+"11",
+"8 7 NO",
+"5 6 YES",
+"1 4 NO",
+"5 7 YES",
+"4 5 NO",
+"0 9 NO",
+"4 9 YES",
+"3 2 NO",
+"7 2 YES",
+"4 2 YES",
+"2 7 NO"
+]
+
+inputArray7 = [
+"10 1 1 2 0",
+"13",
+"6 3 NO",
+"7 5 NO",
+"3 4 YES",
+"0 3 NO",
+"1 7 YES",
+"8 7 NO",
+"0 1 NO",
+"1 9 YES",
+"2 6 NO",
+"2 7 YES",
+"9 4 YES",
+"8 9 NO",
+"7 5 NO"
+]
+
 from tools import input, initArrayInputter
-initArrayInputter(inputArray2)
+initArrayInputter(inputArray7)
 
 from random import randint,seed
 seed()
@@ -38,7 +113,8 @@ def return_allowed(pd, conds):
             Rp = cond['R']
             if (p[Ac] == p[Bc] and not Rp) or (p[Ac] != p[Bc] and Rp):
                 allowed = False
-                #print('Condition not fulfilled : ', cond)
+#                print('Condition not fulfilled : ', cond, p, file=sys.stderr)
+                break
 
         if allowed:
             allowedCombs.append(p)
@@ -46,44 +122,28 @@ def return_allowed(pd, conds):
 from collections import Counter
 
 
-def try_answer_2(combs):
-    answers = set()
-    for comb in combs:
-        mcms = Counter(comb).most_common(2)
-        if (len(mcms) < 2):
-            print("No data", file=sys.stderr)
-            return None
-
-        if (mcms[0][1] > mcms[1][1]):
-            answers.add(mcms[0][0])
-        else:
-            print("Found ambigous:", mcms, file=sys.stderr)
-            return None
-    if len(answers) == 1:
-        return answers.pop()
-    else:
-        print("Too many answers:", answers, file=sys.stderr)
-        return None
 
 
-def try_answer(combs):
+def get_answers(combs):
     answers = []
     for comb in combs:
-        print("Processing comb", comb, file=sys.stderr)
+#        print("Processing comb", comb, file=sys.stderr)
         mcms = Counter(comb).most_common()
+        color = mcms[0][0]
         if (len(mcms) < 1):
-            print("No data", file=sys.stderr)
+#            print("No data", file=sys.stderr)
             continue
         else:
-            color = comb.index(mcms[0][0])
-            answers.add(color)
 
-    if len(answers) == 1:
-        return answers.pop()
-    else:
-        answer = Counter(answers).most_common()
+#            print("Retrieved color ", color, file=sys.stderr)
 
-        print("Giving answer:", answer[0], file=sys.stderr)
+            ball = list(comb).index(color)
+#            print("Retrieved ball ", ball, file=sys.stderr)
+
+            answers.append(color)
+
+
+    return answers
 
 
 
@@ -91,7 +151,7 @@ def try_answer(combs):
 
 def generate_possible_question(combs,N):
 
-    loops = N
+    loops = N*10
     while loops > 0:
         loops -= 1
         As = randint(1,N)-1
@@ -108,8 +168,8 @@ def generate_possible_question(combs,N):
 
         if (foundDiff and foundEqual):
             return (As,Bs)
-        else:
-            print("Unnecessary question: {}, {}".format(As,Bs), file=sys.stderr)
+#        else:
+#           print("Unnecessary question: {}, {}".format(As,Bs), file=sys.stderr)
 
     return None
 
@@ -120,24 +180,44 @@ allconds = []
 
 for i in range(D):
     As,Bs,resp = input().split()
-    A,B = int(As)-1, int(Bs)-1
+    A,B = int(As), int(Bs)
     allconds.append({"A":A, "B":B, "R":1 if resp == 'YES' else 0 })
 
 
-pd = gcmb(N,K)
+
 allowedCombs = []
 ACL = len(allconds)
-cmbs = combinations(allconds,ACL-L)
+cmbs = combinations(allconds,max(ACL-L,0))
 #print(cmbs)
 answers = []
+question_asked = False
 for conds in cmbs:
-#    print(conds)
+#    print(conds,file=sys.stderr)
+    pd = gcmb(N,K)
     allowed_combs = return_allowed(pd, conds)
     possible_question = generate_possible_question(allowed_combs,N)
     if possible_question == None:
 
-        answer = try_answer(allowed_combs)
-        answers.append(answer)
+        answers = answers + get_answers(allowed_combs)
+
     else:
         print(possible_question[0], possible_question[1] )
+        question_asked = True
         break
+if (question_asked == False):
+    if len(answers) > 0:
+        print(Counter(answers).most_common()[0][0])
+    else:
+        for X in range(ACL-L):
+
+            cmbs = combinations(allconds, max(ACL - L - X, 0))
+
+            for conds in cmbs:
+                print(conds,file=sys.stderr)
+                pd = gcmb(N, K)
+                allowed_combs = return_allowed(pd, conds)
+                print(allowed_combs ,file=sys.stderr)
+                answers = answers + get_answers(allowed_combs)
+            if (len(answers) > 0):
+                print(Counter(answers).most_common()[0][0])
+                break
