@@ -115,21 +115,39 @@ inputArray8 = [
 "28 17 YES" ]
 
 
+inputB = [
+"4 1 0 2 0",
+"3",
+"0 1 YES",
+"0 2 YES",
+"0 3 YES"
+]
+
+
+inputBb = [
+"4 1 0 2 0",
+"3",
+"0 1 NO",
+"1 2 YES",
+"1 3 YES"
+]
+
 from tools import input, initArrayInputter
-initArrayInputter(inputArray6)
+initArrayInputter(inputBb)
 
 from random import randint,seed
 seed()
 import sys
 from itertools import product
 
-def generate_some_tuples(D, K):
+def generate_some_tuples(D, K, conds):
     for _ in range(5000):
         ball_combo = []
         for d in range(D):
             k = randint(1,K)-1
             ball_combo.append(k)
-        yield ball_combo
+        if is_allowed(conds, ball_combo):
+            yield ball_combo
 
 def gcmb(D, K):
 
@@ -139,19 +157,26 @@ def gcmb(D, K):
 
 def return_allowed(pd, conds):
     for p in pd:
-        allowed = True
-        for cond in conds:
-            Ac = cond['A']
-            Bc = cond['B']
-            Rp = cond['R']
-            if (p[Ac] == p[Bc] and not Rp) or (p[Ac] != p[Bc] and Rp):
-                allowed = False
-#                print('Condition not fulfilled : ', cond, p, file=sys.stderr)
-                break
+        allowed = is_allowed(conds, p)
 
         if allowed:
             allowedCombs.append(p)
     return allowedCombs
+
+
+def is_allowed(conds, p):
+    allowed = True
+    for cond in conds:
+        Ac = cond['A']
+        Bc = cond['B']
+        Rp = cond['R']
+        if (p[Ac] == p[Bc] and not Rp) or (p[Ac] != p[Bc] and Rp):
+            allowed = False
+            #                print('Condition not fulfilled : ', cond, p, file=sys.stderr)
+            break
+    return allowed
+
+
 from collections import Counter
 
 
@@ -211,6 +236,8 @@ N, pl_flag, L, K, L_max = map(int,input().split())
 D = int(input())
 allconds = []
 
+min_guesses =  (L + 1) * N / 2
+
 for i in range(D):
     As,Bs,resp = input().split()
     A,B = int(As), int(Bs)
@@ -224,33 +251,37 @@ cmbs = combinations(allconds,max(ACL-L,0))
 #print(cmbs)
 answers = []
 question_asked = False
-for conds in cmbs:
-#    print(conds,file=sys.stderr)
-    pd = generate_some_tuples(N,K)
-    allowed_combs = return_allowed(pd, conds)
-    possible_question = generate_possible_question(allowed_combs,N)
-    if possible_question == None:
+if D <= min_guesses:
+    for conds in cmbs:
+        #print(conds,file=sys.stderr)
+        allowed_combs = generate_some_tuples(N,K,conds)
+        #allowed_combs = return_allowed(pd, conds)
+        possible_question = generate_possible_question(allowed_combs,N)
+        if possible_question == None:
+            allowed_combs = generate_some_tuples(N, K, conds)
+            answers = answers + get_answers(allowed_combs)
 
-        answers = answers + get_answers(allowed_combs)
+        else:
+            print(possible_question[0], possible_question[1] )
+            question_asked = True
+            break
 
-    else:
-        print(possible_question[0], possible_question[1] )
-        question_asked = True
-        break
-if (question_asked == False):
+
+if (question_asked == False or D > min_guesses):
     if len(answers) > 0:
         print(Counter(answers).most_common()[0][0])
     else:
-        for X in range(ACL-L):
 
-            cmbs = combinations(allconds, max(ACL - L - X, 0))
 
-            for conds in cmbs:
-                #print(conds,file=sys.stderr)
-                pd = generate_some_tuples(N, K)
-                allowed_combs = return_allowed(pd, conds)
-                #print(allowed_combs ,file=sys.stderr)
-                answers = answers + get_answers(allowed_combs)
-            if (len(answers) > 0):
-                #print(Counter(answers).most_common()[0][0])
-                break
+        cmbs = combinations(allconds, max(ACL - L , 0))
+
+        for conds in cmbs:
+            #print(conds,file=sys.stderr)
+            allowed_combs = generate_some_tuples(N, K, conds)
+
+            #print(allowed_combs ,file=sys.stderr)
+            answers = answers + get_answers(allowed_combs)
+        if (len(answers) > 0):
+            print(Counter(answers).most_common()[0][0])
+        else:
+            print("FAILED")

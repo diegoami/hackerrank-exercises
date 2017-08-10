@@ -211,16 +211,16 @@ inputCc=[
 "1 8 NO"
 ]
 from tools import input, initArrayInputter
-initArrayInputter(inputCc)
+initArrayInputter(inputArray8 )
 from random import randint,seed
 seed()
 import sys
 
-def try_max(equals, notequals, N, L, K):
+def try_max(equals, notequals, N, L, K, R):
     equals_f = sorted([(k, v) for k, v in equals.items()], key=lambda x: len(x[1]), reverse=True)
     for eq_entry in equals_f:
         As = eq_entry[0]
-        if (len(equals[As]) > 0 and len(notequals[As]) < len(equals[As])):
+        if (len(equals[As]) > 0 and len(notequals[As]) < N*(K-1)//(K) + R):
             return As
     return None
 
@@ -229,16 +229,16 @@ def try_question(equals, notequals, N, L, K, R):
     loops = N*5
     while loops > 0:
         loops -= 1
-        As = try_max(equals, notequals, N, L, K)
+        As = try_max(equals, notequals, N, L, K, R)
         if (As == None):
             As = randint(1,N*(K-1)//(K))-1
         Bs = randint(1,N)-1
 
         if (Bs == As):
             continue
-        if len(notequals[As]) >= N*(K-1)//K - R:
+        if len(notequals[As]) >= N*(K-1)//K + R:
             continue
-        if len(notequals[Bs]) >= N*(K-1) //K - R:
+        if len(notequals[Bs]) >= N*(K-1) //K + R:
             continue
 
         if As in equals[Bs] or Bs in equals[As]:
@@ -249,19 +249,19 @@ def try_question(equals, notequals, N, L, K, R):
     return None
 
 def tryGuess(equals_s, notequals, N,L, K):
-    print(equals_s, file=sys.stderr)
-    equals_f = [(k,v) for k,v in equals_s.items() if (len(v) > N//K + L  )]
+    #print(equals_s, file=sys.stderr)
+    equals_f = [(k,v) for k,v in equals_s.items() if (len(v) >= N//K + L  )]
     if len(equals_f) > 0:
         return equals_f[0][0]
     else:
         return None
 
-def doGuess(equals_s, notequals, N,L, K):
+def doGuess(equals_s, notequals, N, L, K, R):
 
     equals_f = sorted([(k,v) for k,v in equals_s.items()], key=lambda x : len(x[1]), reverse=True)
     for eq_entry in equals_f:
         As = eq_entry[0]
-        if (len(equals[As]) > 0 and len(notequals[As]) < len(equals[As])):
+        if (len(equals[As]) > 0 and len(notequals[As]) < N*(K-1)//(K)+R ):
             return As
     return None
 
@@ -298,13 +298,34 @@ while True:
             if k not in equals[ve]:
                 equals[ve].add(k)
                 added = True
+#            notequals[ve] = notequals[ve].union(notequals[k])
+#            notequals[k] = notequals[k].union(notequals[ve])
+
     if not added:
         break
 
 
 
-print("EQUALS ",equals, file=sys.stderr)
-print("NOTEQUALS ",notequals, file=sys.stderr)
+from itertools import combinations
+if (K == 2):
+    while True:
+        added = False
+        for k, v in notequals.items():
+
+            eqc = combinations(v,2)
+            for eq in eqc:
+                if eq[0] not in equals[eq[1]]:
+                    equals[eq[1]].add(eq[0])
+                    added = True
+                if eq[1] not in equals[eq[0]]:
+                    equals[eq[0]].add(eq[1])
+                    added = True
+        if not added:
+            break
+
+#print("EQUALS ",equals, file=sys.stderr)
+#print("NOTEQUALS ",notequals, file=sys.stderr)
+max_guesses = min_guesses*5
 tg = tryGuess(equals, notequals, N, L, K)
 if (tg != None):
     print(tg)
@@ -312,13 +333,15 @@ else:
     done = False
     R = 0
     while not done:
-        tq = try_question(equals, notequals, N, L, K, R)
-
+        if (D < max_guesses):
+            tq = try_question(equals, notequals, N, L, K, R)
+        else:
+            tq = None
         if (tq != None):
             print(tq[0], tq[1])
             done = True
         else:
-            tg = doGuess (equals, notequals, N, L, K)
+            tg = doGuess (equals, notequals, N, L, K, R)
             if (tg != None):
                 print(tg)
                 done = True
