@@ -26,7 +26,13 @@ def input2():
 
 state = 1
 import linecache
+from itertools import cycle
+
+c = cycle(linecache.getlines('tc_8.txt'))
 def input():
+    return next(c)
+
+def input_old():
     global state
     result = linecache.getline('tc_8.txt', state)
     state += 1

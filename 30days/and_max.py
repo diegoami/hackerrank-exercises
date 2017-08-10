@@ -2012,15 +2012,9 @@ res = [
 "45",
 "184"
 ]
+from tools import input, initArrayInputter
+initArrayInputter(inputarray3)
 
-def input():
-    global state
-    result = inputarray3[state]
-    state += 1
-    return result
-
-import sys
-import itertools as it
 import math
 t = int(input().strip())
 for a0 in range(t):
