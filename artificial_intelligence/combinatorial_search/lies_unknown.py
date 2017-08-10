@@ -89,14 +89,47 @@ inputArray7 = [
 "8 9 NO",
 "7 5 NO"
 ]
+inputArray8 = [
+"30 1 2 3 0",
+"21",
+"28 12 NO",
+"23 11 YES",
+"5 6 YES",
+"3 11 NO",
+"15 22 NO",
+"14 25 NO",
+"16 19 NO",
+"7 3 NO",
+"19 2 NO",
+"17 23 YES",
+"9 19 NO",
+"18 27 NO",
+"10 4 NO",
+"20 21 NO",
+"29 27 NO",
+"25 13 NO",
+"19 3 YES",
+"14 27 YES",
+"11 4 NO",
+"26 5 NO",
+"28 17 YES" ]
+
 
 from tools import input, initArrayInputter
-initArrayInputter(inputArray7)
+initArrayInputter(inputArray6)
 
 from random import randint,seed
 seed()
 import sys
 from itertools import product
+
+def generate_some_tuples(D, K):
+    for _ in range(5000):
+        ball_combo = []
+        for d in range(D):
+            k = randint(1,K)-1
+            ball_combo.append(k)
+        yield ball_combo
 
 def gcmb(D, K):
 
@@ -151,7 +184,7 @@ def get_answers(combs):
 
 def generate_possible_question(combs,N):
 
-    loops = N*10
+    loops = N*5
     while loops > 0:
         loops -= 1
         As = randint(1,N)-1
@@ -193,7 +226,7 @@ answers = []
 question_asked = False
 for conds in cmbs:
 #    print(conds,file=sys.stderr)
-    pd = gcmb(N,K)
+    pd = generate_some_tuples(N,K)
     allowed_combs = return_allowed(pd, conds)
     possible_question = generate_possible_question(allowed_combs,N)
     if possible_question == None:
@@ -213,11 +246,11 @@ if (question_asked == False):
             cmbs = combinations(allconds, max(ACL - L - X, 0))
 
             for conds in cmbs:
-                print(conds,file=sys.stderr)
-                pd = gcmb(N, K)
+                #print(conds,file=sys.stderr)
+                pd = generate_some_tuples(N, K)
                 allowed_combs = return_allowed(pd, conds)
-                print(allowed_combs ,file=sys.stderr)
+                #print(allowed_combs ,file=sys.stderr)
                 answers = answers + get_answers(allowed_combs)
             if (len(answers) > 0):
-                print(Counter(answers).most_common()[0][0])
+                #print(Counter(answers).most_common()[0][0])
                 break
