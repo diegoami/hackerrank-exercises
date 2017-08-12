@@ -1,9 +1,11 @@
 from tools import input, initFileInputter
-initFileInputter('dom_3.txt')
+initFileInputter('dom_2.txt')
 
 from copy import deepcopy
 from random import  randint
 import sys
+
+
 
 def revert(pch):
     if (pch == 'v'):
@@ -14,69 +16,72 @@ def revert(pch):
         print("INCORRECT COLOR : {}".format(pch), file=sys.stderr)
         return pch
 
-def allowed_moves(maze,pch):
-    all_cells = []
-    if (pch == 'v'):
-        all_cells = [(j, i) for j in range(ly) for i in range(lx) if maze[j][i] == '-' and j < 7 and maze[j+1][i] == '-' ]
-    elif (pch == 'h'):
-        all_cells = [(j, i) for j in range(ly) for i in range(lx) if maze[j][i] == '-' and i < 7 and maze[j][i+1] == '-' ]
-    else:
-        print("INCORRECT COLOR : {}".format(pch), file=sys.stderr)
-    return all_cells
+class Position:
 
-def execute_move( maze, move, pch):
-    maze_c = deepcopy(maze)
-    #print(maze_c)
-    if (pch == 'v'):
-        maze_c[move[0]][move[1]] = 'v'
-        maze_c[move[0]+1][move[1]] = 'v'
-    else:
-        maze_c[move[0]][move[1]] = 'h'
-        maze_c[move[0]][move[1]+1] = 'v'
-    return maze
+    lx,ly = 8,8
+    def __init__(self, input=None, board=None, pch=None):
+        if (input):
+            self.pch = input()
+            self.board = []
+            for _ in range(self.ly):
+                carr = []
+                self.board.append(carr)
+                cl = input()
+                for c in cl:
+                    carr.append(c)
+        else:
+            self.board = board
+            self.pch =pch
+        self.calculate_moves()
 
-def find_winning_move(maze_eval):
-    for move in maze_eval["moves"]:
-        maze_opp = execute_move(maze, move, pch)
-        maze_eval_opp = analyze(maze_opp, revert(pch))
-        if (maze_eval_opp["lost"]):
+    def calculate_moves(self):
+        self.all_moves = []
+        if (self.pch == 'v'):
+            self.all_moves = [(j, i) for j in range(self.ly) for i in range(self.lx) if self.board[j][i] == '-' and j < 7 and self.board[j + 1][i] == '-']
+        elif (self.pch == 'h'):
+            self.all_moves = [(j, i) for j in range(self.ly) for i in range(self.lx) if self.board[j][i] == '-' and i < 7 and self.board[j][i + 1] == '-']
+        else:
+            print("INCORRECT COLOR : {}".format(self.pch), file=sys.stderr)
+        self.lost =  len(self.all_moves) == 0
 
-            return move
-    return None
+    def execute_move( self, move):
+        board_c = deepcopy(self.board)
+        if (self.pch == 'v'):
+            board_c[move[0]][move[1]] = 'v'
+            board_c[move[0]+1][move[1]] = 'v'
+        else:
+            board_c[move[0]][move[1]] = 'h'
+            board_c[move[0]][move[1]+1] = 'v'
+        return Position(board=board_c,pch=revert(self.pch))
 
 
+    def calculate_opp_positions(self):
+        opp_positions = []
+        for move in self.all_moves:
+            opp_position = self.execute_move(move)
+            opp_positions.append({"position":opp_position,"move":move})
+        return opp_positions
 
-def analyze(maze, pch):
-    moves = allowed_moves(maze,pch)
-    lost = len(moves) == 0
-    return {"moves" : moves, "lost" : lost, "pch" : pch}
+
 
 if __name__ == "__main__":
 
-    maze = []
-    pch = input()
-
-    ly, lx = 8,8
-    for _ in range(ly):
-        carr = []
-        maze.append(carr )
-        cl = input()
-        for c in cl:
-            carr.append(c)
-    maze_eval = analyze(maze, pch)
-    if (maze_eval["lost"]):
+    position = Position(input=input)
+    finished = False
+    if (position.lost):
         print("lost")
     else:
-        winning_move = find_winning_move(maze_eval)
-        if (winning_move):
-            print("FOUND WINNING MOVE : {} {}".format(winning_move[0], winning_move[1]), file=sys.stderr)
-            print(*winning_move)
-        else:
-            print("NO WINNING MOVE, RANDOM MOVE", file=sys.stderr)
+        opp_positions= position.calculate_opp_positions()
+        for opp_position in opp_positions:
 
-            moves = maze_eval["moves"]
-            if (len(moves) > 0):
-                move = moves[randint(1,len(moves))-1]
-                print(*move)
-            else:
-                print("NO VALID MOVE, WE LOSE")
+            if opp_position["position"].lost:
+                print("FOUND WINNING MOVE : {} {}".format(*opp_position["move"]), file=sys.stderr)
+                print(*opp_position)
+                sys.exit(0)
+        print("NO WINNING MOVE, RANDOM MOVE", file=sys.stderr)
+
+        if (len(opp_positions) > 0):
+            opp_position = opp_positions[randint(1,len(opp_positions))-1]
+            print(*opp_position["move"])
+        else:
+            print("NO VALID MOVE, WE LOSE")
