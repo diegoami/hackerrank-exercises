@@ -1,5 +1,5 @@
 from tools import input, initFileInputter
-initFileInputter('dom_3.txt')
+initFileInputter('dom_2.txt')
 
 from copy import deepcopy
 from random import  randint
@@ -35,6 +35,21 @@ class Position:
         self.calculate_moves()
 
 
+
+
+    def evaluate(self):
+        evaluation = 0
+        if (self.pch == 'v'):
+            return  len(self.vertical_moves()) - len(self.horizontal_moves())
+        elif (self.pch == 'h'):
+            return  len(self.horizontal_moves()) - len(self.vertical_moves())
+        else:
+            return 0
+
+    def evaluate_as_target(self):
+        return - self.evaluate()
+
+
     def calculate_moves(self):
         self.all_moves = []
         if (self.pch == 'v'):
@@ -51,6 +66,8 @@ class Position:
 
     def horizontal_moves(self):
         return  [(j, i) for j in range(self.ly) for i in range(self.lx) if self.board[j][i] == '-' and i < 7 and self.board[j][i + 1] == '-']
+
+
 
 
     def execute_move( self, move):
@@ -72,7 +89,7 @@ class Position:
         return opp_positions
 
 
-class PositionNode:
+class Node:
 
     def __init__(self, position, parent_edge=None, depth=0):
         self.position = position
@@ -86,78 +103,70 @@ class PositionNode:
 
 
 
-    def evaluate_func(self,pch):
-        if (pch == 'v'):
-            return len(self.position.vertical_moves()) - len(self.position.horizontal_moves())
-        elif (pch == 'h'):
-            return len(self.position.horizontal_moves()) - len(self.position.vertical_moves())
-        else:
-            return 0
-
     def add_position(self, move, child_position):
-        child =  PositionEdge(self.position, move, child_position)
+        child =  Edge(self.position, move, child_position)
         self.children.append(child)
 
     def retrieve_positions(self):
         opp_positions = self.position.calculate_opp_positions()
         for opp in opp_positions:
-            self.add_position(opp["move"], PositionNode(opp["position"], self.depth+1))
+            new_position = Node(opp["position"], self.depth + 1)
 
-    def evaluate(self,pch):
-        self.evaluation = self.evaluate_func(pch)
+            self.add_position(opp["move"], new_position )
+
+
+    def evaluate(self):
         for edge in self.children:
-
-            edge.endPosition.evaluate(pch)
-
             self.valid_edges.append(edge)
-            if (edge.endPosition.position.lost):
+
+            if (edge.end_node.position.lost):
                 print("FOUND WINNING MOVE : {} {}".format(*edge.move), file=sys.stderr)
                 self.best_edge = edge
                 self.won = True
                 self.valid_edges.append(edge)
                 break
-            elif (edge.endPosition.won):
+            elif (edge.end_node.won):
                 print("FOUND LOSING MOVE : {} {}".format(*edge.move), file=sys.stderr)
                 continue
 
 
         if (len(self.valid_edges) > 0):
-            self.valid_edges = sorted(self.valid_edges, key=lambda e: e.endPosition.evaluation, reverse=True)
+            self.valid_edges = sorted(self.valid_edges, key=lambda e: e.end_node.position.evaluate_as_target(), reverse=True)
             for edge in self.valid_edges:
-                print(" MOVE {} {}, EVALUATION {} ".format(edge.move[0], edge.move[1], edge.endPosition.evaluation),
+                print(" MOVE {} {}, EVALUATION {} ".format(edge.move[0], edge.move[1], edge.end_node.position.evaluate_as_target()),
                       file=sys.stderr)
 
             self.best_edge = self.valid_edges[0]
 
 
-class PositionEdge:
+class Edge:
 
-    def __init__ (self, originPosition, move, endPosition):
-        self.originPosition = originPosition
+    def __init__ (self, origin_node, move, end_node):
+        self.origin_node = origin_node
         self.move = move
-        self.endPosition = endPosition
+        self.end_node = end_node
 
 class PositionTree:
 
     def __init__(self, position) :
-        self.rootNode = PositionNode(position)
+        self.root_node = Node(position)
         self.create_tree()
         self.evaluate_tree()
 
     def create_tree(self):
 
 
-        self.rootNode.retrieve_positions()
+        self.root_node.retrieve_positions()
 
     def evaluate_tree(self):
-        self.rootNode.evaluate(self.rootNode.position.pch)
+        self.root_node.evaluate()
 
 
     def choose_move(self):
-        if (self.rootNode.best_edge):
-            return self.rootNode.best_edge.move
+        if (self.root_node.best_edge):
+            return self.root_node.best_edge.move
         else:
-            edge = self.rootNode.valid_edges[0]
+            edge = self.root_node.valid_edges[0]
             #edge = self.rootNode.valid_edges [randint(1, len(self.rootNode.valid_edges )) - 1]
             #print("NO WINNING MOVE, RANDOM MOVE {} {}".format(*edge.move), file=sys.stderr)
 
