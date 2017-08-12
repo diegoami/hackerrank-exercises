@@ -11,7 +11,7 @@ class ArrayInputter:
         self.inputCycle = cycle(self.inputArray)
 
     def input(self):
-        return next(self.inputCycle )
+        return next(self.inputCycle ).strip()
 
 
 import linecache
