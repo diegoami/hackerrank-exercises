@@ -1,5 +1,5 @@
 from tools import input, initFileInputter
-initFileInputter('dom_2.txt')
+initFileInputter('dom_7.txt')
 
 from copy import deepcopy
 from random import  randint
@@ -36,7 +36,6 @@ class Position:
         self.evaluation = self.evaluate()
 
 
-
     def evaluate(self):
         evaluation = 0
         if (self.pch == 'v'):
@@ -60,6 +59,7 @@ class Position:
             print("INCORRECT COLOR : {}".format(self.pch), file=sys.stderr)
         self.lost =  len(self.all_moves) == 0
 
+
     def vertical_moves(self):
         return [(j, i) for j in range(self.ly) for i in range(self.lx) if
                           self.board[j][i] == '-' and j < 7 and self.board[j + 1][i] == '-']
@@ -78,8 +78,8 @@ class Position:
         else:
             board_c[move[0]][move[1]] = 'h'
             board_c[move[0]][move[1]+1] = 'v'
-        #return Position(board=board_c,pch=revert(self.pch))
-        return Position(board=board_c, pch=self.pch)
+        return Position(board=board_c,pch=revert(self.pch))
+
 
     def calculate_opp_positions(self):
         opp_positions = []
@@ -88,36 +88,75 @@ class Position:
             opp_positions.append({"position":opp_position,"move":move})
         return opp_positions
 
+    def dump(self):
+        print("=============",file=sys.stderr)
+        for b in self.board:
+            print("".join(b),file=sys.stderr)
+        print("=============",file=sys.stderr)
 
+debug = False
 
-def minmax(position, maximizingPlayer, depth=1):
+def minmax(position, maximizingPlayer, depth=1, alpha = -math.inf, beta=math.inf):
+    debug and print(("   "*depth)+"minmax(depth={}, maximizingPlayer={})".format(depth,maximizingPlayer),file=sys.stderr)
+    debug and position.dump()
     if depth == 0:
-        return position.evaluate(), []
-    if position.lost:
+        return position.evaluate_as_target(), []
+    if position.lost or len(position.all_moves) == 0:
         return -math.inf , []
     if (maximizingPlayer):
-        bestValue = -math.inf
-        foundMove = []
+        bestValue = alpha
+        foundMove = None
         for move in position.all_moves:
             new_position = position.execute_move(move)
-            v, pv = minmax(new_position, depth-1, False)
-            if (v > bestValue):
-                foundMove = [move]
-            bestValue = max(bestValue, v)
-        return bestValue, pv + foundMove
-    else:
-        bestValue = math.inf
-        for move in position.all_moves:
-            new_position = position.execute_move()
-            v, pv = minmax(new_position, depth - 1, True    )
-            bestValue = min(bestValue, v)
+#            if (new_position.evaluate() < -alpha):
+#                continue
+            v, pv = minmax(new_position, False, depth-1)
 
-            if (v < bestValue):
-                foundMove = [move]
-        return bestValue, pv + foundMove
+            if (v >= bestValue):
+                foundMove = pv + [move]
+                debug and print(("   "*depth)+"Adding move : {} {}".format(*move), file=sys.stderr)
+                debug and print(("   "*depth)+"Evaluation : {}".format((v)), file=sys.stderr)
+
+                bestValue = max(bestValue, v)
+        debug and print(("   " * depth) + "End minmax(depth={}, maximizingPlayer={})".format(depth, maximizingPlayer),
+          file=sys.stderr)
+
+        debug and print(("   "*depth)+"Returning bestValue : {} ".format((bestValue)), file=sys.stderr)
+        debug and print(("   "*depth)+"Returning foundMove : {} ".format((foundMove)), file=sys.stderr)
+
+        return bestValue, foundMove
+    else:
+        bestValue = beta
+        foundMove = None
+        for move in position.all_moves:
+            new_position = position.execute_move(move)
+#            if (new_position.evaluate() > alpha):
+#                continue
+
+            v, pv = minmax(new_position, True  , depth-1  )
+
+            if (v <= bestValue):
+
+                debug and print(("   "*depth)+"Adding move : {} {}".format(*move), file=sys.stderr)
+                debug and print(("   "*depth)+"Evaluation : {}".format((v)), file=sys.stderr)
+
+                foundMove = pv + [move]
+                bestValue = min(bestValue, v)
+
+        debug and print(("   " * depth) + "End minmax(depth={}, maximizingPlayer={})".format(depth, maximizingPlayer),
+              file=sys.stderr)
+
+        debug and print(("   "*depth)+"Returning bestValue : {} ".format((bestValue)), file=sys.stderr)
+        debug and print(("   "*depth)+"Returning foundMove : {} ".format((foundMove )), file=sys.stderr)
+
+        return bestValue, foundMove
 
 if __name__ == "__main__":
 
     position = Position(input=input)
-    result = minmax(position, True, 1)
-    print(result)
+    depth =  3 if (len(position.all_moves) < 10) else 1
+    v, pv = minmax(position,  True, depth=depth    , alpha=-3, beta=3)
+    if (pv == None):
+        v, pv = minmax(position, True, depth=1)
+
+    print(*pv[0])
