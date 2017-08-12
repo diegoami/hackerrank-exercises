@@ -34,15 +34,24 @@ class Position:
             self.pch =pch
         self.calculate_moves()
 
+
     def calculate_moves(self):
         self.all_moves = []
         if (self.pch == 'v'):
-            self.all_moves = [(j, i) for j in range(self.ly) for i in range(self.lx) if self.board[j][i] == '-' and j < 7 and self.board[j + 1][i] == '-']
+            self.all_moves = self.vertical_moves()
         elif (self.pch == 'h'):
-            self.all_moves = [(j, i) for j in range(self.ly) for i in range(self.lx) if self.board[j][i] == '-' and i < 7 and self.board[j][i + 1] == '-']
+            self.all_moves = self.horizontal_moves()
         else:
             print("INCORRECT COLOR : {}".format(self.pch), file=sys.stderr)
         self.lost =  len(self.all_moves) == 0
+
+    def vertical_moves(self):
+        return [(j, i) for j in range(self.ly) for i in range(self.lx) if
+                          self.board[j][i] == '-' and j < 7 and self.board[j + 1][i] == '-']
+
+    def horizontal_moves(self):
+        return  [(j, i) for j in range(self.ly) for i in range(self.lx) if self.board[j][i] == '-' and i < 7 and self.board[j][i + 1] == '-']
+
 
     def execute_move( self, move):
         board_c = deepcopy(self.board)
@@ -69,7 +78,21 @@ class PositionNode:
         self.position = position
         self.parent_edge = parent_edge
         self.children = []
+        self.valid_edges = []
         self.depth = depth
+        self.lost = position.lost
+        self.best_edge = None
+        self.won = False
+
+
+
+    def evaluate_func(self,pch):
+        if (pch == 'v'):
+            return len(self.position.vertical_moves()) - len(self.position.horizontal_moves())
+        elif (pch == 'h'):
+            return len(self.position.horizontal_moves()) - len(self.position.vertical_moves())
+        else:
+            return 0
 
     def add_position(self, move, child_position):
         child =  PositionEdge(self.position, move, child_position)
@@ -79,6 +102,33 @@ class PositionNode:
         opp_positions = self.position.calculate_opp_positions()
         for opp in opp_positions:
             self.add_position(opp["move"], PositionNode(opp["position"], self.depth+1))
+
+    def evaluate(self,pch):
+        self.evaluation = self.evaluate_func(pch)
+        for edge in self.children:
+
+            edge.endPosition.evaluate(pch)
+
+            self.valid_edges.append(edge)
+            if (edge.endPosition.position.lost):
+                print("FOUND WINNING MOVE : {} {}".format(*edge.move), file=sys.stderr)
+                self.best_edge = edge
+                self.won = True
+                self.valid_edges.append(edge)
+                break
+            elif (edge.endPosition.won):
+                print("FOUND LOSING MOVE : {} {}".format(*edge.move), file=sys.stderr)
+                continue
+
+
+        if (len(self.valid_edges) > 0):
+            self.valid_edges = sorted(self.valid_edges, key=lambda e: e.endPosition.evaluation, reverse=True)
+            for edge in self.valid_edges:
+                print(" MOVE {} {}, EVALUATION {} ".format(edge.move[0], edge.move[1], edge.endPosition.evaluation),
+                      file=sys.stderr)
+
+            self.best_edge = self.valid_edges[0]
+
 
 class PositionEdge:
 
@@ -92,19 +142,28 @@ class PositionTree:
     def __init__(self, position) :
         self.rootNode = PositionNode(position)
         self.create_tree()
+        self.evaluate_tree()
 
     def create_tree(self):
+
+
         self.rootNode.retrieve_positions()
 
-    def choose_move(self):
-        for edge in self.rootNode.children:
-            if (edge.endPosition.position.lost):
-                print("FOUND WINNING MOVE : {} {}".format(*edge.move), file=sys.stderr)
-                return edge.move
+    def evaluate_tree(self):
+        self.rootNode.evaluate(self.rootNode.position.pch)
 
-        edge = self.rootNode.children[randint(1, len(self.rootNode.children)) - 1]
-        print("NO WINNING MOVE, RANDOM MOVE {} {}".format(*edge.move), file=sys.stderr)
-        return edge.move
+
+    def choose_move(self):
+        if (self.rootNode.best_edge):
+            return self.rootNode.best_edge.move
+        else:
+            edge = self.rootNode.valid_edges[0]
+            #edge = self.rootNode.valid_edges [randint(1, len(self.rootNode.valid_edges )) - 1]
+            #print("NO WINNING MOVE, RANDOM MOVE {} {}".format(*edge.move), file=sys.stderr)
+
+            print("NO WINNING MOVE, PICKING FIRST MOVE{} {}".format(*edge.move), file=sys.stderr)
+
+            return edge.move
 
 
 if __name__ == "__main__":
