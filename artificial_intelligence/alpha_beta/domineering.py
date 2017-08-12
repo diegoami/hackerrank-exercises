@@ -63,6 +63,46 @@ class Position:
         return opp_positions
 
 
+class PositionNode:
+
+    def __init__(self, position, parent_edge=None, depth=0):
+        self.position = position
+        self.parent_edge = parent_edge
+        self.children = []
+        self.depth = depth
+
+    def add_position(self, move, child_position):
+        child =  PositionEdge(self.position, move, child_position)
+        self.children.append(child)
+
+    def retrieve_positions(self):
+        opp_positions = self.position.calculate_opp_positions()
+        for opp in opp_positions:
+            self.add_position(opp["move"], PositionNode(opp["position"], self.depth+1))
+
+class PositionEdge:
+
+    def __init__ (self, originPosition, move, endPosition):
+        self.originPosition = originPosition
+        self.move = move
+        self.endPosition = endPosition
+
+class PositionTree:
+
+    def __init__(self, position) :
+        self.rootNode = PositionNode(position)
+
+    def create_tree(self):
+        self.rootNode.retrieve_positions()
+
+    def choose_move(self):
+        for edge in self.rootNode.children:
+            if (edge.endPosition.lost):
+                return edge.move
+
+        edge = self.rootNode.children[randint(1, len(self.rootNode.children)) - 1]
+        return edge.move
+
 
 if __name__ == "__main__":
 
@@ -76,8 +116,8 @@ if __name__ == "__main__":
 
             if opp_position["position"].lost:
                 print("FOUND WINNING MOVE : {} {}".format(*opp_position["move"]), file=sys.stderr)
-                print(*opp_position)
-                sys.exit(0)
+                print(*opp_position["move"])
+
         print("NO WINNING MOVE, RANDOM MOVE", file=sys.stderr)
 
         if (len(opp_positions) > 0):
