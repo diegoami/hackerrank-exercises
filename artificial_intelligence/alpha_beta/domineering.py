@@ -1,5 +1,5 @@
 from tools import input, initFileInputter
-initFileInputter('dom_2.txt')
+initFileInputter('dom_3.txt')
 
 from copy import deepcopy
 from random import  randint
@@ -91,37 +91,25 @@ class PositionTree:
 
     def __init__(self, position) :
         self.rootNode = PositionNode(position)
+        self.create_tree()
 
     def create_tree(self):
         self.rootNode.retrieve_positions()
 
     def choose_move(self):
         for edge in self.rootNode.children:
-            if (edge.endPosition.lost):
+            if (edge.endPosition.position.lost):
+                print("FOUND WINNING MOVE : {} {}".format(*edge.move), file=sys.stderr)
                 return edge.move
 
         edge = self.rootNode.children[randint(1, len(self.rootNode.children)) - 1]
+        print("NO WINNING MOVE, RANDOM MOVE {} {}".format(*edge.move), file=sys.stderr)
         return edge.move
 
 
 if __name__ == "__main__":
 
     position = Position(input=input)
-    finished = False
-    if (position.lost):
-        print("lost")
-    else:
-        opp_positions= position.calculate_opp_positions()
-        for opp_position in opp_positions:
-
-            if opp_position["position"].lost:
-                print("FOUND WINNING MOVE : {} {}".format(*opp_position["move"]), file=sys.stderr)
-                print(*opp_position["move"])
-
-        print("NO WINNING MOVE, RANDOM MOVE", file=sys.stderr)
-
-        if (len(opp_positions) > 0):
-            opp_position = opp_positions[randint(1,len(opp_positions))-1]
-            print(*opp_position["move"])
-        else:
-            print("NO VALID MOVE, WE LOSE")
+    positionTree = PositionTree(position)
+    move = positionTree.choose_move()
+    print(*move)
