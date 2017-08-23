@@ -1,7 +1,7 @@
 
 from itertools import cycle
 inputter = None
-
+import os
 
 
 class ArrayInputter:
@@ -19,9 +19,11 @@ import linecache
 class FileInputter(ArrayInputter):
 
     def __init__(self,inputFile):
-        self.inputFile = inputFile
-        self.inputCycle = cycle(linecache.getlines(self.inputFile))
-
+        if (os.path.isfile(inputFile)):
+            self.inputFile = inputFile
+            self.inputCycle = cycle(linecache.getlines(self.inputFile))
+        else:
+            raise IOError("FILE NOT FOUND "+inputFile)
 
 
 def initArrayInputter(inputArray):

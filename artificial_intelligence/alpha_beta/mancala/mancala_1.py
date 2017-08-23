@@ -1,6 +1,3 @@
-from tools import input, initFileInputter
-initFileInputter('dom_7.txt')
-
 
 
 
@@ -19,8 +16,17 @@ def revert(pch):
         print("INCORRECT COLOR : {}".format(pch), file=sys.stderr)
         return pch
 
-class Position:
 
+
+from itertools import product
+
+class Position:
+    holes = [1, 2, 3, 4, 5, 6]
+    players = ['1', '2']
+
+
+    moves_1 = list(product(['1'],holes))
+    moves_2 = list(product(['2'],holes))
 
     def __init__(self, input=None, board=None, pch=None):
         self.board = {}
@@ -43,54 +49,92 @@ class Position:
 
 
     def evaluate(self):
-        evaluation = 1 if self.pch ==  self.board['N'] else 0
-        if (self.pch == '1'):
-            return self.board['1']['mancala']-self.board['2']['mancala']
-        elif (self.pch == '2'):
-            return self.board['2']['mancala']-self.board['1']['mancala']
-        else:
-            print("INCORRECT COLOR : {}".format(self.pch), file=sys.stderr)
-            return 0
+        ev = self.board['1']['mancala']-self.board['2']['mancala'] + ( 2 if self.board['N'] == '1' else -2)
+    #    ev += sum(self.board['1']['holes']) - sum(self.board['2']['holes'])
+        return ev
 
     def evaluate_as_target(self):
         return - self.evaluate()
 
+    def evaluate_as_obs(self):
+        return self.evaluate() if self.pch == '1' else -self.evaluate()
 
     def calculate_moves(self):
         self.all_moves = []
-        if (self.pch == '1'):
-            return [1,2,3,4,5,6]
-        elif (self.pch == '2'):
-            return [1,2,3,4,5,6]
+
+        if (self.board['N']  == '1'):
+            self.all_moves = [s for s in self.moves_1 if self.board['1']['holes'][s[1]-1] > 0]
+
+        elif (self.board['N'] == '2'):
+            self.all_moves = [s for s in self.moves_2 if self.board['2']['holes'][s[1]-1] > 0]
         else:
             print("INCORRECT COLOR : {}".format(self.pch), file=sys.stderr)
-            return []
 
-    def execute_move(self, move):
+
+    def execute_move(self, moveTot):
+        def get_marbles_in_hole(board, player, hole):
+            return board[player]['holes'][hole - 1]
+
+        def set_marbles_in_hole(board, player, hole, value):
+            board[player]['holes'][hole - 1] = value
+
+        def inc_marbles_in_hole(board, player, hole, delta):
+            board[player]['holes'][hole - 1] += delta
+
+        move = moveTot[1]
         board_c = deepcopy(self.board)
-        player, other_player = self.board_c['N'], revert(self.board_c['N'])
-        marbles = self.board_c[player]['holes'][move]
-        self.board_c[player]['holes'][move] = 0
+
+        player, other_player = board_c['N'], revert(board_c['N'])
+        marbles = get_marbles_in_hole(board_c, player, move)
+        set_marbles_in_hole(board_c, player, move, 0)
         curr_hole = move
         while marbles > 0:
             curr_hole += 1
-            if curr_hole <= 6:
-                self.board_c[player]['holes'][curr_hole] += 1
-            elif curr_hole == 7:
-                self.board_c[player]['mancala'] += 1
+            real_hole = curr_hole % 14
+            if (real_hole == 0):
+                pass
+            elif real_hole  <= 6:
+                inc_marbles_in_hole(board_c, player, real_hole , 1)
+                marbles -= 1
+            elif real_hole  == 7:
+                board_c[player]['mancala'] += 1
+                marbles -= 1
+            elif real_hole  < 14:
+                inc_marbles_in_hole(board_c, other_player, real_hole-7, 1)
+                marbles -= 1
             else:
-                self.board_c[other_player]['holes'][curr_hole-6] += 1
-            marbles -= 1
-        if (curr_hole < 7 ) and self.board_c[player]['holes'][curr_hole] == 1:
-            self.board_c[player]['holes'][curr_hole] += self.board_c[other_player]['holes'][7-curr_hole]
-            self.board_c[other_player]['holes'][7 - curr_hole] = 0
+                pass
+
+
+
+        if (curr_hole < 7 ) and get_marbles_in_hole(board_c, player, curr_hole) == 1:
+            inc_marbles_in_hole(board_c, player, curr_hole, get_marbles_in_hole(board_c, other_player, 7-curr_hole))
+            set_marbles_in_hole(board_c, other_player, 7-curr_hole, 0)
+
 
         if (curr_hole != 7):
-            self.board_c['N'] = other_player
+            board_c['N'] = other_player
+
+        return Position(board=board_c,pch=self.pch)
 
 
+    def calculate_opp_positions(self):
+        opp_positions = []
+        for move in self.all_moves:
+            opp_position = self.execute_move(move)
+            opp_positions.append({"position":opp_position,"move":move})
+        return opp_positions
 
-
+    def dump(self):
+        f = {"file" : sys.stderr}
+        print("============== POSITION ==================",**f)
+        print("{}".format(self.board['N']),**f)
+        print("{}".format(self.board['1']['mancala']),**f)
+        print(*self.board['1']['holes'],sep=' ', **f)
+        print("{}".format(self.board['2']['mancala']),**f)
+        print(*self.board['2']['holes'],sep=' ', **f)
+        print("============EVALUATION : {} =============".format(self.evaluate_as_obs()), **f)
+        print("===========END POSITION ==================",**f)
 
 
 debug = True
@@ -148,7 +192,28 @@ def minmax(position, maximizingPlayer, depth=1, alpha = -math.inf, beta=math.inf
         return bestValue, foundMove
 
 
-if __name__ == "__main__":
 
+def process(input):
     position = Position(input=input)
-    v, pv = minmax(position,  True, depth=1)
+    position.dump()
+    opp_positions  = position.calculate_opp_positions()
+    ops = sorted(opp_positions, key=lambda x: x['position'].evaluate_as_obs(), reverse = True)
+    for o in ops:
+        print("==== MOVE === : {} {} ".format(*o['move']),file=sys.stderr)
+        o['position'].dump()
+    print(ops[0]['move'][1])
+
+
+def do_test_inputs():
+    from tools import input, initFileInputter
+    for i in range(1,5,1):
+        str_to_pr = 'manca_'+str(i)+'.txt'
+        print("======PROCESSING === {} ==========".format(str_to_pr),file=sys.stderr)
+        initFileInputter('manca_'+str(i)+'.txt')
+        process(input)
+        print("======  END PROCESSING === {} =======".format(str_to_pr), file=sys.stderr)
+
+
+if __name__ == "__main__":
+    process(input)
+    #do_test_inputs()
