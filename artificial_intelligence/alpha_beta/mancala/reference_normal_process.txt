@@ -1,0 +1,501 @@
+/home/diegoami/anaconda3/envs/datacamp/bin/python /home/diegoami/PycharmProjects/hackerrank-exercises/artificial_intelligence/alpha_beta/mancala/mancala_1.py
+3
+======PROCESSING === manca_1.txt ==========
+2
+1
+====== START POSITION ========
+============== POSITION ==================
+1
+0
+4 4 4 4 4 4
+0
+4 4 4 4 4 4
+============EVALUATION : 2.0 =============
+===========END POSITION ==================
+minmax(depth=1, rdepth=0, maximizingPlayer=True)
+   minmax(depth=0, rdepth=1, maximizingPlayer=False)
+Adding move : 1 1
+Evaluation : -2.0
+   minmax(depth=0, rdepth=1, maximizingPlayer=False)
+Adding move : 1 2
+Evaluation : -2.0
+   minmax(depth=1, rdepth=1, maximizingPlayer=True)
+      minmax(depth=0, rdepth=2, maximizingPlayer=False)
+   Adding move : 1 1
+   Evaluation : -1.2
+      minmax(depth=0, rdepth=2, maximizingPlayer=False)
+   Adding move : 1 2
+   Evaluation : -1.2
+      minmax(depth=0, rdepth=2, maximizingPlayer=False)
+   Adding move : 1 4
+   Evaluation : -1.2
+      minmax(depth=0, rdepth=2, maximizingPlayer=False)
+      minmax(depth=0, rdepth=2, maximizingPlayer=False)
+   End minmax(depth=1, rdepth=1, maximizingPlayer=True)
+   Returning bestValue : -1.2
+   Returning foundMove : [('1', 4)]
+Adding move : 1 3
+Evaluation : -1.2
+   minmax(depth=0, rdepth=1, maximizingPlayer=False)
+   minmax(depth=0, rdepth=1, maximizingPlayer=False)
+   minmax(depth=0, rdepth=1, maximizingPlayer=False)
+End minmax(depth=1, rdepth=0, maximizingPlayer=True)
+Returning bestValue : -1.2
+Returning foundMove : [('1', 4), ('1', 3)]
+======MOVE FOUND === 1 4 ==========
+====== CHOSEN POSITION ========
+============== POSITION ==================
+2
+1
+4 4 4 0 5 5
+0
+5 4 4 4 4 4
+============EVALUATION : -1.6 =============
+===========END POSITION ==================
+============== POSITION ==================
+1
+0
+4 4 4 4 4 4
+0
+4 4 4 4 4 4
+============EVALUATION : 2.0 =============
+===========END POSITION ==================
+==== MOVE === : 1 3
+============== POSITION ==================
+1
+1
+4 4 0 5 5 5
+0
+4 4 4 4 4 4
+============EVALUATION : 2.8 =============
+===========END POSITION ==================
+==== MOVE === : 1 4
+============== POSITION ==================
+2
+1
+4 4 4 0 5 5
+0
+5 4 4 4 4 4
+============EVALUATION : -1.6 =============
+===========END POSITION ==================
+==== MOVE === : 1 1
+============== POSITION ==================
+2
+0
+0 5 5 5 5 4
+0
+4 4 4 4 4 4
+============EVALUATION : -2.0 =============
+===========END POSITION ==================
+==== MOVE === : 1 2
+============== POSITION ==================
+2
+0
+4 0 5 5 5 5
+0
+4 4 4 4 4 4
+============EVALUATION : -2.0 =============
+===========END POSITION ==================
+==== MOVE === : 1 5
+============== POSITION ==================
+2
+1
+4 4 4 4 0 5
+0
+5 5 4 4 4 4
+============EVALUATION : -2.0 =============
+===========END POSITION ==================
+==== MOVE === : 1 6
+============== POSITION ==================
+2
+1
+4 4 4 4 4 0
+0
+5 5 5 4 4 4
+============EVALUATION : -2.4 =============
+===========END POSITION ==================
+======  END PROCESSING === manca_1.txt =======
+======PROCESSING === manca_2.txt ==========
+====== START POSITION ========
+============== POSITION ==================
+2
+1
+4 4 4 4 0 5
+0
+5 5 4 4 4 4
+============EVALUATION : 2.0 =============
+===========END POSITION ==================
+minmax(depth=1, rdepth=0, maximizingPlayer=True)
+   minmax(depth=0, rdepth=1, maximizingPlayer=False)
+Adding move : 2 1
+Evaluation : -2.0
+   minmax(depth=1, rdepth=1, maximizingPlayer=True)
+      minmax(depth=0, rdepth=2, maximizingPlayer=False)
+   Adding move : 2 1
+   Evaluation : -1.2
+      minmax(depth=0, rdepth=2, maximizingPlayer=False)
+   Adding move : 2 3
+   Evaluation : -0.8
+      minmax(depth=0, rdepth=2, maximizingPlayer=False)
+      minmax(depth=0, rdepth=2, maximizingPlayer=False)
+      minmax(depth=0, rdepth=2, maximizingPlayer=False)
+   End minmax(depth=1, rdepth=1, maximizingPlayer=True)
+   Returning bestValue : -0.8
+   Returning foundMove : [('2', 3)]
+Adding move : 2 2
+Evaluation : -0.8
+   minmax(depth=1, rdepth=1, maximizingPlayer=True)
+      minmax(depth=0, rdepth=2, maximizingPlayer=False)
+   Adding move : 2 1
+   Evaluation : -1.2
+      minmax(depth=1, rdepth=2, maximizingPlayer=True)
+         minmax(depth=0, rdepth=3, maximizingPlayer=False)
+      Adding move : 2 1
+      Evaluation : -0.4
+         minmax(depth=0, rdepth=3, maximizingPlayer=False)
+      Adding move : 2 3
+      Evaluation : -0.4
+         minmax(depth=0, rdepth=3, maximizingPlayer=False)
+         minmax(depth=0, rdepth=3, maximizingPlayer=False)
+         minmax(depth=0, rdepth=3, maximizingPlayer=False)
+      End minmax(depth=1, rdepth=2, maximizingPlayer=True)
+      Returning bestValue : -0.4
+      Returning foundMove : [('2', 3)]
+   Adding move : 2 2
+   Evaluation : -0.4
+      minmax(depth=0, rdepth=2, maximizingPlayer=False)
+      minmax(depth=0, rdepth=2, maximizingPlayer=False)
+      minmax(depth=0, rdepth=2, maximizingPlayer=False)
+   End minmax(depth=1, rdepth=1, maximizingPlayer=True)
+   Returning bestValue : -0.4
+   Returning foundMove : [('2', 3), ('2', 2)]
+Adding move : 2 3
+Evaluation : -0.4
+   minmax(depth=0, rdepth=1, maximizingPlayer=False)
+   minmax(depth=0, rdepth=1, maximizingPlayer=False)
+   minmax(depth=0, rdepth=1, maximizingPlayer=False)
+End minmax(depth=1, rdepth=0, maximizingPlayer=True)
+Returning bestValue : -0.4
+Returning foundMove : [('2', 3), ('2', 2), ('2', 3)]
+======MOVE FOUND === 2 3 ==========
+====== CHOSEN POSITION ========
+============== POSITION ==================
+2
+1
+4 4 4 4 0 5
+1
+5 5 0 5 5 5
+============EVALUATION : 2.8 =============
+===========END POSITION ==================
+============== POSITION ==================
+2
+1
+4 4 4 4 0 5
+0
+5 5 4 4 4 4
+============EVALUATION : 2.0 =============
+===========END POSITION ==================
+==== MOVE === : 2 2
+============== POSITION ==================
+2
+1
+4 4 4 4 0 5
+1
+5 0 5 5 5 5
+============EVALUATION : 2.8 =============
+===========END POSITION ==================
+==== MOVE === : 2 3
+============== POSITION ==================
+2
+1
+4 4 4 4 0 5
+1
+5 5 0 5 5 5
+============EVALUATION : 2.8 =============
+===========END POSITION ==================
+==== MOVE === : 2 4
+============== POSITION ==================
+1
+1
+5 4 4 4 0 5
+1
+5 5 4 0 5 5
+============EVALUATION : -1.6 =============
+===========END POSITION ==================
+==== MOVE === : 2 1
+============== POSITION ==================
+1
+1
+4 4 4 4 0 5
+0
+0 6 5 5 5 5
+============EVALUATION : -2.0 =============
+===========END POSITION ==================
+==== MOVE === : 2 5
+============== POSITION ==================
+1
+1
+5 5 4 4 0 5
+1
+5 5 4 4 0 5
+============EVALUATION : -2.0 =============
+===========END POSITION ==================
+==== MOVE === : 2 6
+============== POSITION ==================
+1
+1
+5 5 5 4 0 5
+1
+5 5 4 4 4 0
+============EVALUATION : -2.4 =============
+===========END POSITION ==================
+======  END PROCESSING === manca_2.txt =======
+======PROCESSING === manca_3.txt ==========
+====== START POSITION ========
+============== POSITION ==================
+1
+3
+5 0 1 1 7 7
+1
+5 5 4 4 0 5
+============EVALUATION : 3.6 =============
+===========END POSITION ==================
+minmax(depth=1, rdepth=0, maximizingPlayer=True)
+   minmax(depth=0, rdepth=1, maximizingPlayer=False)
+Adding move : 1 1
+Evaluation : -0.4
+   minmax(depth=0, rdepth=1, maximizingPlayer=False)
+Adding move : 1 3
+Evaluation : -0.4
+   minmax(depth=0, rdepth=1, maximizingPlayer=False)
+Adding move : 1 4
+Evaluation : -0.4
+   minmax(depth=0, rdepth=1, maximizingPlayer=False)
+   minmax(depth=0, rdepth=1, maximizingPlayer=False)
+End minmax(depth=1, rdepth=0, maximizingPlayer=True)
+Returning bestValue : -0.4
+Returning foundMove : [('1', 4)]
+======MOVE FOUND === 1 4 ==========
+====== CHOSEN POSITION ========
+============== POSITION ==================
+2
+3
+5 0 1 0 8 7
+1
+5 5 4 4 0 5
+============EVALUATION : -0.4 =============
+===========END POSITION ==================
+============== POSITION ==================
+1
+3
+5 0 1 1 7 7
+1
+5 5 4 4 0 5
+============EVALUATION : 3.6 =============
+===========END POSITION ==================
+==== MOVE === : 1 1
+============== POSITION ==================
+2
+3
+0 1 2 2 8 8
+1
+5 5 4 4 0 5
+============EVALUATION : -0.4 =============
+===========END POSITION ==================
+==== MOVE === : 1 3
+============== POSITION ==================
+2
+3
+5 0 0 2 7 7
+1
+5 5 4 4 0 5
+============EVALUATION : -0.4 =============
+===========END POSITION ==================
+==== MOVE === : 1 4
+============== POSITION ==================
+2
+3
+5 0 1 0 8 7
+1
+5 5 4 4 0 5
+============EVALUATION : -0.4 =============
+===========END POSITION ==================
+==== MOVE === : 1 5
+============== POSITION ==================
+2
+4
+5 0 1 1 0 8
+1
+6 6 5 5 1 5
+============EVALUATION : -1.6 =============
+===========END POSITION ==================
+==== MOVE === : 1 6
+============== POSITION ==================
+2
+4
+5 0 1 1 7 0
+1
+6 6 5 5 1 6
+============EVALUATION : -2.0 =============
+===========END POSITION ==================
+======  END PROCESSING === manca_3.txt =======
+======PROCESSING === manca_4.txt ==========
+====== START POSITION ========
+============== POSITION ==================
+1
+5
+0 1 3 2 1 9
+2
+6 6 0 6 6 1
+============EVALUATION : 3.2 =============
+===========END POSITION ==================
+minmax(depth=1, rdepth=0, maximizingPlayer=True)
+   minmax(depth=0, rdepth=1, maximizingPlayer=False)
+Adding move : 1 2
+Evaluation : -0.8
+   minmax(depth=0, rdepth=1, maximizingPlayer=False)
+Adding move : 1 3
+Evaluation : -0.8
+   minmax(depth=0, rdepth=1, maximizingPlayer=False)
+Adding move : 1 4
+Evaluation : -0.8
+   minmax(depth=0, rdepth=1, maximizingPlayer=False)
+Adding move : 1 5
+Evaluation : -0.8
+   minmax(depth=0, rdepth=1, maximizingPlayer=False)
+End minmax(depth=1, rdepth=0, maximizingPlayer=True)
+Returning bestValue : -0.8
+Returning foundMove : [('1', 5)]
+======MOVE FOUND === 1 5 ==========
+====== CHOSEN POSITION ========
+============== POSITION ==================
+2
+5
+0 1 3 2 0 10
+2
+6 6 0 6 6 1
+============EVALUATION : -0.8 =============
+===========END POSITION ==================
+============== POSITION ==================
+1
+5
+0 1 3 2 1 9
+2
+6 6 0 6 6 1
+============EVALUATION : 3.2 =============
+===========END POSITION ==================
+==== MOVE === : 1 2
+============== POSITION ==================
+2
+5
+0 0 4 2 1 9
+2
+6 6 0 6 6 1
+============EVALUATION : -0.8 =============
+===========END POSITION ==================
+==== MOVE === : 1 3
+============== POSITION ==================
+2
+5
+0 1 0 3 2 10
+2
+6 6 0 6 6 1
+============EVALUATION : -0.8 =============
+===========END POSITION ==================
+==== MOVE === : 1 4
+============== POSITION ==================
+2
+5
+0 1 3 0 2 10
+2
+6 6 0 6 6 1
+============EVALUATION : -0.8 =============
+===========END POSITION ==================
+==== MOVE === : 1 5
+============== POSITION ==================
+2
+5
+0 1 3 2 0 10
+2
+6 6 0 6 6 1
+============EVALUATION : -0.8 =============
+===========END POSITION ==================
+==== MOVE === : 1 6
+============== POSITION ==================
+2
+6
+1 2 3 2 1 0
+2
+7 7 1 7 7 2
+============EVALUATION : -2.4000000000000004 =============
+===========END POSITION ==================
+======  END PROCESSING === manca_4.txt =======
+======PROCESSING === manca_5.txt ==========
+====== START POSITION ========
+============== POSITION ==================
+2
+7
+0 7 2 6 1 7
+13
+0 2 2 0 1 0
+============EVALUATION : 4.4 =============
+===========END POSITION ==================
+minmax(depth=1, rdepth=0, maximizingPlayer=True)
+   minmax(depth=0, rdepth=1, maximizingPlayer=False)
+Adding move : 2 2
+Evaluation : 1.2000000000000002
+   minmax(depth=0, rdepth=1, maximizingPlayer=False)
+   minmax(depth=0, rdepth=1, maximizingPlayer=False)
+End minmax(depth=1, rdepth=0, maximizingPlayer=True)
+Returning bestValue : 1.2000000000000002
+Returning foundMove : [('2', 2)]
+======MOVE FOUND === 2 2 ==========
+2
+2
+====== CHOSEN POSITION ========
+============== POSITION ==================
+1
+7
+0 7 0 6 1 7
+13
+0 0 3 3 1 0
+============EVALUATION : 1.2000000000000002 =============
+===========END POSITION ==================
+============== POSITION ==================
+2
+7
+0 7 2 6 1 7
+13
+0 2 2 0 1 0
+============EVALUATION : 4.4 =============
+===========END POSITION ==================
+==== MOVE === : 2 2
+============== POSITION ==================
+1
+7
+0 7 0 6 1 7
+13
+0 0 3 3 1 0
+============EVALUATION : 1.2000000000000002 =============
+===========END POSITION ==================
+==== MOVE === : 2 3
+============== POSITION ==================
+1
+7
+0 7 2 6 1 7
+13
+0 2 0 1 2 0
+============EVALUATION : 0.3999999999999999 =============
+===========END POSITION ==================
+==== MOVE === : 2 5
+============== POSITION ==================
+1
+7
+0 7 2 6 1 7
+13
+0 2 2 0 0 1
+============EVALUATION : 0.3999999999999999 =============
+===========END POSITION ==================
+======  END PROCESSING === manca_5.txt =======
+
+Process finished with exit code 0

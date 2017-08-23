@@ -1,5 +1,3 @@
-from tools import input, initFileInputter
-initFileInputter('dom_7.txt')
 
 from copy import deepcopy
 from random import  randint
@@ -113,7 +111,7 @@ def minmax(position, maximizingPlayer, depth=1, alpha = -math.inf, beta=math.inf
             v, pv = minmax(new_position, False, depth-1)
 
             if (v >= bestValue):
-                foundMove = pv + [move]
+                foundMove = [move] + pv
                 debug and print(("   "*depth)+"Adding move : {} {}".format(*move), file=sys.stderr)
                 debug and print(("   "*depth)+"Evaluation : {}".format((v)), file=sys.stderr)
 
@@ -140,7 +138,7 @@ def minmax(position, maximizingPlayer, depth=1, alpha = -math.inf, beta=math.inf
                 debug and print(("   "*depth)+"Adding move : {} {}".format(*move), file=sys.stderr)
                 debug and print(("   "*depth)+"Evaluation : {}".format((v)), file=sys.stderr)
 
-                foundMove = pv + [move]
+                foundMove = [move] + pv
                 bestValue = min(bestValue, v)
 
         debug and print(("   " * depth) + "End minmax(depth={}, maximizingPlayer={})".format(depth, maximizingPlayer),
@@ -151,8 +149,7 @@ def minmax(position, maximizingPlayer, depth=1, alpha = -math.inf, beta=math.inf
 
         return bestValue, foundMove
 
-if __name__ == "__main__":
-
+def process(input):
     position = Position(input=input)
     depth =  3 if (len(position.all_moves) < 10) else 1
     v, pv = minmax(position,  True, depth=depth    , alpha=-3, beta=3)
@@ -160,3 +157,16 @@ if __name__ == "__main__":
         v, pv = minmax(position, True, depth=1)
 
     print(*pv[0])
+
+
+def do_test_inputs():
+    from tools import input, initFileInputter
+    for i in range(1,8,1):
+        str_to_pr = 'dom_'+str(i)+'.txt'
+        print("======PROCESSING === {} ==========".format(str_to_pr),file=sys.stderr)
+        initFileInputter(str_to_pr)
+        process(input)
+
+if __name__ == "__main__":
+    #process(input)
+    do_test_inputs()

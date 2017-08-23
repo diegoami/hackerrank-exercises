@@ -53,11 +53,15 @@ class Position:
         ev += (sum(self.board['1']['holes']) - sum(self.board['2']['holes']))/5
         return ev
 
-    def evaluate_as_target(self):
-        return - self.evaluate()
+    def player_to_play(self):
+        return self.board['N']
 
     def evaluate_as_obs(self):
         return self.evaluate() if self.pch == '1' else -self.evaluate()
+
+    def evaluate_as_target(self):
+        return - self.evaluate_as_obs()
+
 
     def calculate_moves(self):
         self.all_moves = []
@@ -88,6 +92,7 @@ class Position:
         marbles = get_marbles_in_hole(board_c, player, move)
         set_marbles_in_hole(board_c, player, move, 0)
         curr_hole = move
+        real_hole = curr_hole % 14
         while marbles > 0:
             curr_hole += 1
             real_hole = curr_hole % 14
@@ -107,12 +112,12 @@ class Position:
 
 
 
-        if (curr_hole < 7 ) and get_marbles_in_hole(board_c, player, curr_hole) == 1:
-            inc_marbles_in_hole(board_c, player, curr_hole, get_marbles_in_hole(board_c, other_player, 7-curr_hole))
-            set_marbles_in_hole(board_c, other_player, 7-curr_hole, 0)
+        if (real_hole  < 7 ) and get_marbles_in_hole(board_c, player, real_hole ) == 1:
+            inc_marbles_in_hole(board_c, player, real_hole , get_marbles_in_hole(board_c, other_player, 7-real_hole ))
+            set_marbles_in_hole(board_c, other_player, 7-real_hole , 0)
 
 
-        if (curr_hole != 7):
+        if (real_hole != 7):
             board_c['N'] = other_player
 
         return Position(board=board_c,pch=self.pch)
@@ -139,58 +144,79 @@ class Position:
 
 debug = True
 
-def minmax(position, maximizingPlayer, depth=1, alpha = -math.inf, beta=math.inf):
-    debug and print(("   "*depth)+"minmax(depth={}, maximizingPlayer={})".format(depth,maximizingPlayer),file=sys.stderr)
-    debug and position.dump()
+def minmax(position, maximizingPlayer, depth=1, rdepth = 0, alpha = -math.inf, beta=math.inf):
+    tdepth = rdepth
+    debug and print(("   "*tdepth )+"minmax(depth={}, rdepth={}, maximizingPlayer={})".format(depth,rdepth, maximizingPlayer),file=sys.stderr)
+    #debug and position.dump()
     if depth == 0:
-        return position.evaluate_as_target(), []
-    if position.lost or len(position.all_moves) == 0:
-        return -math.inf , []
+        return position.evaluate_as_obs(), []
+
     if (maximizingPlayer):
         bestValue = alpha
-        foundMove = None
+        foundMove = []
         for move in position.all_moves:
             new_position = position.execute_move(move)
-
-            v, pv = minmax(new_position, False, depth-1)
+            if (new_position.player_to_play() != position.player_to_play()):
+                v, pv = minmax(new_position, False, depth-1, rdepth+1)
+            else:
+                v, pv = minmax(new_position, True, depth, rdepth+1)
 
             if (v >= bestValue):
-                foundMove = pv + [move]
-                debug and print(("   "*depth)+"Adding move : {} {}".format(*move), file=sys.stderr)
-                debug and print(("   "*depth)+"Evaluation : {}".format((v)), file=sys.stderr)
+                foundMove = [move] + pv
+                debug and print(("   "*tdepth)+"Adding move : {} {}".format(*move), file=sys.stderr)
+                debug and print(("   "*tdepth)+"Best Evaluation : {}".format((v)), file=sys.stderr)
 
                 bestValue = max(bestValue, v)
-        debug and print(("   " * depth) + "End minmax(depth={}, maximizingPlayer={})".format(depth, maximizingPlayer),
+            else:
+                debug and print(("   " * tdepth) + "Worse Evaluation : {}".format((v)), file=sys.stderr)
+        debug and print(("   " * tdepth ) + "End minmax(depth={}, rdepth={}, maximizingPlayer={})".format(depth, rdepth, maximizingPlayer),
           file=sys.stderr)
 
-        debug and print(("   "*depth)+"Returning bestValue : {} ".format((bestValue)), file=sys.stderr)
-        debug and print(("   "*depth)+"Returning foundMove : {} ".format((foundMove)), file=sys.stderr)
+        debug and print(("   " * tdepth )+"Returning bestValue : {} ".format((bestValue)), file=sys.stderr)
+        debug and print(("   " * tdepth )+"Returning foundMove : {} ".format((foundMove)), file=sys.stderr)
 
         return bestValue, foundMove
     else:
         bestValue = beta
-        foundMove = None
+        foundMove = []
         for move in position.all_moves:
             new_position = position.execute_move(move)
 
-            v, pv = minmax(new_position, True  , depth-1  )
+            if (new_position.player_to_play() != position.player_to_play()):
+                v, pv = minmax(new_position, True, depth-1, rdepth+1)
+            else:
+                v, pv = minmax(new_position, False, depth, rdepth+1)
 
             if (v <= bestValue):
-
-                debug and print(("   "*depth)+"Adding move : {} {}".format(*move), file=sys.stderr)
-                debug and print(("   "*depth)+"Evaluation : {}".format((v)), file=sys.stderr)
-
-                foundMove = pv + [move]
+                debug and print(("   " * tdepth )+"Adding move : {} {}".format(*move), file=sys.stderr)
+                debug and print(("   " * tdepth )+"Evaluation : {}".format((v)), file=sys.stderr)
+                foundMove = [move] + pv
                 bestValue = min(bestValue, v)
-
-        debug and print(("   " * depth) + "End minmax(depth={}, maximizingPlayer={})".format(depth, maximizingPlayer),
+            else:
+                debug and print(("   " * tdepth) + "Worse Evaluation : {}".format((v)), file=sys.stderr)
+        debug and print(("   " * tdepth ) + "End minmax(depth={}, rdepth={}, maximizingPlayer={})".format(depth, rdepth, maximizingPlayer),
               file=sys.stderr)
 
-        debug and print(("   "*depth)+"Returning bestValue : {} ".format((bestValue)), file=sys.stderr)
-        debug and print(("   "*depth)+"Returning foundMove : {} ".format((foundMove )), file=sys.stderr)
+        debug and print(("   " * tdepth )+"Returning bestValue : {} ".format((bestValue)), file=sys.stderr)
+        debug and print(("   " * tdepth )+"Returning foundMove : {} ".format((foundMove )), file=sys.stderr)
 
         return bestValue, foundMove
 
+def process_minimax(input):
+    position = Position(input=input)
+    debug and print("====== START POSITION ======== ", file=sys.stderr)
+
+    position.dump()
+    value, pv = minmax(position, True, 3)
+    move = pv[0]
+    debug and print("======MOVE FOUND === {} {} ==========".format(*move), file=sys.stderr)
+
+    newposition = position.execute_move(move)
+    debug and print("====== CHOSEN POSITION ======== ", file=sys.stderr)
+
+    newposition.dump()
+
+    print(move[1])
 
 
 def process(input):
@@ -206,14 +232,15 @@ def process(input):
 
 def do_test_inputs():
     from tools import input, initFileInputter
-    for i in range(1,5,1):
+    for i in range(1,9,1):
         str_to_pr = 'manca_'+str(i)+'.txt'
         print("======PROCESSING === {} ==========".format(str_to_pr),file=sys.stderr)
-        initFileInputter('manca_'+str(i)+'.txt')
-        process(input)
+        initFileInputter(str_to_pr)
+        process_minimax(input)
+        #process(input)
         print("======  END PROCESSING === {} =======".format(str_to_pr), file=sys.stderr)
 
 
 if __name__ == "__main__":
-    #process(input)
+    #process_minimax(input)
     do_test_inputs()

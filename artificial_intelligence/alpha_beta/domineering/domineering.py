@@ -1,5 +1,4 @@
-from tools import input, initFileInputter
-initFileInputter('dom_2.txt')
+
 
 from copy import deepcopy
 from random import  randint
