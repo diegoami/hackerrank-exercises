@@ -50,7 +50,7 @@ class Position:
 
     def evaluate(self):
         ev = self.board['1']['mancala']-self.board['2']['mancala'] + ( 2 if self.board['N'] == '1' else -2)
-    #    ev += sum(self.board['1']['holes']) - sum(self.board['2']['holes'])
+        ev += (sum(self.board['1']['holes']) - sum(self.board['2']['holes']))/5
         return ev
 
     def evaluate_as_target(self):
@@ -215,5 +215,5 @@ def do_test_inputs():
 
 
 if __name__ == "__main__":
-    process(input)
-    #do_test_inputs()
+    #process(input)
+    do_test_inputs()
