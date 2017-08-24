@@ -142,7 +142,7 @@ class Position:
         print("===========END POSITION ==================",**f)
 
 
-debug = True
+debug = False
 
 def minmax(position, maximizingPlayer, depth=1, rdepth = 0, alpha = -math.inf, beta=math.inf):
     tdepth = rdepth
@@ -207,7 +207,10 @@ def process_minimax(input):
     debug and print("====== START POSITION ======== ", file=sys.stderr)
 
     position.dump()
-    value, pv = minmax(position, True, 3)
+    value, pv = minmax(position, True, 5, 0, 6, -6)
+    if (pv == []):
+        value, pv = minmax(position, True, 3, 0)
+
     move = pv[0]
     debug and print("======MOVE FOUND === {} {} ==========".format(*move), file=sys.stderr)
 
@@ -232,7 +235,7 @@ def process(input):
 
 def do_test_inputs():
     from tools import input, initFileInputter
-    for i in range(1,9,1):
+    for i in range(1,10,1):
         str_to_pr = 'manca_'+str(i)+'.txt'
         print("======PROCESSING === {} ==========".format(str_to_pr),file=sys.stderr)
         initFileInputter(str_to_pr)
