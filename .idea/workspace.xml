@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28059e24-6916-4e45-a251-8bd7c042f12b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_intelligence/alpha_beta/dom_1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_intelligence/alpha_beta/dom_2.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_intelligence/alpha_beta/domineering.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artificial_intelligence/combinatorial_search/tron.py" afterPath="$PROJECT_DIR$/artificial_intelligence/combinatorial_search/tron.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools.py" afterPath="$PROJECT_DIR$/tools.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_1.py" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_1.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,10 +14,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/hackerrank_exercises$pacman_dfs.coverage" NAME="pacman_dfs Coverage Results" MODIFIED="1501923486351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_intelligence/a_search" />
+    <SUITE FILE_PATH="coverage/hackerrank_exercises$pacman_dfs.coverage" NAME="pacman_dfs Coverage Results" MODIFIED="1503837454767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_intelligence/a_search" />
     <SUITE FILE_PATH="coverage/hackerrank_exercises$regress_1.coverage" NAME="regress_1 Coverage Results" MODIFIED="1500152347154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_intelligence/statistics" />
     <SUITE FILE_PATH="coverage/hackerrank$inssort_2.coverage" NAME="inssort_2 Coverage Results" MODIFIED="1496105057046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sort" />
-    <SUITE FILE_PATH="coverage/hackerrank_exercises$pacman_astar.coverage" NAME="pacman_astar Coverage Results" MODIFIED="1502199998999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_intelligence/a_search" />
+    <SUITE FILE_PATH="coverage/hackerrank_exercises$pacman_astar.coverage" NAME="pacman_astar Coverage Results" MODIFIED="1503837409981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_intelligence/a_search" />
     <SUITE FILE_PATH="coverage/hackerrank$taum_bday.coverage" NAME="taum_bday Coverage Results" MODIFIED="1495045306819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithms" />
     <SUITE FILE_PATH="coverage/hackerrank_exercises$bst_2.coverage" NAME="bst_2 Coverage Results" MODIFIED="1502376378551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/30days" />
     <SUITE FILE_PATH="coverage/hackerrank$pdf_viewer.coverage" NAME="pdf_viewer Coverage Results" MODIFIED="1494760982748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithms" />
@@ -70,7 +66,7 @@
     <SUITE FILE_PATH="coverage/hackerrank$time_in_words.coverage" NAME="time_in_words Coverage Results" MODIFIED="1495267450289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithms" />
     <SUITE FILE_PATH="coverage/hackerrank$movie_beautiful.coverage" NAME="movie_beautiful Coverage Results" MODIFIED="1494801824163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithms" />
     <SUITE FILE_PATH="coverage/hackerrank$poisson1.coverage" NAME="poisson1 Coverage Results" MODIFIED="1494349273082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stats" />
-    <SUITE FILE_PATH="coverage/hackerrank_exercises$domineering.coverage" NAME="domineering Coverage Results" MODIFIED="1502543920730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_intelligence/alpha_beta" />
+    <SUITE FILE_PATH="coverage/hackerrank_exercises$domineering.coverage" NAME="domineering Coverage Results" MODIFIED="1502562661281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_intelligence/alpha_beta" />
     <SUITE FILE_PATH="coverage/hackerrank_exercises$save_princess_2.coverage" NAME="save_princess_2 Coverage Results" MODIFIED="1500147056743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_intelligence/bot_building" />
     <SUITE FILE_PATH="coverage/hackerrank_exercises$change_coins_5.coverage" NAME="change_coins_5 Coverage Results" MODIFIED="1497527337206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dynamic/coin_change" />
     <SUITE FILE_PATH="coverage/hackerrank$rations.coverage" NAME="rations Coverage Results" MODIFIED="1495216712727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithms" />
@@ -133,9 +129,11 @@
     <SUITE FILE_PATH="coverage/hackerrank$kangaroos.coverage" NAME="kangaroos Coverage Results" MODIFIED="1494118771085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hackerrank$reverse.coverage" NAME="reverse Coverage Results" MODIFIED="1494033755725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hackerrank$nested_logic.coverage" NAME="nested_logic Coverage Results" MODIFIED="1496346935350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/30days" />
+    <SUITE FILE_PATH="coverage/hackerrank_exercises$domineering_2.coverage" NAME="domineering_2 Coverage Results" MODIFIED="1503516033246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_intelligence/alpha_beta" />
     <SUITE FILE_PATH="coverage/hackerrank$journey_moon.coverage" NAME="journey_moon Coverage Results" MODIFIED="1496179460668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graphs" />
     <SUITE FILE_PATH="coverage/hackerrank_exercises$tron.coverage" NAME="tron Coverage Results" MODIFIED="1502543684894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_intelligence/combinatorial_search" />
     <SUITE FILE_PATH="coverage/hackerrank$count_luck.coverage" NAME="count_luck Coverage Results" MODIFIED="1496011379960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/search" />
+    <SUITE FILE_PATH="coverage/hackerrank_exercises$maze_1.coverage" NAME="maze_1 Coverage Results" MODIFIED="1503845206132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze" />
     <SUITE FILE_PATH="coverage/hackerrank$pearson1.coverage" NAME="pearson1 Coverage Results" MODIFIED="1494533290118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stats" />
     <SUITE FILE_PATH="coverage/hackerrank$prob5_2.coverage" NAME="prob5_2 Coverage Results" MODIFIED="1495270827708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/probability" />
     <SUITE FILE_PATH="coverage/hackerrank_exercises$icecream_parlor.coverage" NAME="icecream-parlor Coverage Results" MODIFIED="1497527342772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/search" />
@@ -161,6 +159,7 @@
     <SUITE FILE_PATH="coverage/hackerrank$coin_change_2.coverage" NAME="coin_change_2 Coverage Results" MODIFIED="1496272557716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dynamic" />
     <SUITE FILE_PATH="coverage/hackerrank$icecream_parlor.coverage" NAME="icecream-parlor Coverage Results" MODIFIED="1495214410259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/search" />
     <SUITE FILE_PATH="coverage/hackerrank$day_of_programmer.coverage" NAME="day_of_programmer Coverage Results" MODIFIED="1494619663653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/hackerrank_exercises$mancala_1.coverage" NAME="mancala_1 Coverage Results" MODIFIED="1503525450064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala" />
     <SUITE FILE_PATH="coverage/hackerrank_exercises$save_princess_1.coverage" NAME="save_princess_1 Coverage Results" MODIFIED="1500144028197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_intelligence/bot_building" />
     <SUITE FILE_PATH="coverage/hackerrank$even_tree.coverage" NAME="even_tree Coverage Results" MODIFIED="1494884616921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tree" />
     <SUITE FILE_PATH="coverage/hackerrank$cut_sticks.coverage" NAME="cut_sticks Coverage Results" MODIFIED="1494878273479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithms" />
@@ -172,11 +171,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="lies_unknown.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/artificial_intelligence/combinatorial_search/lies_unknown.py">
+      <file leaf-file-name="mancala_1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala/mancala_1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="864">
-              <caret line="171" column="22" lean-forward="false" selection-start-line="171" selection-start-column="22" selection-end-line="171" selection-end-column="22" />
+            <state relative-caret-position="444">
+              <caret line="244" column="0" lean-forward="true" selection-start-line="244" selection-start-column="0" selection-end-line="248" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="maze_1.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="58" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="155" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myfile.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/myfile.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -185,88 +204,68 @@
       <file leaf-file-name="tools.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="13" column="45" lean-forward="false" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+            <state relative-caret-position="541">
+              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lies_unknown_2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/artificial_intelligence/combinatorial_search/lies_unknown_2.py">
+      <file leaf-file-name="maze_1.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_1.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="212" column="0" lean-forward="false" selection-start-line="212" selection-start-column="0" selection-end-line="213" selection-end-column="31" />
+            <state relative-caret-position="0">
+              <caret line="0" column="1" lean-forward="true" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="domineering.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/domineering.py">
+      <file leaf-file-name="maze_2.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_2.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+            <state relative-caret-position="54">
+              <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tree.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_structures/tree/tree.py">
+      <file leaf-file-name="pacman_astar.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/artificial_intelligence/a_search/pacman_astar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+            <state relative-caret-position="486">
+              <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="knight_walk.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/search/knight_walk.py">
+      <file leaf-file-name="pacman_bfs.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/artificial_intelligence/a_search/pacman_bfs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="35" column="7" lean-forward="false" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+            <state relative-caret-position="793">
+              <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dom_1.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/dom_1.txt">
+      <file leaf-file-name="pacman_dfs.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/artificial_intelligence/a_search/pacman_dfs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+            <state relative-caret-position="126">
+              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dom_2.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/dom_2.txt">
+      <file leaf-file-name="bot_clean.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/artificial_intelligence/bot_building/bot_clean.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="random.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/envs/datacamp/lib/python3.6/random.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="746" column="22" lean-forward="false" selection-start-line="746" selection-start-column="22" selection-end-line="746" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tron.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/artificial_intelligence/combinatorial_search/tron.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="19" selection-end-column="1" />
+            <state relative-caret-position="306">
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="32" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -283,12 +282,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sorted</find>
-      <find>^([\-0-9\ ]+)$</find>
-      <find>deq</find>
-      <find>{}</find>
-      <find>Now</find>
-      <find>sys</find>
       <find>ry</find>
       <find>class</find>
       <find>def input\(\)\:\n    global state\n    if state \&lt; len\(inputArray2\)\:\n        result \= inputArray2\[state\]\n        state \+\= 1\n        return result\n    else\:\n        return None\n</find>
@@ -311,8 +304,14 @@
       <find>stder</find>
       <find>stderr</find>
       <find>^(.*)$</find>
-      <find>,</find>
       <find>Tree</find>
+      <find>b</find>
+      <find>bfs</find>
+      <find>,</find>
+      <find>self.board_c</find>
+      <find>MOVE</find>
+      <find>sort</find>
+      <find>real_hole</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -322,6 +321,7 @@
       <replace>from tools import input, initArrayInputte\ninitArray\.Inputter($2)</replace>
       <replace />
       <replace>&quot;$1&quot;,</replace>
+      <replace>board_c</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\python\hackerrank</dir>
@@ -337,36 +337,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dynamic/sam_substrings/sam_substrings_2.py" />
-        <option value="$PROJECT_DIR$/dynamic/sam_substrings/sam_substrings_3.py" />
-        <option value="$PROJECT_DIR$/dynamic/sam_substrings/sam_substrings_4.py" />
-        <option value="$PROJECT_DIR$/sparse_arrays/sarray_1.py" />
-        <option value="$PROJECT_DIR$/data_structures/tree/topview.py" />
-        <option value="$PROJECT_DIR$/data_structures/tree/tree.py" />
-        <option value="$PROJECT_DIR$/data_structures/tree/levelOrder.py" />
-        <option value="$PROJECT_DIR$/data_structures/tree/insert.py" />
-        <option value="$PROJECT_DIR$/data_structures/tree/preorder.py" />
-        <option value="$PROJECT_DIR$/math/fundamentals/find_the_point.py" />
-        <option value="$PROJECT_DIR$/math/fundamentals/socks.py" />
-        <option value="$PROJECT_DIR$/math/fundamentals/handshakes.py" />
-        <option value="$PROJECT_DIR$/math/fundamentals/lowesttriangle.py" />
-        <option value="$PROJECT_DIR$/math/fundamentals/bases.py" />
-        <option value="$PROJECT_DIR$/artificial_intelligence/bot_building/save_princess_1.py" />
-        <option value="$PROJECT_DIR$/artificial_intelligence/bot_building/save_princess_2.py" />
-        <option value="$PROJECT_DIR$/artificial_intelligence/bot_building/bot_clean.py" />
-        <option value="$PROJECT_DIR$/artificial_intelligence/bot_building/bot_clean_2.py" />
-        <option value="$PROJECT_DIR$/artificial_intelligence/statistics/regress_1.py" />
-        <option value="$PROJECT_DIR$/artificial_intelligence/statistics/regress_2.py" />
-        <option value="$PROJECT_DIR$/artificial_intelligence/statistics/regress_3.py" />
-        <option value="$PROJECT_DIR$/artificial_intelligence/statistics/regress_4.py" />
         <option value="$PROJECT_DIR$/artificial_intelligence/statistics/trainingdata.txt" />
         <option value="$PROJECT_DIR$/artificial_intelligence/statistics/battery_life.py" />
         <option value="$PROJECT_DIR$/artificial_intelligence/statistics/stat_warmup.py" />
         <option value="$PROJECT_DIR$/artificial_intelligence/statistics/stockfile_1.txt" />
         <option value="$PROJECT_DIR$/artificial_intelligence/statistics/stockfile_2.txt" />
-        <option value="$PROJECT_DIR$/artificial_intelligence/a_search/pacman_dfs.py" />
-        <option value="$PROJECT_DIR$/artificial_intelligence/a_search/pacman_bfs.py" />
-        <option value="$PROJECT_DIR$/artificial_intelligence/a_search/pacman_astar.py" />
         <option value="$PROJECT_DIR$/tools/inputter.py" />
         <option value="$PROJECT_DIR$/regexes.txt" />
         <option value="$PROJECT_DIR$/scripts.txt" />
@@ -386,8 +361,33 @@
         <option value="$PROJECT_DIR$/artificial_intelligence/combinatorial_search/tron.py" />
         <option value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/dom_1.txt" />
         <option value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/dom_2.txt" />
-        <option value="$PROJECT_DIR$/tools.py" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/dom_3.txt" />
         <option value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/domineering.py" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/dom_4.txt" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/dom_5.txt" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/dom_6.txt" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/domineering_2.py" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/dom_7.txt" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala/manca_1.txt" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala/manca_2.txt" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala/manca_3.txt" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala/manca_4.txt" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala/manca_5.txt" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala/reference_normal_process.txt" />
+        <option value="$PROJECT_DIR$/tools.py" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala/mancala_6.txt" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala/manca_7.txt" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala/manca_8.txt" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/domineering/domineering.py" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/domineering/domineering_2.py" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala/manca_9.txt" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala/mancala_1.py" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/a_search/pacman_astar.py" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/a_search/pacman_bfs.py" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/a_search/pacman_dfs.py" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_1.txt" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_2.txt" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_1.py" />
       </list>
     </option>
   </component>
@@ -398,10 +398,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="64" />
-    <option name="y" value="-11" />
-    <option name="width" value="1857" />
-    <option name="height" value="1092" />
+    <option name="x" value="65" />
+    <option name="y" value="-4" />
+    <option name="width" value="1855" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -419,6 +419,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -454,7 +455,8 @@
               <item name="hackerrank-exercises" type="b2602c69:ProjectViewProjectNode" />
               <item name="hackerrank-exercises" type="462c0819:PsiDirectoryNode" />
               <item name="artificial_intelligence" type="462c0819:PsiDirectoryNode" />
-              <item name="combinatorial_search" type="462c0819:PsiDirectoryNode" />
+              <item name="bot_building" type="462c0819:PsiDirectoryNode" />
+              <item name="escape_maze" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hackerrank-exercises" type="b2602c69:ProjectViewProjectNode" />
@@ -465,7 +467,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -480,18 +481,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze" />
+      <recent name="$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala" />
       <recent name="$PROJECT_DIR$/artificial_intelligence/alpha_beta" />
       <recent name="$PROJECT_DIR$/artificial_intelligence/combinatorial_search" />
       <recent name="$PROJECT_DIR$/artificial_intelligence/a_search" />
-      <recent name="$PROJECT_DIR$/artificial_intelligence/statistics" />
-      <recent name="$PROJECT_DIR$/artificial_intelligence/bot_building" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/artificial_intelligence/alpha_beta/domineering" />
       <recent name="D:\python\hackerrank\dynamic\coin_change" />
       <recent name="D:\python\hackerrank\dynamic\notgood" />
       <recent name="D:\python\hackerrank\strings" />
       <recent name="D:\python\hackerrank\algorithms" />
-      <recent name="D:\python\hackerrank\warmup" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -506,7 +507,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.domineering">
+  <component name="RunManager" selected="Python.maze_1">
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -654,7 +655,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <configuration name="domineering" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="domineering_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -667,97 +668,97 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="hackerrank" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/domineering.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/domineering/domineering_2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="lies_unknown" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="mancala_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/artificial_intelligence/combinatorial_search" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="hackerrank" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/artificial_intelligence/combinatorial_search/lies_unknown.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala/mancala_1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="lies_unknown_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="maze_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/artificial_intelligence/combinatorial_search" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="hackerrank" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/artificial_intelligence/combinatorial_search/lies_unknown_2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="roads_and_libraries" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pacman_astar" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/graphs" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/artificial_intelligence/a_search" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="hackerrank" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/graphs/roads_and_libraries.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/artificial_intelligence/a_search/pacman_astar.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="tron" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pacman_dfs" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/artificial_intelligence/combinatorial_search" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/artificial_intelligence/a_search" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="hackerrank" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/artificial_intelligence/combinatorial_search/tron.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/artificial_intelligence/a_search/pacman_dfs.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.roads_and_libraries" />
-      <item index="1" class="java.lang.String" itemvalue="Python.lies_unknown" />
-      <item index="2" class="java.lang.String" itemvalue="Python.lies_unknown_2" />
-      <item index="3" class="java.lang.String" itemvalue="Python.tron" />
-      <item index="4" class="java.lang.String" itemvalue="Python.domineering" />
+      <item index="0" class="java.lang.String" itemvalue="Python.domineering_2" />
+      <item index="1" class="java.lang.String" itemvalue="Python.mancala_1" />
+      <item index="2" class="java.lang.String" itemvalue="Python.pacman_astar" />
+      <item index="3" class="java.lang.String" itemvalue="Python.pacman_dfs" />
+      <item index="4" class="java.lang.String" itemvalue="Python.maze_1" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.domineering" />
-        <item index="1" class="java.lang.String" itemvalue="Python.tron" />
-        <item index="2" class="java.lang.String" itemvalue="Python.lies_unknown_2" />
-        <item index="3" class="java.lang.String" itemvalue="Python.lies_unknown" />
-        <item index="4" class="java.lang.String" itemvalue="Python.roads_and_libraries" />
+        <item index="0" class="java.lang.String" itemvalue="Python.maze_1" />
+        <item index="1" class="java.lang.String" itemvalue="Python.pacman_dfs" />
+        <item index="2" class="java.lang.String" itemvalue="Python.pacman_astar" />
+        <item index="3" class="java.lang.String" itemvalue="Python.mancala_1" />
+        <item index="4" class="java.lang.String" itemvalue="Python.domineering_2" />
       </list>
     </recent_temporary>
   </component>
@@ -774,97 +775,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1494032842976</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Other problems">
-      <created>1495580293403</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1495580293403</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Other problems">
-      <created>1495658672912</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1495658672912</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Other problems 2">
-      <created>1495659156192</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1495659156192</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Out of memory I guess">
-      <created>1495659940445</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1495659940445</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Graphs at last...">
-      <created>1495664669976</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1495664669976</updated>
-    </task>
-    <task id="LOCAL-00020" summary="A couple of exercises">
-      <created>1495749924045</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1495749924045</updated>
-    </task>
-    <task id="LOCAL-00021" summary="A couple of problems more">
-      <created>1496011660352</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1496011660352</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Silly insertion algorithm">
-      <created>1496018874440</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1496018874440</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Insertion sort, bread first tree">
-      <created>1496105331324</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1496105331324</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Couple of problems more">
-      <created>1496179869256</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1496179869256</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Couple of problems more">
-      <created>1496267064705</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1496267064705</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Problems bobob">
-      <created>1496267535087</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1496267535087</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Problems bobob">
-      <created>1496352841796</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1496352841796</updated>
     </task>
     <task id="LOCAL-00028" summary="Solved simple stuff">
       <created>1496573795928</created>
@@ -1118,7 +1028,98 @@
       <option name="project" value="LOCAL" />
       <updated>1502406490443</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="First version of domineering game">
+      <created>1502545022630</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1502545022631</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Finds winning move">
+      <created>1502546961346</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1502546961346</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Now with Position object">
+      <created>1502549326179</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1502549326179</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Before bigbang">
+      <created>1502551648394</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1502551648394</updated>
+    </task>
+    <task id="LOCAL-00068" summary="One level tree">
+      <created>1502551926516</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1502551926516</updated>
+    </task>
+    <task id="LOCAL-00069" summary="One level tree">
+      <created>1502555244719</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1502555244719</updated>
+    </task>
+    <task id="LOCAL-00070" summary="traditional minmax">
+      <created>1502562746754</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1502562746754</updated>
+    </task>
+    <task id="LOCAL-00071" summary="implemented minmax">
+      <created>1502566895069</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1502566895069</updated>
+    </task>
+    <task id="LOCAL-00072" summary="First version mancala">
+      <created>1503496377807</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1503496377807</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Second version mancala">
+      <created>1503505078693</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1503505078693</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Third idea mancala">
+      <created>1503505353319</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1503505353319</updated>
+    </task>
+    <task id="LOCAL-00075" summary="mancala with depth 3">
+      <created>1503517873152</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1503517873152</updated>
+    </task>
+    <task id="LOCAL-00076" summary="First maze version">
+      <created>1503843846878</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1503843846878</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1139,20 +1140,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
+    <frame x="65" y="-4" width="1857" height="1092" extended-state="6" />
     <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17789757" sideWeight="0.5640648" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.021621622" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2455404" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32668462" sideWeight="0.49513212" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46065056" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32668462" sideWeight="0.50486785" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32668462" sideWeight="0.50486785" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2875131" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.02098636" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17789757" sideWeight="0.4359352" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3976915" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32668462" sideWeight="0.50486785" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1161,6 +1161,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843652" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46065056" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1204,18 +1205,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Breadth first tree implemented" />
-    <MESSAGE value="Fixed bot" />
-    <MESSAGE value="Correct bot" />
-    <MESSAGE value="Basic stats problems" />
-    <MESSAGE value="Stock predictions" />
-    <MESSAGE value="Basic math problems" />
-    <MESSAGE value="Best result" />
-    <MESSAGE value="finalize predict stock" />
-    <MESSAGE value="First version" />
-    <MESSAGE value="Second versiom" />
-    <MESSAGE value="Exercise completed" />
-    <MESSAGE value="First version pacman breadth first search" />
     <MESSAGE value="Sorted astar with bread first search" />
     <MESSAGE value="Solved astar using algorithm" />
     <MESSAGE value="First utility function tron" />
@@ -1229,7 +1218,19 @@
     <MESSAGE value="All lies" />
     <MESSAGE value="Second try" />
     <MESSAGE value="Solved" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solved" />
+    <MESSAGE value="First version of domineering game" />
+    <MESSAGE value="Finds winning move" />
+    <MESSAGE value="Now with Position object" />
+    <MESSAGE value="Before bigbang" />
+    <MESSAGE value="One level tree" />
+    <MESSAGE value="traditional minmax" />
+    <MESSAGE value="implemented minmax" />
+    <MESSAGE value="First version mancala" />
+    <MESSAGE value="Second version mancala" />
+    <MESSAGE value="Third idea mancala" />
+    <MESSAGE value="mancala with depth 3" />
+    <MESSAGE value="First maze version" />
+    <option name="LAST_COMMIT_MESSAGE" value="First maze version" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1305,182 +1306,36 @@
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/domineering.py</url>
-          <line>5</line>
-          <option name="timeStamp" value="43" />
+          <url>file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/domineering/domineering_2.py</url>
+          <line>110</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/domineering/domineering_2.py</url>
+          <line>125</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala/mancala_1.py</url>
+          <line>130</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala/mancala_1.py</url>
+          <line>85</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_1.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="60" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="44" />
+      <option name="time" value="61" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/anaconda3/envs/datacamp/lib/python3.6/site-packages/scipy/stats/stats.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="2127" column="4" lean-forward="false" selection-start-line="2127" selection-start-column="0" selection-end-line="2185" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/datacamp/lib/python3.6/site-packages/scipy/stats/_distn_infrastructure.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="1267" column="8" lean-forward="false" selection-start-line="1267" selection-start-column="8" selection-end-line="1267" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/datacamp/lib/python3.6/site-packages/numpy/core/fromnumeric.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="3026" column="34" lean-forward="false" selection-start-line="3026" selection-start-column="34" selection-end-line="3026" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artificial_intelligence/bot_building/bot_clean.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="40" column="35" lean-forward="true" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artificial_intelligence/bot_building/save_princess_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artificial_intelligence/bot_building/save_princess_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="37" column="15" lean-forward="false" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search/count_luck.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search/icecream-parlor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search/missing_numbers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artificial_intelligence/bot_building/bot_clean_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="75" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search/connected_cells.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artificial_intelligence/a_search/pacman_dfs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2088">
-          <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artificial_intelligence/a_search/pacman_bfs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="182" column="34" lean-forward="false" selection-start-line="182" selection-start-column="24" selection-end-line="182" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic/sam_substrings/sam_substrings_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="95" lean-forward="false" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artificial_intelligence/a_search/pacman_astar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="654">
-          <caret line="200" column="0" lean-forward="false" selection-start-line="200" selection-start-column="0" selection-end-line="205" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/datacamp/lib/python3.6/linecache.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="36" column="4" lean-forward="false" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_structures/stacks/tc_8.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_structures/stacks/tc_3.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/inputter.py" />
-    <entry file="file://$PROJECT_DIR$/30days/angry_professor_ua.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts.txt" />
-    <entry file="file://$PROJECT_DIR$/30days/perl" />
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons/io.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="588" column="8" lean-forward="false" selection-start-line="588" selection-start-column="8" selection-end-line="588" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/30days/binary_cont_2.py.bak" />
-    <entry file="file://$PROJECT_DIR$/30days/bst_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_structures/tree/btree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/30days/binary_cont_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/replace_ml.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -1520,7 +1375,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1535,7 +1389,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1543,7 +1396,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1551,7 +1403,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36252">
           <caret line="2014" column="0" lean-forward="false" selection-start-line="2014" selection-start-column="0" selection-end-line="2014" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1559,15 +1410,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5580">
           <caret line="310" column="0" lean-forward="false" selection-start-line="310" selection-start-column="0" selection-end-line="310" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-286841697/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5346">
-          <caret line="297" column="4" lean-forward="false" selection-start-line="297" selection-start-column="4" selection-end-line="297" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1575,7 +1417,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2466">
           <caret line="137" column="8" lean-forward="false" selection-start-line="137" selection-start-column="8" selection-end-line="137" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1583,7 +1424,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1603,51 +1443,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/dom_2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/dom_1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="13" column="45" lean-forward="false" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/artificial_intelligence/combinatorial_search/tron.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="19" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/datacamp/lib/python3.6/random.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="746" column="22" lean-forward="false" selection-start-line="746" selection-start-column="22" selection-end-line="746" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_structures/tree/tree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding />
+        <state relative-caret-position="221">
+          <caret line="197" column="0" lean-forward="false" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1655,14 +1461,255 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="35" column="7" lean-forward="false" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_structures/tree/tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/domineering/dom_2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/domineering/dom_4.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/domineering/dom_3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/domineering/dom_1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/domineering/dom_5.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/domineering/dom_6.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala/manca_2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-286841697/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="4161" column="8" lean-forward="false" selection-start-line="4161" selection-start-column="8" selection-end-line="4161" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala/manca_3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala/manca_4.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala/manca_6.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/domineering/dom_7.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/domineering/domineering_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="162" column="26" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="171" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/domineering.py">
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/domineering/domineering.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="178" column="36" lean-forward="true" selection-start-line="178" selection-start-column="36" selection-end-line="178" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala/manca_7.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala/reference_normal_process.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2232">
+          <caret line="124" column="7" lean-forward="false" selection-start-line="124" selection-start-column="7" selection-end-line="124" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala/manca_9.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala/manca_8.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala/manca_5.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala/manca_1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/bot_building/save_princess_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/bot_building/save_princess_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-56">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/bot_building/bot_clean.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="32" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/a_search/pacman_bfs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="793">
+          <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/a_search/pacman_dfs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/a_search/pacman_astar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala/mancala_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="244" column="0" lean-forward="true" selection-start-line="244" selection-start-column="0" selection-end-line="248" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="true" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/myfile.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
-          <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <caret line="58" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="155" selection-end-column="17" />
           <folding />
         </state>
       </provider>
