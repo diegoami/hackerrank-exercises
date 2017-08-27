@@ -2,30 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28059e24-6916-4e45-a251-8bd7c042f12b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/history_10.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/history_11.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/history_12.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/history_13.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/history_3.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/history_4.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/history_5.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/history_6.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/history_7.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/history_9.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_10.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_11.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_12.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_13.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_14.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_3.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_4.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_5.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_6.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_7.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_8.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_9.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/clickomania/click_1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/clickomania/click_2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/clickomania/clickomania.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_1.py" afterPath="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_1.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -120,6 +100,7 @@
     <SUITE FILE_PATH="coverage/hackerrank$angry_professor_ua.coverage" NAME="angry_professor_ua Coverage Results" MODIFIED="1496568323108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/30days" />
     <SUITE FILE_PATH="coverage/hackerrank_exercises$bases.coverage" NAME="bases Coverage Results" MODIFIED="1500142943652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/math/fundamentals" />
     <SUITE FILE_PATH="coverage/hackerrank$change_coins_4.coverage" NAME="change_coins_4 Coverage Results" MODIFIED="1496272913637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dynamic" />
+    <SUITE FILE_PATH="coverage/hackerrank_exercises$clickomania.coverage" NAME="clickomania Coverage Results" MODIFIED="1503863851565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_intelligence/bot_building/clickomania" />
     <SUITE FILE_PATH="coverage/hackerrank$valley.coverage" NAME="valley Coverage Results" MODIFIED="1494676291982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hackerrank_exercises$regress_4.coverage" NAME="regress_4 Coverage Results" MODIFIED="1500153661678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/artificial_intelligence/statistics" />
     <SUITE FILE_PATH="coverage/hackerrank$cakewalk.coverage" NAME="cakewalk Coverage Results" MODIFIED="1495351041573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/greedy" />
@@ -192,11 +173,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="maze_1.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="maze_1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="38" column="25" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="339" selection-end-column="17" />
+            <state relative-caret-position="576">
+              <caret line="338" column="34" lean-forward="true" selection-start-line="294" selection-start-column="0" selection-end-line="338" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clickomania.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/artificial_intelligence/bot_building/clickomania/clickomania.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="37" column="39" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="click_2.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/artificial_intelligence/bot_building/clickomania/click_2.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="click_1.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/artificial_intelligence/bot_building/clickomania/click_1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -237,36 +248,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="54">
               <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="history_11.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/history_11.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="history_10.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/history_10.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="history_9.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/history_9.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -358,9 +339,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/dom_4.txt" />
-        <option value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/dom_5.txt" />
-        <option value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/dom_6.txt" />
         <option value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/domineering_2.py" />
         <option value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/dom_7.txt" />
         <option value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala/manca_1.txt" />
@@ -409,6 +387,9 @@
         <option value="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/history_13.txt" />
         <option value="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_14.txt" />
         <option value="$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_1.py" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/bot_building/clickomania/click_1.txt" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/bot_building/clickomania/click_2.txt" />
+        <option value="$PROJECT_DIR$/artificial_intelligence/bot_building/clickomania/clickomania.py" />
       </list>
     </option>
   </component>
@@ -477,6 +458,13 @@
               <item name="hackerrank-exercises" type="462c0819:PsiDirectoryNode" />
               <item name="artificial_intelligence" type="462c0819:PsiDirectoryNode" />
               <item name="bot_building" type="462c0819:PsiDirectoryNode" />
+              <item name="clickomania" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hackerrank-exercises" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hackerrank-exercises" type="462c0819:PsiDirectoryNode" />
+              <item name="artificial_intelligence" type="462c0819:PsiDirectoryNode" />
+              <item name="bot_building" type="462c0819:PsiDirectoryNode" />
               <item name="escape_maze" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -528,7 +516,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.maze_1">
+  <component name="RunManager" selected="Python.clickomania">
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -676,20 +664,20 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <configuration name="domineering_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="clickomania" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/artificial_intelligence/alpha_beta" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/artificial_intelligence/bot_building/clickomania" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="hackerrank" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/artificial_intelligence/alpha_beta/domineering/domineering_2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/artificial_intelligence/bot_building/clickomania/clickomania.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -767,19 +755,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.domineering_2" />
-      <item index="1" class="java.lang.String" itemvalue="Python.mancala_1" />
-      <item index="2" class="java.lang.String" itemvalue="Python.pacman_astar" />
-      <item index="3" class="java.lang.String" itemvalue="Python.pacman_dfs" />
-      <item index="4" class="java.lang.String" itemvalue="Python.maze_1" />
+      <item index="0" class="java.lang.String" itemvalue="Python.mancala_1" />
+      <item index="1" class="java.lang.String" itemvalue="Python.pacman_astar" />
+      <item index="2" class="java.lang.String" itemvalue="Python.pacman_dfs" />
+      <item index="3" class="java.lang.String" itemvalue="Python.maze_1" />
+      <item index="4" class="java.lang.String" itemvalue="Python.clickomania" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.maze_1" />
-        <item index="1" class="java.lang.String" itemvalue="Python.pacman_dfs" />
-        <item index="2" class="java.lang.String" itemvalue="Python.pacman_astar" />
-        <item index="3" class="java.lang.String" itemvalue="Python.mancala_1" />
-        <item index="4" class="java.lang.String" itemvalue="Python.domineering_2" />
+        <item index="0" class="java.lang.String" itemvalue="Python.clickomania" />
+        <item index="1" class="java.lang.String" itemvalue="Python.maze_1" />
+        <item index="2" class="java.lang.String" itemvalue="Python.pacman_dfs" />
+        <item index="3" class="java.lang.String" itemvalue="Python.pacman_astar" />
+        <item index="4" class="java.lang.String" itemvalue="Python.mancala_1" />
       </list>
     </recent_temporary>
   </component>
@@ -796,13 +784,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1494032842976</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Explaining the coin count algorithm">
-      <created>1496579062158</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1496579062158</updated>
     </task>
     <task id="LOCAL-00030" summary="Sam Strings">
       <created>1496602410819</created>
@@ -1140,7 +1121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1503846372309</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="A lot of more rules">
+      <created>1503861294292</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1503861294292</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1226,7 +1214,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Solved astar using algorithm" />
     <MESSAGE value="First utility function tron" />
     <MESSAGE value="Tron first version" />
     <MESSAGE value="Bad version of Tron" />
@@ -1251,7 +1238,8 @@
     <MESSAGE value="mancala with depth 3" />
     <MESSAGE value="First maze version" />
     <MESSAGE value="Boring maze" />
-    <option name="LAST_COMMIT_MESSAGE" value="Boring maze" />
+    <MESSAGE value="A lot of more rules" />
+    <option name="LAST_COMMIT_MESSAGE" value="A lot of more rules" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1357,27 +1345,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-286841697/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="4161" column="8" lean-forward="false" selection-start-line="4161" selection-start-column="8" selection-end-line="4161" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala/manca_3.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala/manca_4.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/artificial_intelligence/alpha_beta/mancala/manca_6.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1719,14 +1686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_14.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1753,8 +1712,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="38" column="25" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="339" selection-end-column="17" />
+        <state relative-caret-position="576">
+          <caret line="338" column="34" lean-forward="true" selection-start-line="294" selection-start-column="0" selection-end-line="338" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/bot_building/clickomania/click_1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/bot_building/escape_maze/maze_14.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/bot_building/clickomania/click_2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/artificial_intelligence/bot_building/clickomania/clickomania.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="37" column="39" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="34" />
           <folding />
         </state>
       </provider>
