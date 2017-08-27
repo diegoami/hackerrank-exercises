@@ -113,14 +113,10 @@ inputarray4 = [
 ]
 
 
-def input():
-    global state
-    if state < len(inputarray4):
-        result = inputarray4[state]
-        state += 1
-        return result
-    else:
-        return None
+
+
+from tools import input, initArrayInputter
+initArrayInputter(inputarray4)
 
 import math
 

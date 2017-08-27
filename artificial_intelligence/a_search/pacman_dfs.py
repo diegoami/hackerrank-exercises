@@ -78,14 +78,10 @@ inputarray2 = [
 ]
 
 """
-def input():
-    global state
-    if state < len(inputarray2):
-        result = inputarray2[state]
-        state += 1
-        return result
-    else:
-        return None
+
+from tools import input, initArrayInputter
+initArrayInputter(inputarray2)
+
 
 from collections import deque
 def walk(maze, sy,sx, y,x):
