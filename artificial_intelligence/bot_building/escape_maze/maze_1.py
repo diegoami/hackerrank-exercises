@@ -1,6 +1,224 @@
 import sys
 import os
 
+rules_exc = [
+
+    {
+        "lines":
+            [
+                "#--",
+                "#--",
+                "#--",
+                "UP",
+                "#--",
+                "#--",
+                "#--"
+            ],
+        "answer" : "RIGHT"
+    },
+
+    {
+        "lines":
+            [
+                "#--",
+                "#--",
+                "###"
+            ],
+        "answer": "RIGHT",
+
+    }
+,
+
+ {
+        "lines":
+            [
+                "###",
+                "#--",
+                "#--"
+            ],
+        "answer": "DOWN",
+
+    }
+,
+    {
+        "lines":
+            [
+                "###",
+                "--#",
+                "--#"
+            ],
+        "answer": "LEFT",
+
+    }
+,
+
+    {
+        "lines":
+            [
+                "--#",
+                "--#",
+                "--#"
+            ],
+        "answer": "LEFT",
+
+    }
+,
+    {
+        "lines":
+            [
+                "--#",
+                "--#",
+                "--#",
+                "LEFT",
+                "###",
+                "---",
+                "---",
+
+            ],
+        "answer": "LEFT",
+
+    }
+,
+    {
+        "lines":
+            [
+                "---",
+                "---",
+                "###",
+                "UP",
+                "###",
+                "---",
+                "---",
+
+            ],
+        "answer": "LEFT"
+
+    },
+    {
+        "lines": [
+
+                "###",
+                "---",
+                "---",
+                "RIGHT",
+                "#--",
+                "#--",
+                "#--"
+            ],
+        "answer" : "RIGHT"
+    }
+
+
+
+]
+
+rules = [ 
+
+
+    {
+        "lines":
+    [
+
+    "#--",
+    "#--",
+    "#--",
+    "UP",
+    "#--",
+    "#--",
+    "#--",
+    "UP",
+    "#--",
+    "#--",
+    "#--"
+    ],
+        "answer": "RIGHT"
+    },
+    { "lines" :
+       [
+
+        "---",
+        "--#",
+        "--#",
+        "UP",
+        "---",
+        "---",
+        "--#",
+    ],
+    "answer" : "RIGHT"
+    },
+    {
+        "lines":
+        [
+
+            "-##",
+            "---",
+            "---",
+            "LEFT",
+            "---",
+            "---",
+            "--#"
+        ],
+        "answer": "RIGHT"
+    },
+
+    {
+        "lines":
+            [
+
+                "###",
+                "---",
+                "---",
+                "RIGHT",
+                "#--",
+                "#--",
+                "#--",
+                "UP",
+                "#--",
+                "#--",
+                "#--"
+            ]
+      ,
+    "answer" : "RIGHT"
+    }
+
+,
+    {
+        "lines":
+            [
+                "#--",
+                "#--",
+                "#--",
+                "RIGHT",
+                "-##",
+                "---",
+                "---"
+
+            ],
+        "answer": "LEFT"
+    },
+]
+
+
+
+def check_rules(lines):
+    if (len(lines) >= 20):
+        return None
+
+    for i, rule_ex in enumerate(rules_exc):
+        rev_lines = [l.strip() for l in lines]
+        if (rev_lines == rule_ex["lines"]):
+            print("Hit Rule Exc {}".format(i), file=sys.stderr)
+            return rule_ex["answer"]
+
+    for i, rule in enumerate(rules):
+        if (len(rule["lines"]) > len(lines)):
+            continue
+        rev_lines = [l.strip() for l in lines]
+        if (rev_lines[len(lines) - len(rule["lines"]):] == rule["lines"]):
+            print("Hit Rule {}".format(i), file=sys.stderr)
+            return rule["answer"]
+    return None
+
 
 def find_exit(maze):
     for j in range(len(maze)):
@@ -8,44 +226,17 @@ def find_exit(maze):
             return (j,maze[j].index('e'))
     return None
 
-dirs = ['UP','LEFT','DOWN','RIGHT']
-def turn_dir(orig_dir, prev_dir):
-    prev_dir_index = dirs.index(prev_dir)
-    orig_dir_index = dirs.index(orig_dir)
-    while prev_dir_index > 0:
-        orig_dir_index -= 1
-        prev_dir_index -= 1
-        if orig_dir_index == -1:
-            orig_dir_index = 3
-    return dirs[orig_dir_index]
-
-def turn_facing_dir(orig_dir, prev_dir):
-    prev_dir_index = dirs.index(prev_dir)
-    orig_dir_index = dirs.index(orig_dir)
-    while prev_dir_index > 0:
-        orig_dir_index += 1
-        prev_dir_index -= 1
-        if orig_dir_index == 4:
-            orig_dir_index = 0
-    return dirs[orig_dir_index]
-
-def turn_maze(maze , prev_dir):
-    turns = dirs.index(prev_dir)
-    new_maze = maze
-
-    for _ in range(turns):
-        new_maze = [ ['-','-','-'], ['-','-','-'], ['-','-','-']]
-        for j in range(3):
-            for i in range(3):
-                new_maze[i][j] = maze[2-j][i]
-
-        maze = new_maze
-    return new_maze
+dirs_r = ['UP','RIGHT','LEFT', 'DOWN']
+dirs_l = ['UP','LEFT','RIGHT', 'DOWN']
 
 
 
 
-def get_best_move(maze, prev_dir = "UP", prev_norm_dir= "UP"):
+
+
+
+
+def get_best_move(maze, lines, prev_dir = "UP", prev_norm_dir= "UP"):
 
     def walk_possible(maze, dir):
         if dir == 'DOWN' and maze[2][1] in ['-','e']:
@@ -57,46 +248,52 @@ def get_best_move(maze, prev_dir = "UP", prev_norm_dir= "UP"):
         elif dir == 'LEFT' and maze[1][0] in ['-','e']:
             return True
 
-
-    exit = find_exit(maze)
-    if (exit):
-        if exit[0] == 0 and walk_possible(maze,'UP'):
-            return 'UP'
-        elif exit[1] == 2 and walk_possible(maze,'RIGHT')  :
-            return 'RIGHT'
-        elif exit[1] == 0 and walk_possible(maze,'LEFT') :
-            return 'LEFT'
-        else:
-            return 'DOWN'
-
+    dir_from_rule = check_rules(lines)
+    if (dir_from_rule):
+        return dir_from_rule
     else:
-        dir = prev_dir
+        exit = find_exit(maze)
+        if (exit):
+            if exit[0] == 0 and walk_possible(maze,'UP'):
+                return 'UP'
+            elif exit[1] == 2 and walk_possible(maze,'RIGHT')  :
+                return 'RIGHT'
+            elif exit[1] == 0 and walk_possible(maze,'LEFT') :
+                return 'LEFT'
+            else:
+                return 'DOWN'
 
-        while True:
-            if walk_possible(maze,dir):
-                return dir
-            dir_index = dirs.index(dir)
-            dir_index = dir_index - 1 if dir_index > 0 else 3
-            dir = dirs[dir_index]
-filename = "myfile.txt"
+        else:
+            dir = prev_dir
 
-def read_direction():
+            while True:
+                if walk_possible(maze,dir):
+                    return dir
+                dir_index = dirs_r.index(dir)
+                dir_index = dir_index + 1 if dir_index < 4 else 0
+                dir = dirs_r[dir_index]
+
+def read_history(filename):
     if (os.path.isfile(filename)):
         with open( filename, "r") as f:
             lines = f.readlines()
-            if (len(lines) > 0):
-                return (lines[0].split(','))
-            else:
-                return "UP","UP"
+            return [l for l in lines if len(l.strip()) > 0]
     else:
-        return "UP","UP"
+        return []
 
 
-def write_direction(dir,orig_dir):
+def write_history(filename,lines):
     with open(filename, "w") as f:
-        f.write(dir+","+orig_dir)
+        f.writelines([l for l in lines if len(l.strip()) > 0] )
 
-def process(input):
+def maze_dump(maze):
+    maze_lines = []
+    for j in range(3):
+        maze_lines.append("".join(maze[j])+"\n")
+    return maze_lines
+
+
+def process(input, filename, overwrite=True):
     player = int(input())
     maze = []
     for j in range(3):
@@ -106,51 +303,38 @@ def process(input):
         mazej = input()
         for i in range(3):
             maze[j].append(mazej[i])
-    prev_dir, facing_dir = read_direction()
-    print("==== PREV_DIR == {} === FACING_DIR {} =======".format(prev_dir,facing_dir ), file=sys.stderr)
 
+    lines = read_history(filename)
 
-    #new_maze = turn_maze(maze,prev_norm_dir)
-    #print(maze)
-    print("===== MAZE === ", file=sys.stderr)
-    print(maze,file=sys.stderr)
+    print("===== HISTORY === ", file=sys.stderr)
+    lines = lines + maze_dump(maze)
+    for line in lines:
+        print(line.strip(),file=sys.stderr)
 
-    orig_dir = get_best_move(maze)
-    #new_dir = turn_dir(orig_dir, prev_dir)
-    new_dir = orig_dir
-    new_facing_dir = turn_facing_dir(new_dir, new_dir)
-    print("====== DIR === {} ==== NEW_FACING_DIR == {} == ".format(new_dir, new_facing_dir), file=sys.stderr)
-
-    write_direction(new_dir, new_facing_dir )
+    new_dir = get_best_move(maze,lines)
+    print("====== DIR === {} ==== ".format(new_dir), file=sys.stderr)
+    lines.append(new_dir+"\n")
+    if (overwrite):
+        write_history(filename, lines)
     print(new_dir)
+    return new_dir
 
 def do_test_inputs():
     from tools import input, initFileInputter
-    for i in range(2,3,1):
+    exp_results = ["DOWN","UP","RIGHT","RIGHT","UP","RIGHT","UP", "RIGHT", "LEFT", "RIGHT", "RIGHT", "RIGHT", "LEFT", "DOWN"]
+    tests_failed = 0
+    for i in range(1,15,1):
         str_to_pr = 'maze_'+str(i)+'.txt'
+        history = 'history_'+str(i)+'.txt'
         print("======PROCESSING === {} ==========".format(str_to_pr),file=sys.stderr)
         initFileInputter(str_to_pr)
-        process(input)
+        res = process(input, history, False)
+        if (res != exp_results[i-1]):
+            tests_failed += 1
         print("======  END PROCESSING === {} =======".format(str_to_pr), file=sys.stderr)
-
-
-def test_mazes():
-
-    maze = [['#', '#', '#'], ['#', '-', '-'], ['#', '-', '-']]
-    new_maze = turn_maze(maze,'RIGHT')
-    print(new_maze)
-
-    maze = [['-', '-', '#'], ['-', '-', '#'], ['#', '#', '#']]
-    new_maze = turn_maze(maze, 'LEFT')
-    print(new_maze)
-
-    maze = [['#', '-', '-'], ['#', '-', '-'], ['#', '#', '#']]
-    new_maze = turn_maze(maze, 'DOWN')
-    print(new_maze)
-
-
+        print("====== TESTS FAILED  ======{} =======".format(tests_failed), file=sys.stderr)
 if __name__ == "__main__":
-    #do_test_inputs()
+    do_test_inputs()
     #new_maze = do_turn_maze('')
-    process(input)
+    #process(input, 'history.txt')
     #test_mazes()
